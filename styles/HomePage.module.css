@@ -1,0 +1,483 @@
+.welcomeScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.welcomeTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+}
+
+.chatInputForm {
+  max-width: min(800px, 95vw);
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #F3F0FF;
+  border-radius: 12px;
+}
+
+.inputWithChips {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.chatTextarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  resize: none;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: none;
+  transition: border-color 0.3s;
+  margin-bottom: 0;
+  min-height: 50px;
+  font-family: 'Nirmala UI', 'Mangal', sans-serif;
+  color: #666;
+}
+
+.chatTextarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.chipContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+  overflow-x: auto;
+  padding: 3px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  white-space: nowrap;
+}
+
+.chipContainer > * {
+  flex: 0 0 auto;
+  margin: 0 !important;
+}
+
+.chipContainer::-webkit-scrollbar {
+  height: 4px;
+}
+
+.chipContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.standardChip {
+  background-color: #fff !important;
+  border: 1px solid #eee !important;
+  padding: 0 16px !important;
+  height: 36px !important;
+  font-size: 13px !important;
+  border-radius: 18px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #333 !important;
+}
+
+.standardChip:hover {
+  background-color: #f8f9fa !important;
+  border-color: #e5e7eb !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.gradientChip {
+  background: white !important;
+  color: black !important;
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.gradientChip:hover {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4) !important;
+  transform: translateY(-1px) !important;
+}
+
+.pulseAnimation {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 79, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 77, 79, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 79, 0);
+  }
+}
+
+.uploadButton {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2b32;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.uploadButton:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.uploadIcon {
+  font-size: 14px;
+  color: #fff;
+}
+
+.disclaimer {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+/* Enhanced Responsive styles */
+@media (max-width: 768px) {
+  .welcomeTitle {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+  }
+  
+  .chatInputForm {
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .chatTextarea {
+    font-size: 15px;
+    padding: 0.4rem;
+    min-height: 40px;
+  }
+
+  .standardChip {
+    padding: 0 8px !important;
+    height: 26px !important;
+  }
+
+  .sendButton {
+    right: 24px;
+    bottom: 24px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .sendButton svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .chatBoxSection {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcomeTitle {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .standardChip {
+    padding: 0 8px !important;
+    height: 28px !important;
+    font-size: 12px !important;
+  }
+
+  .chatTextarea {
+    font-size: 15px;
+    padding: 0.5rem;
+    min-height: 40px;
+  }
+
+  .uploadButton {
+    width: 32px;
+    height: 32px;
+  }
+
+  .uploadIcon {
+    font-size: 12px;
+  }
+
+  .chatBoxSection {
+    padding-bottom: 120px;
+  }
+}
+
+/* Language support styles */
+.languageContent {
+  font-family: var(--selected-language-font, system-ui, sans-serif);
+}
+
+/* RTL text support only - no layout changes */
+[dir="rtl"] .messageContent {
+  text-align: right;
+}
+
+/* Remove flex direction changes to maintain original layout */
+/* [dir="rtl"] .userMessage {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .aiMessage {
+  flex-direction: row-reverse;
+} */
+
+/* Don't change button positions */
+/* [dir="rtl"] .messageActions {
+  left: 0;
+  right: auto;
+} */
+
+/* Language-specific font styles */
+.devanagariText {
+  font-family: 'Nirmala UI', 'Mangal', sans-serif;
+}
+
+.bengaliText {
+  font-family: 'Nirmala UI', 'Shonar Bangla', sans-serif;
+}
+
+.teluguText {
+  font-family: 'Nirmala UI', 'Gautami', sans-serif;
+}
+
+.tamilText {
+  font-family: 'Nirmala UI', 'Latha', sans-serif;
+}
+
+.urduText {
+  font-family: 'Aldhabi', 'Urdu Typesetting', sans-serif;
+  /* Don't change direction to maintain layout */
+  /* direction: rtl; */
+}
+
+.gujaratiText {
+  font-family: 'Nirmala UI', 'Shruti', sans-serif;
+}
+
+.toolGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 16px auto;
+  max-width: 800px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.toolItem {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.toolIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.toolIconSvg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.toolTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .toolGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0 8px;
+    margin: 16px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px;
+    padding: 0 12px;
+    margin: 12px auto;
+    width: 100%;
+    max-width: 100%;
+    display: grid !important;
+  }
+
+  .toolItem {
+    padding: 8px;
+    min-width: 0;
+    width: 100%;
+    max-width: none;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .toolIcon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+  }
+
+  .toolIconSvg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .toolTitle {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 0 4px;
+  }
+}
+
+.sendButton {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.sendButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.sendButton svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+/* Start with ब्रह्मांड AI button */
+.startButton {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+
+.startButton:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Main content spacing adjustments */
+.mainContent {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pageContent {
+  padding: 10px 0;
+}
+
+.chatBoxSection {
+  padding-bottom: 40px;
+} 

@@ -1,0 +1,255 @@
+/* Custom CSS for improving alignment in the static bar */
+
+.rbt-static-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1100px;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0px -10px 25px -5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Remove extra space from containers */
+.chat-box-list,
+.chat-box,
+.inner,
+.chat-section,
+.d-flex,
+.form-group {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+/* Ensure content fits without extra space */
+.chat-content,
+.inner > div,
+.chat-section > div {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* Fix for the blank container */
+.chat-box-list {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box {
+  margin-bottom: 0 !important;
+  flex: 0 0 auto;
+}
+
+.inner {
+  padding-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-section {
+  margin-bottom: 0 !important;
+  flex: 0 0 auto;
+}
+
+/* Prevent any bottom spacing */
+.chat-box:last-child,
+.chat-section:last-child,
+.inner:last-child,
+.chat-content:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.rbt-static-bar .new-chat-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.rbt-static-bar .input-with-chips {
+  width: 100%;
+}
+
+.rbt-static-bar .input-with-chips textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+/* Container for feature buttons */
+.feature-buttons-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  width: 100%;
+  padding: 0 8px;
+}
+
+/* Feature buttons row styles */
+.feature-buttons-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 8px;
+  padding: 0 4px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.feature-buttons-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Bottom row features */
+.bottom-features-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 0 4px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.bottom-features-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom positioning for the send button */
+.send-button-fixed {
+  position: absolute !important;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Make sure the chip components are properly sized */
+.MuiChip-root {
+  margin: 0 2px !important;
+  max-width: fit-content !important;
+  height: 36px !important;
+  border-radius: 18px !important;
+}
+
+/* Ensure chips have consistent height/sizing */
+.MuiChip-label {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  white-space: nowrap !important;
+  font-size: 14px !important;
+}
+
+/* Ensure chip icons are properly sized */
+.MuiChip-icon, .MuiChip-avatar {
+  margin-left: 4px !important;
+  margin-right: -6px !important;
+}
+
+/* Ensure dark mode compatibility */
+.rbt-static-bar[data-theme="dark"] {
+  background-color: #1a1b26;
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 768px) {
+  .rbt-static-bar {
+    padding: 8px;
+  }
+
+  .feature-buttons-container {
+    margin-top: 6px;
+    padding: 0 6px;
+  }
+
+  .feature-buttons-row,
+  .bottom-features-row {
+    gap: 6px;
+    padding: 0 2px;
+  }
+
+  .MuiChip-root {
+    height: 32px !important;
+  }
+
+  .MuiChip-label {
+    font-size: 13px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .rbt-static-bar {
+    padding: 6px;
+  }
+
+  .feature-buttons-container {
+    margin-top: 4px;
+    padding: 0 4px;
+  }
+
+  .feature-buttons-row,
+  .bottom-features-row {
+    gap: 4px;
+    padding: 0;
+  }
+
+  .MuiChip-root {
+    height: 28px !important;
+  }
+
+  .MuiChip-label {
+    font-size: 12px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  .send-button-fixed {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+/* Style the action buttons in feature rows */
+.feature-buttons-row button:not(.send-button-fixed) {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+/* Animation for hover effects */
+.feature-buttons-row button:hover:not(:disabled),
+.feature-buttons-row .MuiChip-root:hover:not(:disabled),
+.bottom-features-row .MuiChip-root:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+} 

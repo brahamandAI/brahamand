@@ -1,0 +1,512 @@
+(node:560556) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560571) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560586) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560601) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560616) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560631) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560646) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560662) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560677) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560692) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560707) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560722) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560737) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560752) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560767) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560782) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560921) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560936) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560951) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560966) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560981) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:560996) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561011) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561026) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561041) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561056) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561071) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561086) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561101) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561116) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561131) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}
+(node:561146) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: ENOENT: no such file or directory, open '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:15:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/brahamand/htdocs/brahamand.ai/certificates/localhost-key.pem'
+}

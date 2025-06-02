@@ -1,0 +1,1400 @@
+(node:705827) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⚠ Duplicate page detected. pages/image-generator.js and pages/image-generator/index.js resolve to /image-generator
+ ⚠ Duplicate page detected. pages/image-generator.js and pages/image-generator/index.js resolve to /image-generator
+Do not add <script> tags using next/head (see inline <script>). Use next/script instead. 
+See more info here: https://nextjs.org/docs/messages/no-script-tags-in-head-component
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call for translation: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call for translation: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Error in direct OpenAI API call for PDF: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+ ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in direct OpenAI API call for PDF: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in direct OpenAI API call for PDF: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in direct OpenAI API call for PDF: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+ ⚠ The requested resource "/images/logo/output-onlinegiftools.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in OpenAI API call: {
+  error: {
+    message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  }
+}
+Unexpected error in generateChatCompletion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error in chat completion: Error: OpenAI API error: Incorrect API key provided: sk-proj-********************************************************************************************************************************************************rwQA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at generateChatCompletion (webpack-internal:///(api)/./lib/openaiService.js:708:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handler (webpack-internal:///(api)/./pages/api/chat.js:107:34)
+    at async K (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:2946)
+    at async U.render (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/compiled/next-server/pages-api.runtime.dev.js:21:3827)
+    at async DevServer.runApi (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:554:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/next-server.js:266:37)
+    at async DevServer.handleRequestImpl (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/base-server.js:789:17)
+    at async /home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:331:20
+    at async Span.traceAsyncFn (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/trace/trace.js:151:20)
+    at async DevServer.handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/dev/next-dev-server.js:328:24)
+    at async invokeRender (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home/brahamand/htdocs/brahamand.ai/node_modules/next/dist/server/lib/router-server.js:377:13)
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongoose' imported from /home/brahamand/htdocs/brahamand.ai/server.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+(node:892649) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/brahamand/htdocs/brahamand.ai/server.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/brahamand/htdocs/brahamand.ai/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:892649) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(node:892649) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+ ⚠ Duplicate page detected. pages/image-generator.js and pages/image-generator/index.js resolve to /image-generator
+ ⚠ Duplicate page detected. pages/image-generator.js and pages/image-generator/index.js resolve to /image-generator
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:25:6 {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:25:6 {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at file:///home/brahamand/htdocs/brahamand.ai/server.js:25:6 {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
