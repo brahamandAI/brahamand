@@ -2059,8 +2059,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           hoverColor: '#7B1FA2'
                                         },
                                         { 
-                                          title: 'News Updates', 
-                                          link: '/news-updates', 
+                                          title: 'LiveNews', 
+                                          link: '/live-news', 
                                           icon: MegaphoneIcon,
                                           color: '#FF9800',
                                           hoverColor: '#F57C00'
@@ -2258,8 +2258,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           icon={<LanguageIcon />}
                                           label="Search News"
                                           onClick={() => {
-                                            // Redirect to news-updates page
-                                            window.location.href = '/news-updates';
+                                            // Redirect to live-news page
+                                            window.location.href = '/live-news';
                                           }}
                                           clickable
                                           style={{
@@ -2774,14 +2774,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                         icon={<LanguageIcon />}
                                         label="Search News"
                                         onClick={() => {
-                                          setNewMessage("Show me news about technology");
-                                          setTimeout(() => {
-                                            handleSendMessage();
-                                            const messageElement = document.createElement('div');
-                                            messageElement.innerHTML = `<div style="position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%); background: rgba(49, 130, 206, 0.9); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">Try \"Show me news about [any topic]\" for customized updates!</div>`;
-                                              document.body.appendChild(messageElement);
-                                              setTimeout(() => document.body.removeChild(messageElement), 5000);
-                                          }, 100);
+                                          // Redirect to live-news page
+                                          window.location.href = '/live-news';
                                         }}
                                         clickable
                                         sx={{

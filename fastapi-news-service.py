@@ -96,8 +96,8 @@ async def startup_event():
     # Start initial scraping
     asyncio.create_task(scrape_all_sources())
     
-    # Schedule periodic scraping every hour
-    scheduler.add_job(scrape_all_sources, 'interval', hours=1, id='periodic_scrape')
+    # Schedule scraping every 30 minutes instead of hourly
+    scheduler.add_job(scrape_all_sources, 'interval', minutes=30, id='periodic_scrape')
     scheduler.start()
 
 @app.on_event("shutdown")
@@ -471,19 +471,26 @@ async def scrape_the_hindu():
                         feed = feedparser.parse(response.text)
                         for entry in feed.entries:
                             try:
-                                # Parse the published date
-                                if hasattr(entry, 'published_parsed'):
-                                    published_at = datetime(*entry.published_parsed[:6])
-                                elif hasattr(entry, 'updated_parsed'):
-                                    published_at = datetime(*entry.updated_parsed[:6])
+                                # Get current time for comparison
+                                current_time = datetime.utcnow()
+                                
+                                # Parse the published date more carefully
+                                if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                                    published_at = datetime.fromtimestamp(time.mktime(entry.published_parsed))
+                                elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                                    published_at = datetime.fromtimestamp(time.mktime(entry.updated_parsed))
                                 else:
-                                    published_at = datetime.utcnow()
+                                    published_at = current_time
+                                
+                                # Validate the date - if it's in the future, use current time
+                                if published_at > current_time:
+                                    published_at = current_time
                                 
                                 article = {
                                     'title': entry.title,
                                     'link': entry.link,
                                     'source': 'The Hindu',
-                                    'scraped_at': datetime.utcnow(),
+                                    'scraped_at': current_time,
                                     'published_at': published_at,
                                     'summary': entry.summary if hasattr(entry, 'summary') else None
                                 }
@@ -509,10 +516,18 @@ async def scrape_the_hindu():
                         unique_articles.append(article)
                 
                 if unique_articles:
-                    result = await collection.insert_many(unique_articles, ordered=False)
-                    print(f"[The Hindu] Inserted {len(result.inserted_ids)} articles")
-            except DuplicateKeyError:
-                print("[The Hindu] Duplicate entries skipped")
+                    # Use update_many with upsert instead of insert_many to avoid duplicates
+                    operations = [
+                        UpdateOne(
+                            {'link': article['link']},
+                            {'$set': article},
+                            upsert=True
+                        ) for article in unique_articles
+                    ]
+                    result = await collection.bulk_write(operations)
+                    print(f"[The Hindu] Updated/Inserted {len(unique_articles)} articles")
+            except Exception as e:
+                print(f"[The Hindu] Error updating articles: {e}")
         return all_articles
     except Exception as e:
         print(f"[Error] The Hindu scraping failed: {e}")
@@ -761,28 +776,44 @@ async def read_root():
 async def get_latest_news(limit: int = Query(10, description="Number of articles to return")):
     """Get the latest news articles from all sources."""
     try:
-        # Get today's date range (midnight to midnight)
-        today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
-        tomorrow = today + timedelta(days=1)
+        # Get current time in UTC
+        now = datetime.utcnow()
         
-        # Query for articles from today
+        # Calculate the start of today in UTC (00:00:00 UTC)
+        today_utc = now.replace(hour=0, minute=0, second=0, microsecond=0)
+        
+        # Calculate the start of yesterday in UTC
+        yesterday_utc = today_utc - timedelta(days=1)
+        
+        # First try to get today's articles
         query = {
             "scraped_at": {
-                "$gte": today,
-                "$lt": tomorrow
+                "$gte": today_utc,
+                "$lt": now
             }
         }
         
         cursor = collection.find(query).sort("scraped_at", -1).limit(limit)
         articles = await cursor.to_list(length=limit)
         
-        # If no articles found for today, get the most recent articles
+        # If no articles found for today, try getting articles from the last 24 hours
         if not articles:
-            cursor = collection.find().sort("scraped_at", -1).limit(limit)
+            query = {
+                "scraped_at": {
+                    "$gte": yesterday_utc,
+                    "$lt": now
+                }
+            }
+            cursor = collection.find(query).sort("scraped_at", -1).limit(limit)
             articles = await cursor.to_list(length=limit)
         
         # Convert MongoDB documents to JSON-serializable format
         json_articles = mongo_to_json(articles)
+        
+        # Add a flag to indicate if articles are from today or yesterday
+        for article in json_articles:
+            article_date = datetime.fromisoformat(article['scraped_at'].replace('Z', '+00:00'))
+            article['is_today'] = article_date >= today_utc
         
         return JSONResponse(content=json_articles)
     except Exception as e:

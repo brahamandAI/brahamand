@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Cloud, FileText, BarChart2, Globe, Settings, Star, Home, Briefcase, Youtube, Activity} from 'react-feather';
+import { Cloud, FileText, BarChart2, Settings, Star, Home, Briefcase, Youtube, Activity} from 'react-feather';
 
 import avatar from "../../public/images/team/team-01sm.jpg";
 import light from "../../public/images/light/switch/sun-01.svg";
@@ -159,12 +159,6 @@ const LeftSidebar = () => {
                       <Link href="/pdf-analysis" className="d-flex align-items-center">
                         <FileText size={18} className="me-2" />
                         <span>PDF Analysis</span>
-                      </Link>
-                    </li>
-                    <li className={currentPath === '/news-updates' ? 'active' : ''}>
-                      <Link href="/news-updates" className="d-flex align-items-center">
-                        <Globe size={18} className="me-2" />
-                        <span>News</span>
                       </Link>
                     </li>
                     <li className={currentPath === '/live-news' ? 'active' : ''}>
