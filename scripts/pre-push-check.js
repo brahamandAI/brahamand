@@ -51,13 +51,19 @@ console.log('✅ ENCRYPTION_KEY found in .env.git');
 // Check 4: Ensure .env.production is not tracked by git
 try {
     const gitStatus = execSync('git status --porcelain', { encoding: 'utf8' });
-    if (gitStatus.includes(envFile)) {
-        console.error(`❌ Error: ${envFile} is tracked by git!`);
-        console.error('This is a security risk. Please:');
-        console.error('1. Add .env.production to .gitignore');
-        console.error('2. Remove it from git: git rm --cached .env.production');
-        console.error('3. Commit the changes');
-        process.exit(1);
+    // Split by lines and check each file individually to avoid false positives
+    const statusLines = gitStatus.split('\n').filter(line => line.trim());
+    for (const line of statusLines) {
+        // Extract filename (after status codes and whitespace)
+        const filename = line.substring(3).trim();
+        if (filename === envFile) {
+            console.error(`❌ Error: ${envFile} is tracked by git!`);
+            console.error('This is a security risk. Please:');
+            console.error('1. Add .env.production to .gitignore');
+            console.error('2. Remove it from git: git rm --cached .env.production');
+            console.error('3. Commit the changes');
+            process.exit(1);
+        }
     }
     console.log('✅ .env.production is not tracked by git');
 } catch (error) {
