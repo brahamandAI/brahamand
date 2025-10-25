@@ -24,7 +24,8 @@ jobs:
       run: |
         echo "Setting up deployment environment from GitHub Secrets..."
         echo "HOST=${{ secrets.HOST }}" >> $GITHUB_ENV
-        echo "SSH_PORT=22" >> $GITHUB_ENV
+        echo "SSH_PORT=${{ secrets.SSH_PORT || '22' }}" >> $GITHUB_ENV
+        echo "DEPLOY_PATH=${{ secrets.DEPLOY_PATH || '~/brahamand' }}" >> $GITHUB_ENV
         echo "ENCRYPTION_KEY=${{ secrets.ENCRYPTION_KEY }}" >> $GITHUB_ENV
         
     - name: Deploy to server
@@ -39,10 +40,10 @@ jobs:
           echo "❌ deploy.sh not found!"
           exit 1
         fi
-        
-        # Pull latest code and deploy
-        echo "deploying to server"
-        ssh -o StrictHostKeyChecking=no -p $SSH_PORT $HOST "cd ~/projects/brahamand && echo 'ENCRYPTION_KEY=$ENCRYPTION_KEY' > .env.git && echo '✅ .env.git file created/updated' && chmod +x deploy.sh && ./deploy.sh"
+         
+        # Deploy on server
+        echo "🚀 Deploying to server..."
+        ssh -o StrictHostKeyChecking=no -p $SSH_PORT $HOST "cd $DEPLOY_PATH && echo 'ENCRYPTION_KEY=$ENCRYPTION_KEY' > .env.git && echo '✅ .env.git file created/updated' && chmod +x deploy.sh && ./deploy.sh"
 
     - name: Deployment Status
       run: |
