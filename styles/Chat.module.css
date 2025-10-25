@@ -1,0 +1,267 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: white;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.logoText {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menuButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #3b2f93;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chatContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 16px;
+}
+
+.messageArea {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+.message {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.messageAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.messageContent {
+  flex: 1;
+}
+
+.messageSender {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.messageText {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.chatInputForm {
+  position: relative;
+  width: 100%;
+  background: white;
+  border-radius: 24px;
+  padding: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.inputWithChips {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chipContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 4px;
+  width: 100%;
+}
+
+.standardChip {
+  background-color: white !important;
+  border: 1px solid #e9ecef !important;
+  padding: 0 16px !important;
+  height: 36px !important;
+  font-size: 14px !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+}
+
+.standardChip:first-child {
+  padding: 0 !important;
+  width: 36px !important;
+  min-width: 36px !important;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.chatTextarea {
+  width: 100%;
+  padding: 8px 44px 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #e9ecef;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 40px;
+  background-color: #f8f9fa;
+}
+
+.chatTextarea:focus {
+  outline: none;
+  border-color: #3b2f93;
+  background-color: white;
+}
+
+.sendButton {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #4285f4;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 0;
+  z-index: 2;
+  transform: none;
+}
+
+.sendButton:hover {
+  background: #1a73e8;
+}
+
+.sendButton:active {
+  background: #1557b0;
+}
+
+.sendButton svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+  pointer-events: none;
+}
+
+.disclaimer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .chatContainer {
+    padding: 12px;
+  }
+
+  .chipContainer {
+    gap: 6px;
+    padding: 6px 2px;
+  }
+
+  .standardChip {
+    height: 32px !important;
+    font-size: 13px !important;
+    padding: 0 12px !important;
+    border-radius: 16px !important;
+  }
+
+  .standardChip:first-child {
+    width: 32px !important;
+    min-width: 32px !important;
+  }
+
+  .chatInputForm {
+    border-radius: 20px;
+    padding: 8px;
+  }
+
+  .sendButton {
+    width: 28px;
+    height: 28px;
+    right: 6px;
+    bottom: 6px;
+  }
+
+  .sendButton svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .chatContainer {
+    padding: 8px;
+  }
+
+  .chipContainer {
+    gap: 4px;
+    padding: 4px 2px;
+  }
+
+  .standardChip {
+    height: 28px !important;
+    font-size: 12px !important;
+    padding: 0 10px !important;
+    border-radius: 14px !important;
+  }
+
+  .standardChip:first-child {
+    width: 28px !important;
+    min-width: 28px !important;
+  }
+} 
