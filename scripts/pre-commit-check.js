@@ -46,5 +46,19 @@ try {
     process.exit(1);
 }
 
+// Step 4: Auto-stage the encrypted file
+try {
+    console.log('📝 Staging encrypted file...');
+    execSync('git add .env.production.encrypted', { 
+        stdio: 'inherit',
+        cwd: process.cwd()
+    });
+    console.log('✅ Encrypted file staged successfully');
+} catch (error) {
+    console.error('❌ Error: Failed to stage encrypted file');
+    console.error('Error:', error.message);
+    process.exit(1);
+}
+
 console.log('\n🎉 All pre-commit checks passed! Ready to commit.');
 process.exit(0);
