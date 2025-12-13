@@ -19,7 +19,7 @@ import LogoCon from "@/components/Header/Logocon";
 import styles from "../../styles/HomePage.module.css";
 import { formatResponse, typeResponse, extractNewsCategory, formatNewsForResponse, isNewsRelatedQuery } from "../../lib/homeHelpers";
 import PDFAnalysisComponent from "../../components/PDFAnalysisComponent";
-import { generateResponse } from "../../components/ChatResponseHandler";
+// Removed unused import: generateResponse - using only OpenAI streaming now
 import { processPDFFile } from "../../lib/homeHelpers";
 import Clipboard from 'clipboard';
 import { useAuth } from "@/context/AuthContext";
@@ -561,94 +561,65 @@ const HomePage = () => {
     }
     
     // Check if it's a news-related query and not in brainstorm mode
-    if (!isBrainstormMode && !messageIsBrainstorming && isNewsRelatedQuery(userMessage)) {
-      handleNewsQuery(userMessage);
-      return;
-    }
+    // DISABLED: Let OpenAI handle these queries with streaming for better responses
+    // if (!isBrainstormMode && !messageIsBrainstorming && isNewsRelatedQuery(userMessage)) {
+    //   handleNewsQuery(userMessage);
+    //   return;
+    // }
     
     setLoading(true);
     
     try {
       let responseText;
       
-      // Check if the query is asking for real-time data
-      const isRealTimeQuery = /^(what is|show me|tell me|current|latest|today|now|cm of|chief minister of|weather|news|update|status)/i.test(userMessage);
+      // ALL queries now use OpenAI streaming for consistent, high-quality responses
       
-      if (isRealTimeQuery) {
-        // Get real-time data response
-        const response = await fetch('/api/tavily-search', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ query: userMessage }),
-        });
-
-        if (!response.ok) {
-          throw new Error('Failed to fetch real-time data');
-        }
-
-        const data = await response.json();
-        console.log('Received data from tavily:', data);
-        
-        // Create a clean HTML response
-        let responseHtml = `<div>
-          <p>${data.answer || 'Here\'s what I found:'}</p>`;
-        
-        // Add results section if available
-        if (data.results && data.results.length > 0) {
-          responseHtml += `<div style="margin-top: 16px;">`;
-          data.results.slice(0, 3).forEach(result => {
-            responseHtml += `<div style="margin-bottom: 12px;">
-              <a href="${result.url}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none; font-weight: 500;">
-                ${result.title}
-              </a>
-              <p style="margin-top: 4px; color: #4b5563; font-size: 14px;">
-                ${result.content}
-              </p>
-            </div>`;
-          });
-          responseHtml += `</div>`;
-        }
-        
-        // Add images section if available
-        if (data.images && data.images.length > 0) {
-          responseHtml += `<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px;">`;
-          data.images.slice(0, 3).forEach(img => {
-            responseHtml += `<div style="width: 200px; margin-bottom: 8px;">
-              <img src="${img.url}" alt="${img.title || 'Related image'}" style="width: 100%; max-height: 150px; border-radius: 4px; object-fit: cover;" />
-            </div>`;
-          });
-          responseHtml += `</div>`;
-        }
-        
-        responseHtml += `</div>`;
-        responseText = responseHtml;
-      } else if (isBrainstormMode || isBrainstormingQuery(userMessage)) {
+      if (isBrainstormMode || isBrainstormingQuery(userMessage)) {
         // Use reasoning model for all questions in brainstorming mode
         responseText = await handleBrainstormResponse(userMessage);
       } else {
-        // Regular chat response
-        const response = await fetch('/api/chat', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            message: userMessage,
-            history: messages.map(msg => ({
-              role: msg.title.toLowerCase() === 'you' ? 'user' : 'assistant',
-              content: msg.desc
-            }))
-          }),
-        });
+        // Regular chat response with OpenAI streaming
+        responseText = await handleStreamingResponse(userMessage);
+        // Streaming already displayed the response, so we skip typing animation
+        // Just handle translation if needed
+        const currentLanguageCode = localStorage.getItem('languageCode') || 'en';
         
-        if (!response.ok) {
-          throw new Error('Failed to get response from AI');
+        if (currentLanguageCode !== 'en') {
+          try {
+            const translationResponse = await fetch('/api/translate', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                text: responseText,
+                targetLanguage: currentLanguageCode
+              }),
+            });
+            
+            if (translationResponse.ok) {
+              const translationData = await translationResponse.json();
+              if (translationData && translationData.translatedText) {
+                // Update with translated text
+                setMessages((prevMessages) => {
+                  const newMessages = [...prevMessages];
+                  const lastMessage = { ...newMessages[newMessages.length - 1] };
+                  lastMessage.response.content = formatResponse(translationData.translatedText);
+                  lastMessage.originalResponse = responseText;
+                  newMessages[newMessages.length - 1] = lastMessage;
+                  return newMessages;
+                });
+              }
+            }
+          } catch (translationError) {
+            console.error("Translation error:", translationError);
+          }
         }
         
-        const data = await response.json();
-        responseText = data.response;
+        // Skip the typing animation below since streaming already handled it
+        setLoading(false);
+        setShowSpinner(false);
+        return;
       }
       
       // Get the current language code from localStorage
@@ -712,26 +683,21 @@ const HomePage = () => {
     } catch (error) {
       console.error("Error sending message:", error);
       
-      // Fallback to the local generateResponse function if API fails
-      try {
-        console.log("Falling back to local response generation");
-        const fallbackResponse = generateResponse(userMessage);
-        const formattedResponse = formatResponse(fallbackResponse);
-        typeResponseWithState(formattedResponse);
-      } catch (fallbackError) {
-        console.error("Even fallback failed:", fallbackError);
-        
-        // Update with error message - with better visibility
-        setMessages((prevMessages) => {
-          const newMessages = [...prevMessages];
-          const lastMessage = { ...newMessages[newMessages.length - 1] };
-          lastMessage.response.content = "<span style='color: #ef4444; font-weight: 500;'>Sorry, there was an error processing your request. Please try again.</span>";
-          newMessages[newMessages.length - 1] = lastMessage;
-          return newMessages;
-        });
-      }
+      // Show proper error message without fallbacks
+      setMessages((prevMessages) => {
+        const newMessages = [...prevMessages];
+        const lastMessage = { ...newMessages[newMessages.length - 1] };
+        lastMessage.response.content = `<div style="color: #ef4444; padding: 16px; border-left: 4px solid #ef4444; background-color: #fef2f2; border-radius: 8px;">
+          <div style="font-weight: 600; margin-bottom: 8px;">⚠️ Unable to generate response</div>
+          <div style="font-size: 14px;">${error.message || 'An error occurred while processing your request.'}</div>
+          <div style="font-size: 13px; margin-top: 8px; opacity: 0.8;">Please check your API configuration and try again.</div>
+        </div>`;
+        newMessages[newMessages.length - 1] = lastMessage;
+        return newMessages;
+      });
     } finally {
       setLoading(false);
+      setShowSpinner(false);
     }
   };
   
@@ -1412,6 +1378,134 @@ Your analysis must follow this exact four-section structure with the headings ex
     
     // Show notification
     toast.info("Brainstorming mode enabled");
+  };
+  
+  // Handle streaming response with real-time updates
+  const handleStreamingResponse = async (prompt) => {
+    return new Promise(async (resolve, reject) => {
+      try {
+        let fullResponse = '';
+        let updateCounter = 0;
+        
+        // Update message to show thinking state
+        setMessages((prevMessages) => {
+          const newMessages = [...prevMessages];
+          const lastMessage = { ...newMessages[newMessages.length - 1] };
+          lastMessage.response.content = `<span style='color: #3b82f6; font-weight: 500;'>●</span>`;
+          newMessages[newMessages.length - 1] = lastMessage;
+          return newMessages;
+        });
+
+        const response = await fetch('/api/chat-stream', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            message: prompt,
+            history: messages.map(msg => ({
+              role: msg.title.toLowerCase() === 'you' ? 'user' : 'assistant',
+              content: msg.desc
+            }))
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to get streaming response');
+        }
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        // Function to update message content with smooth scrolling
+        const updateStreamingContent = (content, isFormatted = false) => {
+          const displayContent = isFormatted ? content : formatResponse(content);
+          
+          setMessages((prevMessages) => {
+            const newMessages = [...prevMessages];
+            const lastMessage = { ...newMessages[newMessages.length - 1] };
+            lastMessage.response.content = displayContent;
+            newMessages[newMessages.length - 1] = lastMessage;
+            return newMessages;
+          });
+          
+          // Smooth scroll every few updates to avoid performance issues
+          if (updateCounter % 5 === 0) {
+            requestAnimationFrame(() => {
+              const containers = [
+                document.querySelector(".rbt-daynamic-page-content"),
+                document.querySelector(".chat-list"),
+                document.querySelector(".rbt-main-content")
+              ];
+              
+              containers.forEach(container => {
+                if (container) {
+                  container.scrollTop = container.scrollHeight;
+                }
+              });
+              
+              if (messagesEndRef.current) {
+                messagesEndRef.current.scrollIntoView({ behavior: "instant", block: "end" });
+              }
+            });
+          }
+          updateCounter++;
+        };
+
+        while (true) {
+          const { done, value } = await reader.read();
+          
+          if (done) {
+            console.log('Stream complete');
+            // Final update with formatted content
+            updateStreamingContent(fullResponse);
+            break;
+          }
+
+          // Decode the chunk
+          const chunk = decoder.decode(value, { stream: true });
+          buffer += chunk;
+          
+          // Process complete SSE messages
+          const lines = buffer.split('\n');
+          buffer = lines.pop() || ''; // Keep incomplete line in buffer
+
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const data = line.slice(6).trim();
+              
+              if (!data) continue;
+              
+              try {
+                const parsed = JSON.parse(data);
+                
+                if (parsed.error) {
+                  throw new Error(parsed.error);
+                }
+                
+                if (parsed.content) {
+                  fullResponse += parsed.content;
+                  // Update UI immediately with each token
+                  updateStreamingContent(fullResponse);
+                }
+                
+                if (parsed.done) {
+                  console.log('Stream marked as done');
+                }
+              } catch (parseError) {
+                console.warn('Failed to parse SSE data:', data.substring(0, 100));
+              }
+            }
+          }
+        }
+
+        resolve(fullResponse);
+      } catch (error) {
+        console.error('Error in streaming response:', error);
+        reject(error);
+      }
+    });
   };
   
   // Handle brainstorm response with reasoning model

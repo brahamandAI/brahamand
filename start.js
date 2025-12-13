@@ -4,6 +4,12 @@ const os = require('os');
 const path = require('path');
 const fs = require('fs');
 
+// Load environment variables from .env file
+require('dotenv').config();
+
+console.log('Environment variables loaded');
+console.log('OPENAI_API_KEY configured:', !!process.env.OPENAI_API_KEY);
+
 // Calculate memory limit based on available system memory
 // Use 75% of available memory or 4GB, whichever is lower
 const availableMemoryMB = Math.floor(os.freemem() / (1024 * 1024));

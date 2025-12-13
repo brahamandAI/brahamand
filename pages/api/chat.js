@@ -66,7 +66,7 @@ export default async function handler(req, res) {
             model: "gpt-4o", // Using the most accurate model
             messages: messages,
             temperature: 0.2, // Lower temperature for more factual summaries
-            max_tokens: 2000,
+            max_tokens: 4000, // Increased for comprehensive summaries
             top_p: 0.9,
             frequency_penalty: 0,
             presence_penalty: 0,
