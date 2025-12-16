@@ -1,0 +1,23 @@
+npm install          →  pnpm install
+npm i                →  pnpm add
+npm install <pkg>    →  pnpm add <pkg>
+npm install -D <pkg>  →  pnpm add -D <pkg>
+npm install -g <pkg>  →  pnpm add -g <pkg>
+npm uninstall <pkg>  →  pnpm remove <pkg>
+npm update            →  pnpm update
+npm update <pkg>      →  pnpm update <pkg>
+
+npm run dev           →  pnpm dev
+npm run build         →  pnpm build
+npm run start         →  pnpm start
+npm run <script>      →  pnpm <script>
+npm test              →  pnpm test
+
+npm init              →  pnpm init
+npm list              →  pnpm list
+npm outdated          →  pnpm outdated
+npm audit             →  pnpm audit
+npm audit fix         →  pnpm audit --fix
+npm ci                →  pnpm install --frozen-lockfile
+
+PORT=3001 pnpm dev

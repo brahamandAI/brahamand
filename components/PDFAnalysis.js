@@ -14,6 +14,26 @@ export default function PDFAnalysis() {
   const [progress, setProgress] = useState(0);
   const analysisContentRef = useRef(null);
 
+  // Ensure PDF.js worker is configured
+  useEffect(() => {
+    // Wait for PDF.js to be loaded from _document.js
+    const checkPDFjs = setInterval(() => {
+      if (typeof window !== 'undefined' && window.pdfjsLib) {
+        console.log('📄 PDF.js detected in PDFAnalysis component');
+        if (!window.pdfjsLib.GlobalWorkerOptions.workerSrc) {
+          window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+          console.log('✅ PDF.js worker configured in component');
+        }
+        clearInterval(checkPDFjs);
+      }
+    }, 100);
+    
+    // Clear interval after 5 seconds if PDF.js still not loaded
+    setTimeout(() => clearInterval(checkPDFjs), 5000);
+    
+    return () => clearInterval(checkPDFjs);
+  }, []);
+
   // Check for uploaded file from home page
   useEffect(() => {
     const pdfFileName = sessionStorage.getItem('uploadedPDF');
@@ -116,6 +136,18 @@ export default function PDFAnalysis() {
     setAnalysis(''); // Clear previous analysis
 
     try {
+      // Check if PDF.js is loaded
+      if (typeof window === 'undefined' || !window.pdfjsLib) {
+        toast.error('PDF library is still loading. Please wait a moment and try again.');
+        console.error('PDF.js library not loaded yet');
+        return;
+      }
+      
+      // Ensure worker is set
+      if (window.pdfjsLib && !window.pdfjsLib.GlobalWorkerOptions.workerSrc) {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+      }
+      
       // Use the processPDFFile from homeHelpers, same as the + icon
       const updateAnalysisState = (content) => {
         setAnalysis(content);
