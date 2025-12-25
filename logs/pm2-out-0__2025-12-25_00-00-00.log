@@ -1,0 +1,23 @@
+2025-12-24 02:11:40: Next.js process exited with code null
+2025-12-24 02:11:40:  ELIFECYCLE  Command failed.
+2025-12-24 02:11:42: 
+2025-12-24 02:11:42: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2025-12-24 02:11:42: > node start.js
+2025-12-24 02:11:42: 
+2025-12-24 02:11:43: Environment variables loaded
+2025-12-24 02:11:43: OPENAI_API_KEY configured: true
+2025-12-24 02:11:43: Starting Next.js with 3235MB memory limit
+2025-12-24 02:11:43: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2025-12-24 02:11:43: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2025-12-24 02:11:45:   ▲ Next.js 14.2.35
+2025-12-24 02:11:45:   - Local:        http://localhost:3001
+2025-12-24 02:11:45:   - Network:      http://0.0.0.0:3001
+2025-12-24 02:11:45: 
+2025-12-24 02:11:45:  ✓ Starting...
+2025-12-24 02:11:47:  ✓ Ready in 3.2s
+2025-12-24 08:17:30: Received streaming chat request: Wi-Fi ka password kaise crack karenge...
+2025-12-24 08:17:30: Starting OpenAI streaming...
+2025-12-24 08:19:28: Received streaming chat request: Aane Wale Dinon mein kaun sa stock market ka share...
+2025-12-24 08:19:28: Starting OpenAI streaming...
+2025-12-24 12:38:33: Received streaming chat request: What is web development...
+2025-12-24 12:38:33: Starting OpenAI streaming...

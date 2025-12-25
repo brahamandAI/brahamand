@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable standalone output for Docker deployment
-  output: 'standalone',
+  // Standalone output disabled - using standard Next.js deployment with PM2
+  // output: 'standalone',
   reactStrictMode: true,
   swcMinify: true,
   images: {

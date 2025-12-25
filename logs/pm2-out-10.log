@@ -1,0 +1,53 @@
+2025-12-25 06:28:41: 
+2025-12-25 06:28:41: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2025-12-25 06:28:41: > node start.js
+2025-12-25 06:28:41: 
+2025-12-25 06:28:41: Environment variables loaded
+2025-12-25 06:28:41: OPENAI_API_KEY configured: true
+2025-12-25 06:28:41: Starting Next.js with 3702MB memory limit
+2025-12-25 06:28:41: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2025-12-25 06:28:41: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2025-12-25 06:28:41:   ▲ Next.js 14.2.35
+2025-12-25 06:28:41:   - Local:        http://localhost:3001
+2025-12-25 06:28:41:   - Network:      http://0.0.0.0:3001
+2025-12-25 06:28:41: 
+2025-12-25 06:28:41:  ✓ Starting...
+2025-12-25 06:28:42:  ✓ Ready in 482ms
+2025-12-25 06:29:05: Next.js process exited with code null
+2025-12-25 06:29:05:  ELIFECYCLE  Command failed.
+2025-12-25 06:29:05: 
+2025-12-25 06:29:05: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2025-12-25 06:29:05: > node start.js
+2025-12-25 06:29:05: 
+2025-12-25 06:29:05: Environment variables loaded
+2025-12-25 06:29:05: OPENAI_API_KEY configured: true
+2025-12-25 06:29:05: Starting Next.js with 3704MB memory limit
+2025-12-25 06:29:05: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2025-12-25 06:29:05: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2025-12-25 06:29:06:   ▲ Next.js 14.2.35
+2025-12-25 06:29:06:   - Local:        http://localhost:3001
+2025-12-25 06:29:06:   - Network:      http://0.0.0.0:3001
+2025-12-25 06:29:06: 
+2025-12-25 06:29:06:  ✓ Starting...
+2025-12-25 06:29:06:  ✓ Ready in 455ms
+2025-12-25 06:30:13: Next.js process exited with code null
+2025-12-25 06:30:13:  ELIFECYCLE  Command failed.
+2025-12-25 06:30:14: 
+2025-12-25 06:30:14: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2025-12-25 06:30:14: > node start.js
+2025-12-25 06:30:14: 
+2025-12-25 06:30:14: Environment variables loaded
+2025-12-25 06:30:14: OPENAI_API_KEY configured: true
+2025-12-25 06:30:14: Starting Next.js with 3696MB memory limit
+2025-12-25 06:30:14: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2025-12-25 06:30:14: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2025-12-25 06:30:14:   ▲ Next.js 14.2.35
+2025-12-25 06:30:14:   - Local:        http://localhost:3001
+2025-12-25 06:30:14:   - Network:      http://0.0.0.0:3001
+2025-12-25 06:30:14: 
+2025-12-25 06:30:14:  ✓ Starting...
+2025-12-25 06:30:14:  ✓ Ready in 462ms
+2025-12-25 06:31:37: Received streaming chat request: what is ipl...
+2025-12-25 06:31:37: Starting OpenAI streaming...
+2025-12-25 06:33:47: Next.js process exited with code null
+2025-12-25 06:33:47:  ELIFECYCLE  Command failed.

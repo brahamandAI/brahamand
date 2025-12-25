@@ -1,0 +1,50 @@
+2025-12-25 06:33:48:  ⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+2025-12-25 06:34:50:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2025-12-25 06:34:59: Error during streaming: AuthenticationError: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************vKUA. You can find your API key at https://platform.openai.com/account/api-keys.
+2025-12-25 06:34:59:     at APIError.generate (file:///home/ubuntu/htdocs/brahamand/node_modules/.pnpm/openai@4.104.0/node_modules/openai/error.mjs:44:20)
+2025-12-25 06:34:59:     at OpenAI.makeStatusError (file:///home/ubuntu/htdocs/brahamand/node_modules/.pnpm/openai@4.104.0/node_modules/openai/core.mjs:295:25)
+2025-12-25 06:34:59:     at OpenAI.makeRequest (file:///home/ubuntu/htdocs/brahamand/node_modules/.pnpm/openai@4.104.0/node_modules/openai/core.mjs:339:30)
+2025-12-25 06:34:59:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-12-25 06:34:59:     at async o (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/chat-stream.js:73:232)
+2025-12-25 06:34:59:     at async K (/home/ubuntu/htdocs/brahamand/node_modules/.pnpm/next@14.2.35_react-dom@18.3.1_react@18.3.1__react@18.3.1_sass@1.96.0/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:20:16881)
+2025-12-25 06:34:59:     at async U.render (/home/ubuntu/htdocs/brahamand/node_modules/.pnpm/next@14.2.35_react-dom@18.3.1_react@18.3.1__react@18.3.1_sass@1.96.0/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:20:17520)
+2025-12-25 06:34:59:     at async NextNodeServer.runApi (/home/ubuntu/htdocs/brahamand/node_modules/.pnpm/next@14.2.35_react-dom@18.3.1_react@18.3.1__react@18.3.1_sass@1.96.0/node_modules/next/dist/server/next-server.js:603:9)
+2025-12-25 06:34:59:     at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/htdocs/brahamand/node_modules/.pnpm/next@14.2.35_react-dom@18.3.1_react@18.3.1__react@18.3.1_sass@1.96.0/node_modules/next/dist/server/next-server.js:269:37)
+2025-12-25 06:34:59:     at async NextNodeServer.handleRequestImpl (/home/ubuntu/htdocs/brahamand/node_modules/.pnpm/next@14.2.35_react-dom@18.3.1_react@18.3.1__react@18.3.1_sass@1.96.0/node_modules/next/dist/server/base-server.js:818:17) {
+2025-12-25 06:34:59:   status: 401,
+2025-12-25 06:34:59:   headers: {
+2025-12-25 06:34:59:     'alt-svc': 'h3=":443"; ma=86400',
+2025-12-25 06:34:59:     'cf-cache-status': 'DYNAMIC',
+2025-12-25 06:34:59:     'cf-ray': '9b3650d87f3747f0-BOM',
+2025-12-25 06:34:59:     connection: 'keep-alive',
+2025-12-25 06:34:59:     'content-length': '410',
+2025-12-25 06:34:59:     'content-type': 'text/plain',
+2025-12-25 06:34:59:     date: 'Thu, 25 Dec 2025 06:34:59 GMT',
+2025-12-25 06:34:59:     server: 'cloudflare',
+2025-12-25 06:34:59:     'set-cookie': '__cf_bm=BSAvSkGZ__jbQ_SeJ45bs1VPH2ii2qtLIfT.pF.yrD4-1766644499-1.0.1.1-sNW5mZuhp45mpUJORSTYivLMWZ7804x_hBEoAsS4G6d_FtYB3jpc7i2QgELQxYXOYX6iWHKhb0le_RYMd_sz0zUQ7xZOFNmhglWYu5jIQc4; path=/; expires=Thu, 25-Dec-25 07:04:59 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=vcv8ucM994UcUQMdauUCeY5hXTyZjK83sblDAgmVMIA-1766644499540-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-25 06:34:59:     'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-25 06:34:59:     'x-content-type-options': 'nosniff',
+2025-12-25 06:34:59:     'x-datadog-parent-id': '16649515909545093715',
+2025-12-25 06:34:59:     'x-datadog-sampling-priority': '0',
+2025-12-25 06:34:59:     'x-datadog-trace-id': '10367732468035602927',
+2025-12-25 06:34:59:     'x-envoy-upstream-service-time': '25',
+2025-12-25 06:34:59:     'x-error-json': 'ewogICJlcnJvciI6IHsKICAgICJtZXNzYWdlIjogIkluY29ycmVjdCBBUEkga2V5IHByb3ZpZGVkOiBzay1wcm9qLSoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqdktVQS4gWW91IGNhbiBmaW5kIHlvdXIgQVBJIGtleSBhdCBodHRwczovL3BsYXRmb3JtLm9wZW5haS5jb20vYWNjb3VudC9hcGkta2V5cy4iLAogICAgInR5cGUiOiAiaW52YWxpZF9yZXF1ZXN0X2Vycm9yIiwKICAgICJjb2RlIjogImludmFsaWRfYXBpX2tleSIsCiAgICAicGFyYW0iOiBudWxsCiAgfSwKICAic3RhdHVzIjogNDAxCn0=',
+2025-12-25 06:34:59:     'x-openai-authorization-error': '401',
+2025-12-25 06:34:59:     'x-openai-ide-error-code': 'invalid_api_key',
+2025-12-25 06:34:59:     'x-openai-internal-caller': 'unknown_through_ide',
+2025-12-25 06:34:59:     'x-openai-proxy-wasm': 'v0.1',
+2025-12-25 06:34:59:     'x-request-id': 'req_92d704b127964856958a95beca5fcae1'
+2025-12-25 06:34:59:   },
+2025-12-25 06:34:59:   request_id: 'req_92d704b127964856958a95beca5fcae1',
+2025-12-25 06:34:59:   error: {
+2025-12-25 06:34:59:     message: 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************vKUA. You can find your API key at https://platform.openai.com/account/api-keys.',
+2025-12-25 06:34:59:     type: 'invalid_request_error',
+2025-12-25 06:34:59:     code: 'invalid_api_key',
+2025-12-25 06:34:59:     param: null
+2025-12-25 06:34:59:   },
+2025-12-25 06:34:59:   code: 'invalid_api_key',
+2025-12-25 06:34:59:   param: null,
+2025-12-25 06:34:59:   type: 'invalid_request_error'
+2025-12-25 06:34:59: }
+2025-12-25 06:36:55:  ⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+2025-12-25 06:42:50:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
