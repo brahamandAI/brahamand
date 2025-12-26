@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Brahamand</string>
+    <string name="title_activity_main">Brahamand</string>
+    <string name="package_name">ai.brahamand.app</string>
+    <string name="custom_url_scheme">ai.brahamand.app</string>
+</resources>

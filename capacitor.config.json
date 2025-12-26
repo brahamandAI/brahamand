@@ -1,0 +1,9 @@
+{
+  "appId": "ai.brahamand.app",
+  "appName": "Brahamand",
+  "webDir": "public",
+  "server": {
+    "url": "https://brahamand.ai",
+    "cleartext": false
+  }
+}
