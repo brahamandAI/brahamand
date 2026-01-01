@@ -1,0 +1,16 @@
+2025-12-31 20:27:51: /usr/local/bin/pnpm: line 2: syntax error near unexpected token `('
+2025-12-31 20:27:51: /usr/local/bin/pnpm: line 2: `const [major, minor] = process.version.slice(1).split('.')'
+2025-12-31 20:28:01: /usr/local/bin/pnpm: line 2: syntax error near unexpected token `('
+2025-12-31 20:28:01: /usr/local/bin/pnpm: line 2: `const [major, minor] = process.version.slice(1).split('.')'
+2025-12-31 20:28:11: /usr/local/bin/pnpm: line 2: syntax error near unexpected token `('
+2025-12-31 20:28:11: /usr/local/bin/pnpm: line 2: `const [major, minor] = process.version.slice(1).split('.')'
+2025-12-31 20:28:13: /usr/local/bin/pnpm: line 2: syntax error near unexpected token `('
+2025-12-31 20:28:13: /usr/local/bin/pnpm: line 2: `const [major, minor] = process.version.slice(1).split('.')'
+2025-12-31 20:28:23: /usr/local/bin/pnpm: line 2: syntax error near unexpected token `('
+2025-12-31 20:28:23: /usr/local/bin/pnpm: line 2: `const [major, minor] = process.version.slice(1).split('.')'
+2026-01-01 03:04:01:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-01-01 03:04:01:  ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-01 03:04:01:  ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-01 03:04:02:  ⚠ The requested resource "/images/logo/logo-dark-half.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-01 03:04:03:  ⚠ The requested resource "/images/logo/logo-dark.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-01 03:25:55:  ⚠ The requested resource "/images/logo/output-onlinegiftools.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
