@@ -14,3 +14,52 @@
 2026-01-01 03:04:02:  ⚠ The requested resource "/images/logo/logo-dark-half.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
 2026-01-01 03:04:03:  ⚠ The requested resource "/images/logo/logo-dark.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
 2026-01-01 03:25:55:  ⚠ The requested resource "/images/logo/output-onlinegiftools.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-02 05:06:14:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-01-02 05:06:15:  ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-02 05:06:17:  ⚠ The requested resource "/images/logo/logo-dark-half.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-02 05:06:17:  ⚠ The requested resource "/images/logo/logo-dark.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-03 06:03:35:  ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-04 12:12:23:  ⚠ The requested resource "/images/logo/output-onlinegiftools.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-04 12:13:27:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-01-04 12:13:27:     at 59985 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1698)
+2026-01-04 12:13:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-01-04 12:13:27:     at 4203 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:523)
+2026-01-04 12:13:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-01-04 12:13:27:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2349
+2026-01-04 12:13:27:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2379)
+2026-01-04 12:13:27:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-01-04 12:13:27:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-01-04 12:13:27:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-01-04 12:13:27:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-01-04 12:13:32:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-01-04 12:13:32:     at 59985 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1698)
+2026-01-04 12:13:32:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-01-04 12:13:32:     at 4203 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:523)
+2026-01-04 12:13:32:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-01-04 12:13:32:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2349
+2026-01-04 12:13:32:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2379)
+2026-01-04 12:13:32:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-01-04 12:13:32:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-01-04 12:13:32:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-01-04 12:13:32:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-01-05 09:19:16:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-01-05 09:19:16:  ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-05 10:38:03:  ⚠ The requested resource "/images/logo/logo-dark-half.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-05 10:38:03:  ⚠ The requested resource "/images/logo/logo-dark.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-05 13:08:27:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-01-05 13:08:27:     at 59985 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1698)
+2026-01-05 13:08:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-01-05 13:08:27:     at 4203 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:523)
+2026-01-05 13:08:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-01-05 13:08:27:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2349
+2026-01-05 13:08:27:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2379)
+2026-01-05 13:08:27:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-01-05 13:08:27:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-01-05 13:08:27:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-01-05 13:08:27:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-01-05 15:14:35:  ⚠ The requested resource "/images/icons/loader-one.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-05 16:24:26:  ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-05 17:06:06:  ⚠ The requested resource "/_next/static/media/loader-one.f2ff83ca.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-06 21:14:44:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-01-06 21:14:46:  ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-01-06 22:50:44:  ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.

@@ -10,7 +10,7 @@ import HeaderDashboard from "@/components/Header/HeaderDashboard";
 import RightDashboardSidebar from "@/components/Header/RightDashboardSidebar";
 import Modal from "@/components/Common/Modal";
 import StaticbarDashboard from "@/components/Common/StaticBarDashboard";
-import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
+import TextToImage from "@/components/ImageGenerator/TextToImage";
 
 const ImageGeneratorPage = () => {
   return (
@@ -31,7 +31,7 @@ const ImageGeneratorPage = () => {
                 <div className="rbt-dashboard-content">
                   <div className="content-page">
                     <div className="chat-box-section">
-                      <ImageGenerator />
+                      <TextToImage />
                       <StaticbarDashboard />
                     </div>
                   </div>

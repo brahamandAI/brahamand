@@ -1,0 +1,15 @@
+2026-01-04 14:23:42: 
+2026-01-04 14:23:42: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2026-01-04 14:23:42: > node start.js
+2026-01-04 14:23:42: 
+2026-01-04 14:23:42: Environment variables loaded
+2026-01-04 14:23:42: OPENAI_API_KEY configured: true
+2026-01-04 14:23:42: Starting Next.js with 4096MB memory limit
+2026-01-04 14:23:42: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-01-04 14:23:42: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-01-04 14:23:42:   ▲ Next.js 14.2.35
+2026-01-04 14:23:42:   - Local:        http://localhost:3001
+2026-01-04 14:23:42:   - Network:      http://0.0.0.0:3001
+2026-01-04 14:23:42: 
+2026-01-04 14:23:42:  ✓ Starting...
+2026-01-04 14:23:43:  ✓ Ready in 431ms

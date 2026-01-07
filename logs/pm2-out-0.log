@@ -35,3 +35,102 @@
 2026-01-01 03:25:55: Received streaming chat request: Hi...
 2026-01-01 03:25:55: Starting OpenAI streaming...
 2026-01-01 03:25:57: Streaming completed successfully
+2026-01-02 04:56:04: 
+2026-01-02 04:56:04: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2026-01-02 04:56:04: > node start.js
+2026-01-02 04:56:04: 
+2026-01-02 04:56:05: Environment variables loaded
+2026-01-02 04:56:05: OPENAI_API_KEY configured: true
+2026-01-02 04:56:05: Starting Next.js with 4096MB memory limit
+2026-01-02 04:56:05: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-01-02 04:56:05: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-01-02 04:56:08:   ▲ Next.js 14.2.35
+2026-01-02 04:56:08:   - Local:        http://localhost:3001
+2026-01-02 04:56:08:   - Network:      http://0.0.0.0:3001
+2026-01-02 04:56:08: 
+2026-01-02 04:56:08:  ✓ Starting...
+2026-01-02 04:56:10:  ✓ Ready in 3.7s
+2026-01-02 05:14:02: Received streaming chat request: hi...
+2026-01-02 05:14:02: Starting OpenAI streaming...
+2026-01-02 05:14:04: Streaming completed successfully
+2026-01-04 12:12:23: Received streaming chat request: Hello...
+2026-01-04 12:12:23: Starting OpenAI streaming...
+2026-01-04 12:12:25: Streaming completed successfully
+2026-01-04 12:12:48: Received streaming chat request: Show me news about technology...
+2026-01-04 12:12:48: Starting OpenAI streaming...
+2026-01-04 12:12:54: Streaming completed successfully
+2026-01-04 14:10:39: Next.js process exited with code null
+2026-01-04 14:10:39:  ELIFECYCLE  Command failed.
+2026-01-05 03:45:17: 
+2026-01-05 03:45:17: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2026-01-05 03:45:17: > node start.js
+2026-01-05 03:45:17: 
+2026-01-05 03:45:19: Environment variables loaded
+2026-01-05 03:45:19: OPENAI_API_KEY configured: true
+2026-01-05 03:45:19: Starting Next.js with 4096MB memory limit
+2026-01-05 03:45:19: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-01-05 03:45:19: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-01-05 03:45:26:   ▲ Next.js 14.2.35
+2026-01-05 03:45:26:   - Local:        http://localhost:3001
+2026-01-05 03:45:26:   - Network:      http://0.0.0.0:3001
+2026-01-05 03:45:26: 
+2026-01-05 03:45:26:  ✓ Starting...
+2026-01-05 03:45:31:  ✓ Ready in 8.6s
+2026-01-05 16:26:46: Received chat request: Hii
+2026-01-05 16:26:46: Generating chat completion for: Hii
+2026-01-05 16:26:46: API key available: true
+2026-01-05 16:26:46: Is PDF summary request: false
+2026-01-05 16:26:46: Making OpenAI API call with message length: 3
+2026-01-05 16:26:49: OpenAI API returned successful response
+2026-01-06 05:27:22: Received streaming chat request: h;lo...
+2026-01-06 05:27:22: Starting OpenAI streaming...
+2026-01-06 05:27:24: Streaming completed successfully
+2026-01-06 06:34:39: Received streaming chat request: HI...
+2026-01-06 06:34:39: Starting OpenAI streaming...
+2026-01-06 06:34:40: Streaming completed successfully
+2026-01-06 06:34:53: Received streaming chat request: TEMPERATURE IN CHOPTA...
+2026-01-06 06:34:53: Starting OpenAI streaming...
+2026-01-06 06:34:59: Streaming completed successfully
+2026-01-06 06:36:10: Received streaming chat request: HI...
+2026-01-06 06:36:10: Starting OpenAI streaming...
+2026-01-06 06:36:12: Streaming completed successfully
+2026-01-06 06:36:24: Received streaming chat request: CHOPTA...
+2026-01-06 06:36:24: Starting OpenAI streaming...
+2026-01-06 06:36:34: Streaming completed successfully
+2026-01-06 06:40:03: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: KIDNEY PROFILE  Blood Urea Nitrogen  Sample : Serum  Method :   Calculated  11.68   8.41 - 25.70   mg/dL  Blood Urea  Sample : Serum  Method :   Urease UV  25.00   18.00 - 55.00   mg/dL  Creatinine  Sample : Serum  Method :   Jaffe Kinetic IDMS  0.78   0.70 - 1.30   mg/dL  BUN Creatinine Ratio  Sample : Serum  Method :   Calculated  15.07   10.00 - 20.00   Ratio  Uric Acid  Sample : Serum  Method :   Uricase  4.56   3.40 - 7.00   mg/dL  Total Protein  Sample : Serum  Method :   BIURET  7.65   6.40 - 8.30   gm/dL  Albumin  Sample : Serum  Method :   Bromo Cresol Green(BCG)  4.88   3.97 - 4.94   gm/dL  Globulin  Sample : Serum  Method :   Calculated  2.77   1.90 - 3.70   gm/dL  Albumin Globulin A/G Ratio  Sample : Serum  Method :   Calculated  1.76   1.00 - 2.10   Ratio  Sodium  Sample : Serum  Method :   ISE-Indirect  141.70   136.00 - 145.00   mmol/L Mr. J P GUPTA   Collected at:   Pathkind CC Manduadih  Shivdaspur BLW Road Bullest Showroom  Agency Varanasi UP 221103   Ph  6394674409  Processed at:   Pathkind Labs Varanasi,  D63/8 1 Krishna Complex Mahmoorganj  221010, Ph 7500075111  Barcode:   80017857302  55 Yrs Age   :  Male Gender   :  1200C116260105009702 PID   :  1200C116260105002697 VID   :  Collected   :   05/01/2026 03:46 PM  Reported   :   05/01/2026 05:43 PM  Report Status   :   Preliminary  Ref. By   :   Dr. PROFESAR A.K.  AGARWAL  Test Name   Result   Biological Ref. Interval   Unit Page No: 1 of 3
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: Potassium  Sample : Serum  Method :   ISE-Indirect  4.87   3.50 - 5.10   mmol/L  Chloride  Sample : Serum  Method :   ISE-Indirect  102.30   97.00 - 107.00   mmol/L  Estimated Glomerular Filtration Rate (eGFR)  Sample :   Serum  Age  Method :   Manual  55.00   -   Years  GFR Male  Method :   Calculated  104.11   30-59: Moderate decrease in GFR  15-29: Severe decrease in GFR  <15: Kidney failure  >90: Normal GFR  60-89: Mild decrease in GFR  mL/min/1.73  m2  Authenticated by  Dr. Richa   Katiyar  MBBS MD (Pathology)  Cluster Lab Head  Interpretation  Creatinine  Serum creatinine is inversely correlated with glomerular filtration rate (GFR). Increased levels of Serum Creatinine is associated with renal dysfunction.  Total Protein  High levels of Serum Total Protein is seen in increased acute phase reactants in inflammation, late-stage liver disease, infections,multiple myeloma and other  malignant paraproteinemias.n. Hypoproteinemia is seen in hypogammaglobulinemia, nephrotic syndrome and protein-losing enteropathy.  Uric Acid  Uric acid is the final product of purine metabolism. Serum uric acid levels are raised in case of increased purine synthesis, inherited metabolic disorder, excess Mr. J P GUPTA   Collected at:   Pathkind CC Manduadih  Shivdaspur BLW Road Bullest Showroom  Agency Varanasi UP 221103   Ph  6394674409  Processed at:   Pathkind Labs Varanasi,  D63/8 1 Krishna Complex Mahmoorganj  221010, Ph 7500075111  Barcode:   80017857302  55 Yrs Age   :  Male Gender   :  1200C116260105009702 PID   :  1200C116260105002697 VID   :  Collected   :   05/01/2026 03:46 PM  Reported   :   05/01/2026 05:43 PM  Report Status   :   Preliminary  Ref. By   :   Dr. PROFESAR A.K.  AGARWAL  Test Name   Result   Biological Ref. Interval   Unit Page No: 2 of 3
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: dietary purine intake, increased nucleic acid turnover, malignancy and cytotoxic drugs. Decreased levels are seen in chronic renal failure, severe hepatocellular  disease with reduced purine synthesis, defective renal tubular reabsorption, overtreatment of hyperuricemia with allopurinol, as well as some cancer therapies.  Sodium  Serum Sodium estimation is performed to assess acid-base balance, water balance, water intoxication, and dehydration.  Potassium  Potassium (K+) is the major intracellular cation. It regulates neuromuscular excitability, heart contractility, intracellular fluid volume, and hydrogen ion  concentration. High levels of serum Potassium is seen in acute renal disease and end-stage renal failure due to decreased excretion.Levels are also high during  the diuretic phase of acute tubular necrosis, during administration of non-potassium sparing diuretic therapy, and during states of excess mineralocorticoid or  glucocorticoid.  Chloride  Chloride (Cl) is the major extracellular anion and it has an important role in maintaining proper body water distribution, osmotic pressure, and normalanion-cation  balance in the extracellular fluid compartment. Chloride is increased in dehydration, renal tubular acidosis, acute renal failure, metabolic acidosis associated with  prolonged diarrhea and loss of sodium bicarbonate, diabetes insipidus, adrenocortical hyperfuction,salicylate intoxication and with excessive infusion of isotonic  saline or extremely high dietary intake of salt. Hyperchloremia acidosis may be a sign of severe renal tubular pathology. Chloride is decreased inoverhydration,  chronic respiratory acidosis, salt-losing nephritis, metabolic alkalosis, congestive heart failure, Addisonian crisis, certain types of metabolic acidosis, persistent  gastric secretion and prolonged vomiting, aldosteronism, bromide intoxication, syndrome of inappropriate antidiuretic hormone secretion,and conditions  associated with expansion of extracellular fluid volume.  Albumin  "Hypoalbuminemia can be caused by impaired synthesis due to liver disease (primary) or due to diminished protein intake (secondary), increased catabolism  due to tissue damage and inflammation; malabsorption of amino acids; and increased renal excretion (eg, nephrotic syndrome).Hyperalbuminemia is seen in  dehydration."  Estimated Glomerular Filtration Rate (eGFR)  eGFR is a test used to assess kidney function. It is not used to diagnose any disease. The eGFR test involves a blood test which measures creatinine. The eGFR  is calculated from age, sex and blood creatinine level.  EGFR calculation is provided only for adults more than 18 years of age.  ** End of Report ** Mr. J P GUPTA   Collected at:   Pathkind CC Manduadih  Shivdaspur BLW Road Bullest Showroom  Agency Varanasi UP 221103   Ph  6394674409  Processed at:   Pathkind Labs Varanasi,  D63/8 1 Krishna Complex Mahmoorganj  221010, Ph 7500075111  Barcode:   80017857302  55 Yrs Age   :  Male Gender   :  1200C116260105009702 PID   :  1200C116260105002697 VID   :  Collected   :   05/01/2026 03:46 PM  Reported   :   05/01/2026 05:43 PM  Report Status   :   Preliminary  Ref. By   :   Dr. PROFESAR A.K.  AGARWAL  Test Name   Result   Biological Ref. Interval   Unit Page No: 3 of 3
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: KIDNEY PROFILE  Blood Urea Nitrogen  Sample : Serum  Method :   Calculated  11.68   8.41 - 25.70   mg/dL  Blood Urea  Sample : Serum  Method :   Urease UV  25.00   18.00 - 55.00   mg/dL  Creatinine  Sample : Serum  Method :   Jaffe Kinetic IDMS  0.78   0.70 - 1.30   mg/dL  BUN Creatinine Ratio  Sample : Serum  Method :   Calculated  15.07   10.00 - 20.00   Ratio  Uric Acid  Sample : Serum  Method :   Uricase  4.56   3.40 - 7.00   mg/dL  Total Protein  Sample : Serum  Method :   BIURET  7.65   6.40 - 8.30   gm/dL  Albumin  Sample : Serum  Method :   Bromo Cresol Green(BCG)  4.88   3.97 - 4.94   gm/dL  Globulin  Sample : Serum  Method :   Calculated  2.77   1.90 - 3.70   gm/dL  Albumin Globulin A/G Ratio  Sample : Serum  Method :   Calculated  1.76   1.00 - 2.10   Ratio  Sodium  Sample : Serum  Method :   ISE-Indirect  141.70   136.00 - 145.00   mmol/L Mr. J P GUPTA   Collected at:   Pathkind CC Manduadih  Shivdaspur BLW Road Bullest Showroom  Agency Varanasi UP 221103   Ph  6394674409  Processed at:   Pathkind Labs Varanasi,  D63/8 1 Krishna Complex Mahmoorganj  221010, Ph 7500075111  Barcode:   80017857302  55 Yrs Age   :  Male Gender   :  1200C116260105009702 PID   :  1200C116260105002697 VID   :  Collected   :   05/01/2026 03:46 PM  Reported   :   05/01/2026 05:43 PM  Report Status   :   Preliminary  Ref. By   :   Dr. PROFESAR A.K.  AGARWAL  Test Name   Result   Biological Ref. Interval   Unit Page No: 1 of 3
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: Potassium  Sample : Serum  Method :   ISE-Indirect  4.87   3.50 - 5.10   mmol/L  Chloride  Sample : Serum  Method :   ISE-Indirect  102.30   97.00 - 107.00   mmol/L  Estimated Glomerular Filtration Rate (eGFR)  Sample :   Serum  Age  Method :   Manual  55.00   -   Years  GFR Male  Method :   Calculated  104.11   30-59: Moderate decrease in GFR  15-29: Severe decrease in GFR  <15: Kidney failure  >90: Normal GFR  60-89: Mild decrease in GFR  mL/min/1.73  m2  Authenticated by  Dr. Richa   Katiyar  MBBS MD (Pathology)  Cluster Lab Head  Interpretation  Creatinine  Serum creatinine is inversely correlated with glomerular filtration rate (GFR). Increased levels of Serum Creatinine is associated with renal dysfunction.  Total Protein  High levels of Serum Total Protein is seen in increased acute phase reactants in inflammation, late-stage liver disease, infections,multiple myeloma and other  malignant paraproteinemias.n. Hypoproteinemia is seen in hypogammaglobulinemia, nephrotic syndrome and protein-losing enteropathy.  Uric Acid  Uric acid is the final product of purine metabolism. Serum uric acid levels are raised in case of increased purine synthesis, inherited metabolic disorder, excess Mr. J P GUPTA   Collected at:   Pathkind CC Manduadih  Shivdaspur BLW Road Bullest Showroom  Agency Varanasi UP 221103   Ph  6394674409  Processed at:   Pathkind Labs Varanasi,  D63/8 1 Krishna Complex Mahmoorganj  221010, Ph 7500075111  Barcode:   80017857302  55 Yrs Age   :  Male Gender   :  1200C116260105009702 PID   :  1200C116260105002697 VID   :  Collected   :   05/01/2026 03:46 PM  Reported   :   05/01/2026 05:43 PM  Report Status   :   Preliminary  Ref. By   :   Dr. PROFESAR A.K.  AGARWAL  Test Name   Result   Biological Ref. Interval   Unit Page No: 2 of 3
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: dietary purine intake, increased nucleic acid turnover, malignancy and cytotoxic drugs. Decreased levels are seen in chronic renal failure, severe hepatocellular  disease with reduced purine synthesis, defective renal tubular reabsorption, overtreatment of hyperuricemia with allopurinol, as well as some cancer therapies.  Sodium  Serum Sodium estimation is performed to assess acid-base balance, water balance, water intoxication, and dehydration.  Potassium  Potassium (K+) is the major intracellular cation. It regulates neuromuscular excitability, heart contractility, intracellular fluid volume, and hydrogen ion  concentration. High levels of serum Potassium is seen in acute renal disease and end-stage renal failure due to decreased excretion.Levels are also high during  the diuretic phase of acute tubular necrosis, during administration of non-potassium sparing diuretic therapy, and during states of excess mineralocorticoid or  glucocorticoid.  Chloride  Chloride (Cl) is the major extracellular anion and it has an important role in maintaining proper body water distribution, osmotic pressure, and normalanion-cation  balance in the extracellular fluid compartment. Chloride is increased in dehydration, renal tubular acidosis, acute renal failure, metabolic acidosis associated with  prolonged diarrhea and loss of sodium bicarbonate, diabetes insipidus, adrenocortical hyperfuction,salicylate intoxication and with excessive infusion of isotonic  saline or extremely high dietary intake of salt. Hyperchloremia acidosis may be a sign of severe renal tubular pathology. Chloride is decreased inoverhydration,  chronic respiratory acidosis, salt-losing nephritis, metabolic alkalosis, congestive heart failure, Addisonian crisis, certain types of metabolic acidosis, persistent  gastric secretion and prolonged vomiting, aldosteronism, bromide intoxication, syndrome of inappropriate antidiuretic hormone secretion,and conditions  associated with expansion of extracellular fluid volume.  Albumin  "Hypoalbuminemia can be caused by impaired synthesis due to liver disease (primary) or due to diminished protein intake (secondary), increased catabolism  due to tissue damage and inflammation; malabsorption of amino acids; and increased renal excretion (eg, nephrotic syndrome).Hyperalbuminemia is seen in  dehydration."  Estimated Glomerular Filtration Rate (eGFR)  eGFR is a test used to assess kidney function. It is not used to diagnose any disease. The eGFR test involves a blood test which measures creatinine. The eGFR  is calculated from age, sex and blood creatinine level.  EGFR calculation is provided only for adults more than 18 years of age.  ** End of Report ** Mr. J P GUPTA   Collected at:   Pathkind CC Manduadih  Shivdaspur BLW Road Bullest Showroom  Agency Varanasi UP 221103   Ph  6394674409  Processed at:   Pathkind Labs Varanasi,  D63/8 1 Krishna Complex Mahmoorganj  221010, Ph 7500075111  Barcode:   80017857302  55 Yrs Age   :  Male Gender   :  1200C116260105009702 PID   :  1200C116260105002697 VID   :  Collected   :   05/01/2026 03:46 PM  Reported   :   05/01/2026 05:43 PM  Report Status   :   Preliminary  Ref. By   :   Dr. PROFESAR A.K.  AGARWAL  Test Name   Result   Biological Ref. Interval   Unit Page No: 3 of 3
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: 
+2026-01-06 06:40:03: API key available: true
+2026-01-06 06:40:03: Is PDF summary request: false
+2026-01-06 06:40:03: Making OpenAI API call with message length: 6555
+2026-01-06 06:40:18: OpenAI API returned successful response
+2026-01-06 20:43:28: 
+2026-01-06 20:43:28: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2026-01-06 20:43:28: > node start.js
+2026-01-06 20:43:28: 
+2026-01-06 20:43:32: Environment variables loaded
+2026-01-06 20:43:32: OPENAI_API_KEY configured: true
+2026-01-06 20:43:32: Starting Next.js with 4096MB memory limit
+2026-01-06 20:43:32: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-01-06 20:43:32: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-01-06 20:43:40:   ▲ Next.js 14.2.35
+2026-01-06 20:43:40:   - Local:        http://localhost:3001
+2026-01-06 20:43:40:   - Network:      http://0.0.0.0:3001
+2026-01-06 20:43:40: 
+2026-01-06 20:43:40:  ✓ Starting...
+2026-01-06 20:43:44:  ✓ Ready in 8.1s
