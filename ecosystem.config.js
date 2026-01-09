@@ -7,7 +7,7 @@ module.exports = {
         cwd: "/home/ubuntu/htdocs/brahamand",
   
       // ---- START USING PNPM (IMPORTANT) ----
-      script: "/usr/local/bin/pnpm",
+      script: "/home/ubuntu/.local/share/pnpm/pnpm",
       args: "start",
       interpreter: "node",
   
