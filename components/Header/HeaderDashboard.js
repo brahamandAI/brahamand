@@ -10,7 +10,7 @@ import avatar from "../../public/images/team/team-01sm.jpg";
 import Nav from "./Nav";
 import UserMenu from "./UserMenu";
 
-const HeaderDashboard = ({ display }) => {
+const HeaderDashboard = ({ display, hideRightSidebar = false, useSidebarAsMobileMenu = false }) => {
   const {
     mobile,
     setMobile,
@@ -53,13 +53,14 @@ const HeaderDashboard = ({ display }) => {
         <div className="container-fluid position-relative">
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-3 col-md-6 col-6">
-              <div className="header-left d-flex">
-                <div className="expand-btn-grp">
+              <div className="header-left d-flex align-items-center">
+                <div className="expand-btn-grp d-none d-lg-block">
                   <button
                     className={`bg-solid-primary popup-dashboardleft-btn ${
                       mobile ? "" : "collapsed"
                     }`}
                     onClick={handleToggleLeftSidebar}
+                    aria-label="Toggle sidebar"
                   >
                     <i className="fa-sharp fa-regular fa-sidebar"></i>
                   </button>
@@ -79,7 +80,21 @@ const HeaderDashboard = ({ display }) => {
             </div>
 
             <div className="col-lg-3 col-md-6 col-6">
-              <div className="header-right">
+              <div className="header-right d-flex align-items-center justify-content-end">
+                {useSidebarAsMobileMenu && (
+                <div className="mobile-menu-bar d-block d-lg-none">
+                  <button
+                    type="button"
+                    className="popup-dashboardleft-btn bg-solid-primary sidebar-menu-btn-mobile sidebar-menu-btn-nav-right"
+                    onClick={handleToggleLeftSidebar}
+                    aria-label="Open menu"
+                  >
+                    <i className="feather-menu"></i>
+                    <span className="sidebar-menu-label">Menu</span>
+                  </button>
+                </div>
+                )}
+                {!useSidebarAsMobileMenu && (
                 <div className="mobile-menu-bar mr--10 ml--10 d-block d-lg-none">
                   <div className="hamberger">
                     <button
@@ -90,7 +105,9 @@ const HeaderDashboard = ({ display }) => {
                     </button>
                   </div>
                 </div>
+                )}
 
+                {!hideRightSidebar && (
                 <div className={`expand-btn-grp ${display}`}>
                   <button
                     className={`bg-solid-primary popup-dashboardright-btn ${
@@ -101,6 +118,7 @@ const HeaderDashboard = ({ display }) => {
                     <i className="fa-sharp fa-regular fa-sidebar-flip"></i>
                   </button>
                 </div>
+                )}
               </div>
             </div>
           </div>

@@ -18,6 +18,7 @@ import Context from "@/context/Context";
 // ========= Plugins CSS END =========
 
 import "../public/scss/style.scss";
+import "../public/css/custom.css";
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);

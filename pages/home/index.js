@@ -6,12 +6,10 @@ import { Chip, Avatar, Box, Button, DialogActions, DialogContent, DialogTitle, D
 import MicIcon from "@mui/icons-material/Mic";
 import LanguageIcon from "@mui/icons-material/Language";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
-import Context, { useAppContext } from "@/context/Context";
+import { useAppContext } from "@/context/Context";
 import PageHead from "../Head";
 import HeaderDashboard from "@/components/Header/HeaderDashboard";
 import LeftDashboardSidebar from "@/components/Header/LeftDashboardSidebar";
-import RightDashboardSidebar from "@/components/Header/RightDashboardSidebar";
-import PopupMobileMenu from "@/components/Header/PopUpMobileMenu";
 import BackToTop from "../backToTop";
 import Modal from "@/components/Common/Modal";
 import Logo from "@/components/Header/Logo";
@@ -56,7 +54,7 @@ const HomePage = () => {
   const [isBrainstormMode, setIsBrainstormMode] = useState(false);
   const [lastBrainstormNotificationTime, setLastBrainstormNotificationTime] = useState(0);
   const messagesEndRef = useRef(null);
-  const { isDarkMode } = useAppContext();
+  const { isDarkMode, setShouldCollapseLeftbar, shouldCollapseLeftbar } = useAppContext();
   const [copiedMessageId, setCopiedMessageId] = useState(null);
   const { user, isLoggedIn } = useAuth();
   const [anchorElLanguage, setAnchorElLanguage] = useState(null);
@@ -369,49 +367,87 @@ const HomePage = () => {
     };
   }, []);
   
-  // Set up chat container scrolling behavior
+  /* Body class for stable ChatGPT-like viewport on mobile */
   useEffect(() => {
-    // Reset any overflow restrictions but keep proper scrolling for messages
+    const cls = 'home-chat-page';
+    document.documentElement.classList.add(cls);
+    document.body.classList.add(cls);
+    /* ChatGPT-like: left sidebar visible on home */
+    if (setShouldCollapseLeftbar) setShouldCollapseLeftbar(false);
+    return () => {
+      document.documentElement.classList.remove(cls);
+      document.body.classList.remove(cls);
+    };
+  }, [setShouldCollapseLeftbar]);
+
+  /* Body class when welcome view (no messages) - for no-scroll + full-width on mobile */
+  useEffect(() => {
+    const cls = 'home-welcome-view';
+    if (messages.length === 0) {
+      document.body.classList.add(cls);
+    } else {
+      document.body.classList.remove(cls);
+    }
+    return () => document.body.classList.remove(cls);
+  }, [messages.length]);
+
+  // Set up chat container scrolling behavior (re-run when messages or left sidebar state changes)
+  useEffect(() => {
+    const isHomeChatMobile = document.body.classList.contains('home-chat-page') && window.innerWidth <= 768;
+    // Keep viewport locked: do not allow body/html to scroll on home (desktop or mobile)
     document.documentElement.style.height = "";
     document.body.style.height = "";
     document.body.style.margin = "";
     document.body.style.padding = "";
-    document.body.style.overflow = "auto"; // Allow normal scrolling
+    if (document.body.classList.contains('home-chat-page')) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    }
 
     // Only apply fixed layout if messages exist
     if (messages.length > 0) {
-      const chatContainer = document.querySelector(".rbt-daynamic-page-content");
-      if (chatContainer) {
-        chatContainer.style.overflow = "auto"; // Enable scrolling
-        chatContainer.style.height = "calc(100vh - 160px)"; // Set height but leave room for input
-        chatContainer.style.scrollBehavior = "smooth"; // Smooth scrolling
-        chatContainer.style.paddingBottom = "80px"; // Space for input
-      }
-      
-      // Fix the main content wrapper
-      const mainContent = document.querySelector(".rbt-main-content");
-      if (mainContent) {
-        mainContent.style.height = "100%"; 
-        mainContent.style.overflow = "visible"; // Ensure content is visible
-      }
+      const readjust = () => {
+        const chatContainer = document.querySelector(".rbt-daynamic-page-content");
+        if (chatContainer) {
+          chatContainer.style.overflow = "auto";
+          if (isHomeChatMobile) {
+            chatContainer.style.height = "calc(100dvh - 56px - 140px)"; /* header ~56px, input bar ~140px */
+            chatContainer.style.paddingTop = "16px";
+            chatContainer.style.paddingBottom = "24px";
+          } else {
+            chatContainer.style.height = "calc(100vh - 160px)";
+            chatContainer.style.paddingTop = "64px";
+            chatContainer.style.paddingBottom = "100px";
+          }
+          chatContainer.style.scrollBehavior = "smooth";
+        }
+        const mainContent = document.querySelector(".rbt-main-content");
+        if (mainContent) {
+          mainContent.style.height = "100%";
+          mainContent.style.overflowY = "auto";
+          mainContent.style.overflowX = "hidden";
+        }
+      };
+      readjust();
+      // When left bar toggles, re-readjust after sidebar transition (0.4s) so chat window fits
+      const t = setTimeout(readjust, 450);
+      return () => clearTimeout(t);
     } else {
       // Keep original behavior for welcome screen
       const chatContainer = document.querySelector(".rbt-daynamic-page-content");
       if (chatContainer) {
-        chatContainer.style.overflow = ""; 
+        chatContainer.style.overflow = "";
         chatContainer.style.height = "";
         chatContainer.style.scrollBehavior = "";
       }
-      
-      // Original main content behavior for welcome screen
       const mainContent = document.querySelector(".rbt-main-content");
       if (mainContent) {
         mainContent.style.display = "block";
         mainContent.style.height = "";
-        mainContent.style.overflow = "visible";
+        mainContent.style.overflow = "";
       }
     }
-  }, [messages]);
+  }, [messages, shouldCollapseLeftbar]);
   
   // Scroll to bottom when messages change but with fewer jumps
   useEffect(() => {
@@ -439,15 +475,17 @@ const HomePage = () => {
         dynamicContent.style.overflowX = "hidden";
         dynamicContent.style.scrollBehavior = "smooth"; // Smooth scrolling
         
-        // Only scroll on new messages, not during typing
-        if (!isTyping) {
-          // Use a small timeout to ensure content is rendered before scrolling
+        // Only scroll on new messages, not during typing (except for first message - show it at top)
+        if (!isTyping || messages.length === 1) {
           setTimeout(() => {
-            // Scroll without animation to avoid jumps
-            dynamicContent.scrollTo({
-              top: dynamicContent.scrollHeight,
-              behavior: "auto"
-            });
+            if (messages.length === 1) {
+              dynamicContent.scrollTo({ top: 0, behavior: "auto" });
+            } else {
+              dynamicContent.scrollTo({
+                top: dynamicContent.scrollHeight,
+                behavior: "auto"
+              });
+            }
           }, 100);
         }
       }
@@ -460,6 +498,16 @@ const HomePage = () => {
       e.preventDefault();
       handleSendMessage();
     }
+  };
+
+  // Auto-resize textarea so it starts at one line and grows with content
+  const handleTextareaChange = (e) => {
+    const el = e.target;
+    setNewMessage(el.value);
+    // reset height to auto, then grow to fit content up to a max height
+    el.style.height = "auto";
+    const maxHeight = 200; // px
+    el.style.height = Math.min(el.scrollHeight, maxHeight) + "px";
   };
   
   // Helper function to scroll chat to bottom
@@ -2044,13 +2092,13 @@ Your analysis must follow this exact four-section structure with the headings ex
       </PageHead>
       <main className="page-wrapper">
         <div className="rbt-panel-wrapper">
-          <Context>
             <LeftDashboardSidebar />
-            <HeaderDashboard display="" />
+            <HeaderDashboard display="" hideRightSidebar useSidebarAsMobileMenu />
             
             <div className={`rbt-main-content ${styles.mainContent}`}>
-              {/* Powered by section - premium text-based design */}
-              <div style={{
+              {/* Powered by section - show only before first response (hidden on mobile via CSS) */}
+              {messages.length === 0 && (
+              <div className={styles.footerCredits} style={{
                 textAlign: 'center',
                 padding: '45px 0 15px', /* Increased top padding to move down */
                 margin: '10px 0 20px', /* Added margin to create space */
@@ -2108,32 +2156,28 @@ Your analysis must follow this exact four-section structure with the headings ex
                   </a> 2025 CSJMU 14 April to 16 Apr&apos;25
                 </div>
               </div>
+              )}
               
-              <div className={`rbt-daynamic-page-content ${styles.pageContent}`}>
-                <div className="rbt-dashboard-content">
-                  <div className="content-page">
-                    <div className={`chat-box-section ${styles.chatBoxSection}`}>
+              <div className={`rbt-daynamic-page-content ${styles.pageContent} ${styles.chatPageContent}`}>
+                <div className={`chat-box-section ${styles.chatBoxSection}${messages.length > 0 ? ` ${styles.chatBoxSectionWithMessages}` : ""}`}>
                       {messages.length === 0 ? (
                         <div
-                          className={`slider-area slider-style-1 variation-default slider-bg-image bg-banner1 slider-bg-shape ${styles.welcomeScreen}`}
+                          className={styles.welcomeScreen}
                           data-black-overlay="1"
                           style={{ margin: 0, padding: 0 }}
                         >
-                          <div className="container">
-                            <div className="row justify-content-center">
-                              <div className="col-lg-12">
-                                <div className="inner text-center mt--20">
-                                  <Logo />
-                                  <h1
-                                    className={styles.welcomeTitle}
-                                    style={{ color: "#000000 !important" }}
-                                  >
-                                    How can I help you? <br /> मैं आपकी क्या मदद
-                                    कर सकता हूं ?
-                                  </h1>
+                          <div className={styles.welcomeContent}>
+                            <Logo />
+                            <h1
+                              className={styles.welcomeTitle}
+                              style={{ color: "#000000 !important" }}
+                            >
+                              How can I help you? <br /> मैं आपकी क्या मदद
+                              कर सकता हूं ?
+                            </h1>
 
-                                  <div
-                                    className={`form-group ${styles.chatInputForm}`}
+                                    <div
+                                    className={`form-group ${styles.chatInputForm} ${styles.chatInputFormWelcome}`}
                                   >
                                     {/* Tool Grid Start */}
                                     <div className={styles.toolGrid} style={{ width: '100%', maxWidth: '100%' }}>
@@ -2228,12 +2272,10 @@ Your analysis must follow this exact four-section structure with the headings ex
                                         name="text"
                                         className={styles.chatTextarea}
                                         cols="30"
-                                        rows="2"
+                                        rows="1"
                                         placeholder="नमस्ते..."
                                         value={newMessage}
-                                        onChange={(e) =>
-                                          setNewMessage(e.target.value)
-                                        }
+                                        onChange={handleTextareaChange}
                                         onKeyDown={handleKeyDown}
                                       />
 
@@ -2438,14 +2480,15 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           ))}
                                         </Menu>
                                       </div>
-                                      <div className="d-flex" style={{
+                                      </div>
+                                      <div className={`d-flex ${styles.startButtonRow}`} style={{
                                         display: "flex",
                                         justifyContent: "center",
                                         width: "100%",
                                         marginBottom: "0",
                                         paddingBottom: "0"
                                       }}>
-                                        <div style={{
+                                        <div className={styles.startButtonWrapper} style={{
                                           display: "flex",
                                           flexDirection: "column",
                                           alignItems: "center",
@@ -2520,10 +2563,6 @@ Your analysis must follow this exact four-section structure with the headings ex
                                         </div>
                                       </div>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       ) : (
@@ -2648,6 +2687,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                 style={{
                                   backgroundColor: isDarkMode ? "#1a1b26" : "#ffffff",
                                   boxShadow: "0px -10px 25px -5px rgba(0, 0, 0, 0.1)",
+                                  marginTop: "24px",
+                                  paddingTop: "16px",
                                 }}
                               >
                                 <form
@@ -2703,42 +2744,18 @@ Your analysis must follow this exact four-section structure with the headings ex
                                   <div style={{ 
                                     display: "flex",
                                     flexDirection: "column", 
-                                    margin: "10px auto 0",
-                                    padding: "0 15px",
+                                    margin: "10px 0 0",
+                                    padding: "0 16px 0",
                                     width: "100%",
-                                    maxWidth: "650px"
+                                    boxSizing: "border-box"
                                   }}>
-                                    <div style={{
-                                      width: "100%",
-                                      marginBottom: "12px"
-                                    }}>
-                                      <textarea
-                                        rows="1"
-                                        placeholder="Send a message..."
-                                        value={newMessage}
-                                        onChange={(e) => setNewMessage(e.target.value)}
-                                        onKeyDown={handleKeyDown}
-                                        style={{
-                                          width: "100%",
-                                          resize: "none",
-                                          border: "none",
-                                          outline: "none",
-                                          fontSize: "16px",
-                                          padding: "10px 0"
-                                        }}
-                                      />
-                                    </div>
-                                    
-                                    {/* Combined row of buttons */}
-                                    <div style={{ 
+                                    {/* Chips row - secondary on mobile */}
+                                    <div className={styles.chatChipsRow} style={{ 
                                       display: "flex", 
                                       justifyContent: "flex-start", 
                                       alignItems: "center",
                                       width: "100%",
-                                      marginBottom: "12px",
                                       gap: "10px",
-                                      position: "relative",
-                                      paddingRight: "50px",
                                       flexWrap: "wrap"
                                     }}>
                                       <input
@@ -2766,7 +2783,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           cursor: "pointer",
                                           border: "none",
                                           boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-                                          transition: "all 0.2s ease"
+                                          transition: "all 0.2s ease",
+                                          flexShrink: 0
                                         }}
                                         onClick={() => {
                                           document.getElementById("file-upload-input-chat").click();
@@ -2806,7 +2824,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           border: isBrainstormMode ? "none" : "1px solid #e0e0e0",
                                           transition: "all 0.2s ease",
                                           color: isBrainstormMode ? "white" : "#000000",
-                                          fontWeight: "400"
+                                          fontWeight: "400",
+                                          flexShrink: 0
                                         }}
                                         onClick={handleBrainstormClick}
                                         onMouseOver={(e) => {
@@ -2845,7 +2864,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           transition: "all 0.3s ease",
                                           boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
                                           border: isListening ? "none" : "1px solid #f0f0f0",
-                                          padding: "0px 4px"
+                                          padding: "0px 4px",
+                                          flexShrink: 0
                                         }}
                                         onClick={handleSpeechToText}
                                         onMouseOver={(e) => {
@@ -2895,7 +2915,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           transition: "all 0.3s ease",
                                           boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
                                           border: "1px solid #f0f0f0",
-                                          padding: "0px 4px"
+                                          padding: "0px 4px",
+                                          flexShrink: 0
                                         }}
                                         onMouseOver={(e) => {
                                           e.currentTarget.style.backgroundColor = "#3b82f6";
@@ -2931,7 +2952,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           transition: "all 0.3s ease",
                                           boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
                                           border: "1px solid #f0f0f0",
-                                          padding: "0px 4px"
+                                          padding: "0px 4px",
+                                          flexShrink: 0
                                         }}
                                         onMouseOver={(e) => {
                                           e.currentTarget.style.backgroundColor = "#3b82f6";
@@ -2944,54 +2966,6 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           e.currentTarget.style.boxShadow = "0 2px 4px rgba(0,0,0,0.05)";
                                         }}
                                       />
-                                      
-                                      <button
-                                        className={`form-icon ${isTyping ? "icon-stop" : "icon-send"}`}
-                                        onClick={isTyping ? handleStopGeneration : handleSendMessage}
-                                        disabled={loading}
-                                        style={{
-                                          width: "44px",
-                                          height: "44px",
-                                          display: "flex",
-                                          alignItems: "center",
-                                          justifyContent: "center",
-                                          borderRadius: "50%",
-                                          border: "none",
-                                          background: isTyping ? "linear-gradient(135deg, #ef4444, #f87171)" : "linear-gradient(135deg, #2563eb, #3b82f6)",
-                                          boxShadow: isTyping ? "0 2px 5px rgba(239, 68, 68, 0.3)" : "0 2px 5px rgba(37, 99, 235, 0.3)",
-                                          cursor: loading ? "not-allowed" : "pointer",
-                                          opacity: loading ? "0.7" : "1",
-                                          transition: "all 0.2s ease",
-                                          position: "absolute",
-                                          right: "10px",
-                                          top: "50%",
-                                          transform: "translateY(-50%)",
-                                          willChange: "background, box-shadow"
-                                        }}
-                                        onMouseOver={(e) => {
-                                          if (!loading) {
-                                            if (isTyping) {
-                                              e.currentTarget.style.background = "linear-gradient(135deg, #dc2626, #ef4444)";
-                                              e.currentTarget.style.boxShadow = "0 4px 10px rgba(239, 68, 68, 0.4)";
-                                            } else {
-                                              e.currentTarget.style.background = "linear-gradient(135deg, #1d4ed8, #2563eb)";
-                                              e.currentTarget.style.boxShadow = "0 4px 10px rgba(37, 99, 235, 0.4)";
-                                            }
-                                          }
-                                        }}
-                                        onMouseOut={(e) => {
-                                          e.currentTarget.style.background = isTyping ? "linear-gradient(135deg, #ef4444, #f87171)" : "linear-gradient(135deg, #2563eb, #3b82f6)";
-                                          e.currentTarget.style.boxShadow = isTyping ? "0 2px 5px rgba(239, 68, 68, 0.3)" : "0 2px 5px rgba(37, 99, 235, 0.3)";
-                                        }}
-                                      >
-                                        <i 
-                                          className={`fa-sharp fa-solid ${isTyping ? "fa-stop" : "fa-paper-plane-top"}`}
-                                          style={{ color: "#ffffff", fontSize: "18px" }}
-                                        />
-                                      </button>
-                                    </div>
-                                  </div>
-                                  
                                       <Menu
                                         anchorEl={anchorElLanguage}
                                         open={Boolean(anchorElLanguage)}
@@ -3023,6 +2997,75 @@ Your analysis must follow this exact four-section structure with the headings ex
                                           </MenuItem>
                                         ))}
                                       </Menu>
+                                    </div>
+
+                                    {/* Input row: textarea + send (chatbot-style) */}
+                                    <div className={styles.chatInputRow} style={{ display: "flex", alignItems: "flex-end", gap: "10px", width: "100%", marginBottom: "12px" }}>
+                                      <textarea
+                                        rows="1"
+                                        placeholder="Send a message..."
+                                        value={newMessage}
+                                        onChange={handleTextareaChange}
+                                        onKeyDown={handleKeyDown}
+                                        className={styles.chatTextarea}
+                                        style={{
+                                          flex: "1",
+                                          minWidth: "0",
+                                          resize: "none",
+                                          border: "1px solid #e5e7eb",
+                                          outline: "none",
+                                          fontSize: "16px",
+                                          padding: "10px 14px",
+                                          borderRadius: "24px",
+                                          minHeight: "40px",
+                                          background: "#fff",
+                                          overflow: "hidden",
+                                          boxSizing: "border-box"
+                                        }}
+                                      />
+                                      <button
+                                        type="button"
+                                        className={`form-icon ${isTyping ? "icon-stop" : "icon-send"}`}
+                                        onClick={isTyping ? handleStopGeneration : handleSendMessage}
+                                        disabled={loading}
+                                        style={{
+                                          width: "40px",
+                                          height: "40px",
+                                          flexShrink: 0,
+                                          display: "flex",
+                                          alignItems: "center",
+                                          justifyContent: "center",
+                                          borderRadius: "50%",
+                                          border: "none",
+                                          background: isTyping ? "linear-gradient(135deg, #ef4444, #f87171)" : "linear-gradient(135deg, #2563eb, #3b82f6)",
+                                          boxShadow: isTyping ? "0 2px 5px rgba(239, 68, 68, 0.3)" : "0 2px 5px rgba(37, 99, 235, 0.3)",
+                                          cursor: loading ? "not-allowed" : "pointer",
+                                          opacity: loading ? "0.7" : "1",
+                                          transition: "all 0.2s ease"
+                                        }}
+                                        onMouseOver={(e) => {
+                                          if (!loading) {
+                                            if (isTyping) {
+                                              e.currentTarget.style.background = "linear-gradient(135deg, #dc2626, #ef4444)";
+                                              e.currentTarget.style.boxShadow = "0 4px 10px rgba(239, 68, 68, 0.4)";
+                                            } else {
+                                              e.currentTarget.style.background = "linear-gradient(135deg, #1d4ed8, #2563eb)";
+                                              e.currentTarget.style.boxShadow = "0 4px 10px rgba(37, 99, 235, 0.4)";
+                                            }
+                                          }
+                                        }}
+                                        onMouseOut={(e) => {
+                                          e.currentTarget.style.background = isTyping ? "linear-gradient(135deg, #ef4444, #f87171)" : "linear-gradient(135deg, #2563eb, #3b82f6)";
+                                          e.currentTarget.style.boxShadow = isTyping ? "0 2px 5px rgba(239, 68, 68, 0.3)" : "0 2px 5px rgba(37, 99, 235, 0.3)";
+                                        }}
+                                      >
+                                        <i 
+                                          className={`fa-sharp fa-solid ${isTyping ? "fa-stop" : "fa-paper-plane-top"}`}
+                                          style={{ color: "#ffffff", fontSize: "18px" }}
+                                        />
+                                      </button>
+                                    </div>
+                                  </div>
                                 </form>
                                 <small className={styles.disclaimer}>ब्रह्मांड AI can be Imperfect. Check important info.</small>
                               </div>
@@ -3031,11 +3074,8 @@ Your analysis must follow this exact four-section structure with the headings ex
                         ))
                       )}
                     </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </Context>
         </div>
       </main>
       <BackToTop />

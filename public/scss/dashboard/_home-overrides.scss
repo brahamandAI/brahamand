@@ -1,0 +1,44 @@
+/* Home chat page: remove box shadow under container (static bar + main area) */
+body.home-chat-page {
+  .rbt-static-bar {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+  .rbt-main-content,
+  .rbt-daynamic-page-content,
+  .chat-box-section {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  /* Blend message bubbles with page background - no distinct user/AI box color */
+  .chat-box-section .chat-box-list {
+    background: transparent !important;
+    padding: 20px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 32px;
+  }
+  .chat-box-section .chat-box-list:last-of-type {
+    margin-bottom: 0;
+  }
+  .chat-box,
+  .chat-box.inner,
+  .chat-box .inner,
+  .chat-box .chat-section,
+  .chat-box .chat-content,
+  .chat-box.author-speech,
+  .chat-box.ai-speech {
+    background: transparent !important;
+    border-top: none !important;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .chat-box.author-speech .editable,
+  .chat-box.ai-speech .chat-content > div {
+    background: transparent !important;
+  }
+}
+

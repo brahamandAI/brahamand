@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -12,78 +12,17 @@ import appleApp from "../../public/images/cta-img/apple-app.png";
 
 import SmallNavItem from "../../data/header.json";
 import { useAppContext } from "@/context/Context";
-import { Button } from "@mui/material";
-import axios from "axios";
 
 const LeftSidebar = () => {
   const router = useRouter();
   const { shouldCollapseLeftbar, setShouldCollapseLeftbar, isLightTheme, toggleTheme } = useAppContext();
   const sidebarRef = useRef(null);
-  const [isloading , setIsLoading] = useState(false);
-  const handlePayment = async () => {
-    setIsLoading(true);
-    const userId = localStorage.getItem("userId");
-    // Create an order on the server
-    const response = await fetch(`/api/payment?userId=${userId}`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            amount: 100, // Example amount (in INR)
-            currency: "INR",
-        }),
-    });
-
-    const data = await response.json();
-
-    if (!data.id) {
-        alert("Failed to create order");
-        setIsLoading(false);
-        return;
-    }
-
-    // Configure Razorpay options
-    const options = {
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
-        amount: data.amount,
-        currency: data.currency,
-        name: "ब्रह्मांड AI",
-        description: "ब्रह्मांड AI",
-        order_id: data.id,
-        handler: async function (response) {
-          alert("Payment successful!");
-          console.log("Payment Response:", response);
-      
-          try {
-            const userId = localStorage.getItem("userId");
-              const tokenRes = await axios.post(`/api/generateToken?userId=${userId}`, {
-                  paymentId: response.razorpay_payment_id,
-                  orderId: response.razorpay_order_id,
-              });
-      
-              console.log("Generated Token:", tokenRes.data.token);
-          } catch (error) {
-              console.error("Error generating token:", error.response ? error.response.data : error);
-          }
-      },
-      
-        prefill: {
-            name: "Customer Name",
-            email: "customer@example.com",
-            contact: "",
-        },
-    };
-
-    const razorpay = new window.Razorpay(options);
-    razorpay.open();
-    setIsLoading(false);
-};
   const isActive = (path) => {
     return router.pathname === path;
   };
 
   const handleClickOutside = (event) => {
+    if (event.target.closest('.popup-dashboardleft-btn')) return;
     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
       setShouldCollapseLeftbar(true);
     }
@@ -112,6 +51,17 @@ const LeftSidebar = () => {
         }`}
       >
         <div className="rbt-default-sidebar sticky-top rbt-shadow-box rbt-gradient-border">
+          <div className="sidebar-mobile-header d-block d-lg-none">
+            <span className="sidebar-mobile-title">Menu</span>
+            <button
+              type="button"
+              className="sidebar-close-btn"
+              onClick={() => setShouldCollapseLeftbar(true)}
+              aria-label="Close menu"
+            >
+              <i className="fa-sharp fa-regular fa-x"></i>
+            </button>
+          </div>
           <div className="inner">
             <div className="content-item-content">
               <div className="rbt-default-sidebar-wrapper" style={{
@@ -212,7 +162,7 @@ const LeftSidebar = () => {
 
           <div className="subscription-box" style={{background:'#EFEFFF !important'}}>
           <div className="app-store-btn d-flex gap-2 p-2 justify-content-center">
-                  <Link className="store-btn" href="#">
+                  <Link className="store-btn" href="https://play.google.com/store/apps/details?id=co.median.android.xlrmlbo" target="_blank" rel="noopener noreferrer">
                     <Image
                       src={playApp}
                       width={117}
@@ -246,11 +196,6 @@ const LeftSidebar = () => {
                 </div>
                 <div className="author-badge">Free</div>
               </Link>
-              <div className="btn-part">
-                <Button   onClick={handlePayment} disabled={isloading} className="btn-default btn-border">
-                 {isloading ? "Processing" : ' Upgrade To Pro'}
-                </Button>
-              </div>
             </div>
           </div>
           {/* <div className="switcher-btn-gr inner-switcher">

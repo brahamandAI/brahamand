@@ -85,6 +85,142 @@ body {
   overflow-x: hidden;
 }
 
+/* Home chat page: no page scroll on any viewport (desktop + mobile). Only chat area scrolls. */
+html.home-chat-page,
+body.home-chat-page {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100% !important;
+  height: 100dvh !important;
+  max-height: 100vh !important;
+  max-height: 100dvh !important;
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+}
+
+body.home-chat-page .page-wrapper {
+  height: 100% !important;
+  height: 100dvh !important;
+  max-height: 100vh;
+  max-height: 100dvh;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+body.home-chat-page .page-wrapper .rbt-panel-wrapper {
+  flex: 1 !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+body.home-chat-page .page-wrapper .rbt-panel-wrapper .rbt-main-content {
+  flex: 1 !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile: stable viewport - no rubber-band / vertical drag */
+@media (max-width: 768px) {
+  html,
+  body {
+    overscroll-behavior-y: none;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Full width: remove all side margins/padding that create gray strips */
+  body.home-chat-page .page-wrapper .rbt-panel-wrapper .rbt-main-content {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body.home-chat-page .rbt-daynamic-page-content,
+  body.home-chat-page .rbt-dashboard-content,
+  body.home-chat-page .content-page,
+  body.home-chat-page .chat-box-section {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Welcome screen and inner container: full width, minimal side padding (safe area only) */
+  body.home-chat-page .chat-box-section .slider-area {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 0;
+    /* Remove extra container look: no banner/slider background */
+    background: transparent !important;
+    background-image: none !important;
+  }
+
+  body.home-chat-page .chat-box-section .slider-area .container {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: max(12px, env(safe-area-inset-left)) !important;
+    padding-right: max(12px, env(safe-area-inset-right)) !important;
+  }
+
+  body.home-chat-page .chat-box-section .slider-area .container .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  body.home-chat-page .chat-box-section .slider-area .container [class*="col-"] {
+    padding-left: max(12px, env(safe-area-inset-left)) !important;
+    padding-right: max(12px, env(safe-area-inset-right)) !important;
+    max-width: none !important;
+  }
+
+  /* Welcome view: no scroll - content fits viewport */
+  body.home-chat-page.home-welcome-view .page-wrapper .rbt-panel-wrapper .rbt-main-content {
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  body.home-chat-page.home-welcome-view .rbt-daynamic-page-content {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Mobile: header safe area and compact height */
+  body.home-chat-page .rbt-dashboard-header {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+
+  /* Mobile: prevent chat message text overflow */
+  body.home-chat-page .chat-content .editable,
+  body.home-chat-page .chat-content .position-relative > div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

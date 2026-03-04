@@ -8,16 +8,28 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  max-width: none;
+  margin: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Single full-width wrapper - no Bootstrap container/row/col */
+.welcomeContent {
+  width: 100%;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-left: max(12px, env(safe-area-inset-left));
+  padding-right: max(12px, env(safe-area-inset-right));
+  box-sizing: border-box;
 }
 
 .welcomeTitle {
   margin: 0 0 0.5rem 0;
-  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-size: clamp(1.2rem, 4vw, 1.65rem);
   font-weight: 700;
   line-height: 1.2;
   background: linear-gradient(90deg, #2563eb, #3b82f6);
@@ -28,9 +40,9 @@
 }
 
 .chatInputForm {
-  max-width: min(800px, 95vw);
-  margin: 0 auto;
+  max-width: 100%;
   width: 100%;
+  margin: 0 auto;
   position: relative;
   padding: 12px;
   display: flex;
@@ -38,32 +50,149 @@
   gap: 8px;
   background-color: #F3F0FF;
   border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+/* Welcome form: no second layer - transparent, no shadow. Center and compact. */
+.chatInputFormWelcome {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  max-width: 560px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 8px !important;
+  gap: 6px !important;
+}
+
+.chatInputFormWelcome .inputWithChips .chatTextarea {
+  min-height: 40px;
+  max-height: 96px;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.chatInputFormWelcome .chipContainer {
+  gap: 6px;
+  margin-bottom: 6px;
+  padding: 4px 0;
+  justify-content: center;
+}
+
+.chatInputFormWelcome .standardChip {
+  height: 32px !important;
+  padding: 0 12px !important;
+  font-size: 12px !important;
+  border-radius: 16px !important;
+}
+
+.chatInputFormWelcome .uploadButton {
+  width: 32px;
+  height: 32px;
+}
+
+.chatInputFormWelcome .uploadIcon {
+  font-size: 12px;
+}
+
+.chatInputFormWelcome .startButtonRow {
+  justify-content: center;
+  margin-top: 4px;
+}
+
+/* Mobile: force order = Tool grid → Input + chips → Start button */
+@media (max-width: 768px) {
+  .welcomeScreen {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .welcomeContent {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    max-width: 100%;
+  }
+
+  .chatInputFormWelcome {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+  }
+
+  .chatInputFormWelcome .toolGrid {
+    order: 1;
+  }
+
+  .chatInputFormWelcome .inputWithChips {
+    order: 2;
+  }
+
+  .chatInputFormWelcome .startButtonRow {
+    order: 3;
+  }
 }
 
 .inputWithChips {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   position: relative;
   width: 100%;
-  flex-wrap: wrap;
-  gap: 4px;
+  gap: 0;
+}
+
+/* Chatbot-style: input row = textarea + send (one row) */
+.chatInputRow {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 0;
+}
+
+.chatInputRow textarea {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 0;
 }
 
 .chatTextarea {
   width: 100%;
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid #eee;
+  padding: 12px 52px 12px 14px;
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
   resize: none;
   font-size: 15px;
   background-color: #fff;
   box-shadow: none;
   transition: border-color 0.3s;
   margin-bottom: 0;
-  min-height: 50px;
+  min-height: 40px;
+  max-height: 160px;
+  overflow-y: hidden;
   font-family: 'Nirmala UI', 'Mangal', sans-serif;
-  color: #666;
+  color: #333;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Welcome form: no send button in row, so normal padding */
+.inputWithChips > .chatTextarea {
+  padding-right: 12px;
 }
 
 .chatTextarea:focus {
@@ -77,11 +206,12 @@
   flex-wrap: nowrap;
   align-items: center;
   gap: 8px;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   overflow-x: auto;
-  padding: 3px 0;
+  padding: 6px 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
   white-space: nowrap;
 }
 
@@ -91,12 +221,7 @@
 }
 
 .chipContainer::-webkit-scrollbar {
-  height: 4px;
-}
-
-.chipContainer::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  display: none;
 }
 
 .standardChip {
@@ -180,68 +305,90 @@
   text-align: center;
   font-size: 12px;
   color: #6b7280;
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  padding-top: 8px;
 }
 
 /* Enhanced Responsive styles */
 @media (max-width: 768px) {
+  .welcomeScreen {
+    padding: 12px 8px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   .welcomeTitle {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 0.5rem 0;
     padding: 0 0.5rem;
   }
   
   .chatInputForm {
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     position: relative;
     z-index: 1;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .inputWithChips {
+    flex-direction: column;
+  }
+
+  /* Chips above input on mobile for welcome screen */
+  .inputWithChips .chipContainer {
+    order: 1;
+    margin-bottom: 8px;
+    padding: 4px 0;
+    max-height: 40px;
+  }
+
+  .inputWithChips .chatTextarea {
+    order: 2;
   }
 
   .chatTextarea {
     font-size: 15px;
-    padding: 0.4rem;
-    min-height: 40px;
+    padding: 12px 52px 12px 14px;
+    min-height: 48px;
+    border-radius: 22px;
   }
 
   .standardChip {
-    padding: 0 8px !important;
-    height: 26px !important;
-  }
-
-  .sendButton {
-    right: 24px;
-    bottom: 24px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .sendButton svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  .chatBoxSection {
-    padding-bottom: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .welcomeTitle {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-  }
-  
-  .standardChip {
-    padding: 0 8px !important;
-    height: 28px !important;
+    padding: 0 10px !important;
+    height: 32px !important;
     font-size: 12px !important;
+    border-radius: 16px !important;
   }
 
-  .chatTextarea {
-    font-size: 15px;
-    padding: 0.5rem;
-    min-height: 40px;
+  /* Mobile: chips as icon-only (no text) for better alignment */
+  .chipContainer :global(.MuiChip-label),
+  .chatChipsRow :global(.MuiChip-label) {
+    display: none !important;
+  }
+
+  .chipContainer :global(.MuiChip-root),
+  .chatChipsRow :global(.MuiChip-root) {
+    min-width: 36px !important;
+    width: 36px !important;
+    padding: 0 4px !important;
+    border-radius: 50% !important;
+    justify-content: center !important;
+  }
+
+  .chipContainer :global(.MuiChip-icon),
+  .chipContainer :global(.MuiChip-avatar),
+  .chatChipsRow :global(.MuiChip-icon),
+  .chatChipsRow :global(.MuiChip-avatar) {
+    margin: 0 !important;
+  }
+
+  .chipContainer :global(.MuiChip-avatar),
+  .chatChipsRow :global(.MuiChip-avatar) {
+    width: 24px !important;
+    height: 24px !important;
   }
 
   .uploadButton {
@@ -254,7 +401,104 @@
   }
 
   .chatBoxSection {
-    padding-bottom: 120px;
+    padding-bottom: 24px;
+  }
+
+  /* Static bar: chips row compact, input row full */
+  .chatChipsRow {
+    flex-wrap: nowrap;
+    padding: 4px 0 6px;
+    gap: 6px;
+    max-height: 44px;
+  }
+
+  .chatChipsRow :global(.MuiChip-root) {
+    height: 32px !important;
+  }
+
+  .chatChipsRow :global(.MuiChip-label) {
+    font-size: 12px !important;
+  }
+
+  .chatInputRow {
+    min-height: 48px;
+  }
+
+  .chatInputRow textarea {
+    font-size: 16px;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcomeTitle {
+    font-size: 1.35rem;
+    margin: 0.5rem 0;
+  }
+  
+  .chatInputForm {
+    padding: 8px;
+  }
+
+  .standardChip {
+    padding: 0 8px !important;
+    height: 28px !important;
+    font-size: 11px !important;
+    border-radius: 14px !important;
+  }
+
+  .chatTextarea {
+    font-size: 15px;
+    padding: 10px 48px 10px 12px;
+    min-height: 44px;
+    border-radius: 20px;
+  }
+
+  .uploadButton {
+    width: 28px;
+    height: 28px;
+  }
+
+  .uploadIcon {
+    font-size: 11px;
+  }
+
+  .chatBoxSection {
+    padding-bottom: 20px;
+  }
+
+  .chatChipsRow {
+    gap: 4px;
+    padding: 2px 0 4px;
+    max-height: 40px;
+  }
+
+  .chatChipsRow :global(.MuiChip-root) {
+    height: 28px !important;
+  }
+
+  .chatChipsRow :global(.MuiChip-label) {
+    font-size: 11px !important;
+  }
+
+  /* Smaller icon-only chips on small mobile */
+  .chipContainer :global(.MuiChip-root),
+  .chatChipsRow :global(.MuiChip-root) {
+    min-width: 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 2px !important;
+  }
+
+  .chipContainer :global(.MuiChip-avatar),
+  .chatChipsRow :global(.MuiChip-avatar) {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .chatInputRow button[class*="form-icon"] {
+    width: 36px !important;
+    height: 36px !important;
   }
 }
 
@@ -312,20 +556,20 @@
 
 .toolGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 12px;
-  margin: 16px auto;
-  max-width: 800px;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+  margin: 12px auto;
+  max-width: 560px;
   padding: 0 10px;
   width: 100%;
 }
 
 .toolItem {
   background: white;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 8px;
+  border-radius: 8px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -335,29 +579,30 @@
   position: relative;
   overflow: hidden;
   height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .toolIcon {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8px;
-  border-radius: 12px;
+  margin-bottom: 6px;
+  border-radius: 10px;
   transition: all 0.3s ease;
   position: relative;
   z-index: 1;
 }
 
 .toolIconSvg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   transition: all 0.3s ease;
 }
 
 .toolTitle {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #333;
   transition: all 0.3s ease;
@@ -420,10 +665,10 @@
 
 .sendButton {
   position: absolute;
-  right: 32px;
-  bottom: 32px;
-  width: 44px;
-  height: 44px;
+  right: 6px;
+  bottom: 6px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #2563eb;
   border: none;
@@ -433,6 +678,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+  flex-shrink: 0;
 }
 
 .sendButton:hover {
@@ -441,20 +687,39 @@
 }
 
 .sendButton svg {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   color: white;
+}
+
+/* Static bar input row (when chatting) - same pattern */
+.chatChipsRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 4px 0 8px;
+  margin-bottom: 0;
+}
+
+.chatChipsRow::-webkit-scrollbar {
+  display: none;
 }
 
 /* Start with ब्रह्मांड AI button */
 .startButton {
   width: 100%;
-  padding: 12px 24px;
-  border-radius: 12px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
   border: none;
   background: #2563eb;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -464,6 +729,23 @@
 .startButton:hover {
   background: #1d4ed8;
   transform: translateY(-1px);
+}
+
+/* Wrapper for Start button - push down on mobile so button sits lower */
+.startButtonWrapper {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .startButtonWrapper {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .startButtonWrapper {
+    margin-top: 24px;
+  }
 }
 
 /* Main content spacing adjustments */
@@ -480,4 +762,38 @@
 
 .chatBoxSection {
   padding-bottom: 40px;
+}
+
+/* Extra top space when showing messages so first user message is clearly visible */
+.chatBoxSectionWithMessages {
+  padding-top: 40px;
+}
+
+/* Flattened chat content - no extra wrappers, full width */
+.chatPageContent {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .chatPageContent {
+    width: 100% !important;
+    max-width: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Footer credits - hidden on mobile to save space */
+.footerCredits {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footerCredits {
+    display: none !important;
+  }
 } 

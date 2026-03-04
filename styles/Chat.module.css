@@ -1,6 +1,7 @@
 .container {
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   background-color: #f8f9fa;
@@ -11,6 +12,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
   background-color: white;
   border-bottom: 1px solid #e9ecef;
 }
@@ -58,6 +61,7 @@
   flex: 1;
   overflow-y: auto;
   margin-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .message {
@@ -72,6 +76,7 @@
 .messageAvatar {
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -84,6 +89,7 @@
 
 .messageContent {
   flex: 1;
+  min-width: 0;
 }
 
 .messageSender {
@@ -94,8 +100,10 @@
 .messageText {
   color: #4b5563;
   line-height: 1.5;
+  word-break: break-word;
 }
 
+/* ========== Input: chatbot-style bar ========== */
 .chatInputForm {
   position: relative;
   width: 100%;
@@ -103,20 +111,31 @@
   border-radius: 24px;
   padding: 12px;
   border: 1px solid #e9ecef;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .inputWithChips {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
+/* Chips row: secondary, compact on mobile */
 .chipContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 8px 4px;
+  padding: 4px 0;
   width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  min-height: 0;
+}
+
+.chipContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .standardChip {
@@ -131,6 +150,7 @@
   transition: all 0.2s ease !important;
   margin: 0 !important;
   white-space: nowrap !important;
+  flex-shrink: 0;
 }
 
 .standardChip:first-child {
@@ -139,21 +159,31 @@
   min-width: 36px !important;
 }
 
+/* Input row: textarea + send (single row like modern chatbots) */
 .inputContainer {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  min-height: 44px;
 }
 
 .chatTextarea {
+  flex: 1;
+  min-width: 0;
   width: 100%;
-  padding: 8px 44px 8px 12px;
-  border-radius: 20px;
+  padding: 10px 48px 10px 14px;
+  border-radius: 22px;
   border: 1px solid #e9ecef;
   resize: none;
-  font-size: 14px;
-  line-height: 1.5;
-  min-height: 40px;
+  font-size: 15px;
+  line-height: 1.4;
+  min-height: 44px;
+  max-height: 120px;
   background-color: #f8f9fa;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .chatTextarea:focus {
@@ -162,12 +192,16 @@
   background-color: white;
 }
 
+.chatTextarea::placeholder {
+  color: #9ca3af;
+}
+
 .sendButton {
   position: absolute;
-  right: 4px;
-  bottom: 4px;
-  width: 32px;
-  height: 32px;
+  right: 6px;
+  bottom: 6px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: #4285f4;
   border: none;
@@ -178,7 +212,7 @@
   transition: background-color 0.2s ease;
   padding: 0;
   z-index: 2;
-  transform: none;
+  flex-shrink: 0;
 }
 
 .sendButton:hover {
@@ -203,21 +237,87 @@
   margin-top: 8px;
 }
 
+/* ========== Mobile: clean chatbot layout ========== */
 @media (max-width: 768px) {
-  .chatContainer {
-    padding: 12px;
+  .header {
+    padding: 10px 12px;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
   }
 
+  .logoText {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .menuButton {
+    width: 36px;
+    height: 36px;
+  }
+
+  .chatContainer {
+    padding: 12px;
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+
+  .message {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .messageAvatar {
+    width: 28px;
+    height: 28px;
+  }
+
+  .messageSender {
+    font-size: 14px;
+  }
+
+  .messageText {
+    font-size: 14px;
+  }
+
+  /* Input form: tighter, single focus */
+  .chatInputForm {
+    border-radius: 22px;
+    padding: 8px 10px;
+  }
+
+  .inputWithChips {
+    gap: 8px;
+  }
+
+  /* Chips: horizontal scroll, smaller, less prominent */
   .chipContainer {
     gap: 6px;
-    padding: 6px 2px;
+    padding: 2px 0;
+    max-height: 40px;
+    order: 1;
+  }
+
+  /* Mobile: icon-only chips (no text) for better alignment */
+  .chipContainer .MuiChip-label {
+    display: none !important;
+  }
+
+  .chipContainer .standardChip {
+    min-width: 36px !important;
+    width: 36px !important;
+    padding: 0 4px !important;
+    border-radius: 50% !important;
   }
 
   .standardChip {
     height: 32px !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
     padding: 0 12px !important;
     border-radius: 16px !important;
+    opacity: 0.92;
   }
 
   .standardChip:first-child {
@@ -225,21 +325,34 @@
     min-width: 32px !important;
   }
 
-  .chatInputForm {
-    border-radius: 20px;
-    padding: 8px;
+  /* Input row: primary focus */
+  .inputContainer {
+    min-height: 48px;
+    order: 2;
+  }
+
+  .chatTextarea {
+    padding: 10px 46px 10px 14px;
+    min-height: 48px;
+    font-size: 16px;
+    border-radius: 24px;
   }
 
   .sendButton {
-    width: 28px;
-    height: 28px;
-    right: 6px;
-    bottom: 6px;
+    width: 40px;
+    height: 40px;
+    right: 4px;
+    bottom: 4px;
   }
 
   .sendButton svg {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .disclaimer {
+    font-size: 11px;
+    margin-top: 6px;
   }
 }
 
@@ -250,12 +363,18 @@
 
   .chipContainer {
     gap: 4px;
-    padding: 4px 2px;
+    max-height: 36px;
+  }
+
+  .chipContainer .standardChip {
+    min-width: 32px !important;
+    width: 32px !important;
+    padding: 0 2px !important;
   }
 
   .standardChip {
     height: 28px !important;
-    font-size: 12px !important;
+    font-size: 11px !important;
     padding: 0 10px !important;
     border-radius: 14px !important;
   }
@@ -264,4 +383,25 @@
     width: 28px !important;
     min-width: 28px !important;
   }
-} 
+
+  .chatInputForm {
+    padding: 6px 8px;
+    border-radius: 18px;
+  }
+
+  .chatTextarea {
+    min-height: 44px;
+    padding: 8px 42px 8px 12px;
+    font-size: 15px;
+  }
+
+  .sendButton {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sendButton svg {
+    width: 18px;
+    height: 18px;
+  }
+}

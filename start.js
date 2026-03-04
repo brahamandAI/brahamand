@@ -12,8 +12,10 @@ console.log('OPENAI_API_KEY configured:', !!process.env.OPENAI_API_KEY);
 
 // Calculate memory limit based on available system memory
 // Use 75% of available memory or 4GB, whichever is lower
+// Enforce minimum 1GB so Next.js dev compilation doesn't OOM on memory-tight systems
+const MIN_MEMORY_MB = 1024;
 const availableMemoryMB = Math.floor(os.freemem() / (1024 * 1024));
-const memoryLimitMB = Math.min(availableMemoryMB * 0.75, 4096);
+const memoryLimitMB = Math.max(MIN_MEMORY_MB, Math.min(availableMemoryMB * 0.75, 4096));
 
 console.log(`Starting Next.js with ${Math.floor(memoryLimitMB)}MB memory limit`);
 

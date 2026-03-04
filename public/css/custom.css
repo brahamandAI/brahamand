@@ -1,17 +1,35 @@
 /* Custom CSS for improving alignment in the static bar */
 
+/* Full-width chatbot container - desktop and mobile (like ChatGPT) */
 .rbt-static-bar {
   position: fixed;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  max-width: 1100px;
+  max-width: none;
+  margin: 0;
   z-index: 10;
   background-color: #ffffff;
-  box-shadow: 0px -10px 25px -5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  padding: 10px 16px;
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+  padding-bottom: max(10px, env(safe-area-inset-bottom));
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.rbt-static-bar .new-chat-form,
+.rbt-static-bar .new-chat-form > div {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.rbt-static-bar .new-chat-form > div {
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
 }
 
 /* Remove extra space from containers */
@@ -173,10 +191,108 @@
   background-color: #1a1b26;
 }
 
-/* Enhanced mobile responsiveness */
+/* Home page: force full width - remove dashboard width constraints (desktop + mobile) */
+body.home-chat-page .page-wrapper,
+body.home-chat-page .rbt-panel-wrapper {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+body.home-chat-page .rbt-main-content {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background: transparent !important;
+}
+
+/* No right sidebar on home - main content uses full remaining width */
+body.home-chat-page .rbt-main-content.area-right-expanded,
+body.home-chat-page .rbt-main-content {
+  margin-right: 0 !important;
+}
+
+body.home-chat-page .rbt-daynamic-page-content,
+body.home-chat-page .chat-box-section {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background: transparent !important;
+}
+
+/* Home chat: message bubbles blend with page – no card background */
+body.home-chat-page .chat-box-list,
+body.home-chat-page .chat-box,
+body.home-chat-page .chat-box .inner,
+body.home-chat-page .chat-section,
+body.home-chat-page .chat-content,
+body.home-chat-page .author-speech .editable,
+body.home-chat-page .ai-speech .chat-content {
+  background: transparent !important;
+}
+
+/* Remove extra container: no banner/slider background around welcome chatbot (all viewports) */
+body.home-chat-page .chat-box-section .slider-area {
+  background: transparent !important;
+  background-image: none !important;
+}
+
+/* No box-shadow on welcome area - single flat layer */
+body.home-chat-page .chat-box-section,
+body.home-chat-page .rbt-daynamic-page-content .chat-box-section,
+body.home-chat-page .chat-box-section [class*="welcomeScreen"] {
+  box-shadow: none !important;
+}
+
+/* No box-shadow under main content / chat container */
+body.home-chat-page .rbt-main-content,
+body.home-chat-page .rbt-daynamic-page-content {
+  box-shadow: none !important;
+}
+
+/* Home: static bar full width (theme sets max-width: 805px) */
+body.home-chat-page .rbt-static-bar {
+  width: 100% !important;
+  max-width: none !important;
+  left: 0 !important;
+  right: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Enhanced mobile responsiveness - full-width ChatGPT-style */
 @media (max-width: 768px) {
   .rbt-static-bar {
-    padding: 8px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 12px 0;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    border-radius: 0;
+  }
+
+  .rbt-static-bar .new-chat-form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .rbt-static-bar .new-chat-form > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+  }
+
+  .rbt-static-bar,
+  .rbt-static-bar * {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
   }
 
   .feature-buttons-container {
@@ -203,7 +319,15 @@
 
 @media (max-width: 480px) {
   .rbt-static-bar {
-    padding: 6px;
+    padding: 10px 0;
+    padding-left: max(10px, env(safe-area-inset-left));
+    padding-right: max(10px, env(safe-area-inset-right));
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+
+  .rbt-static-bar .new-chat-form > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .feature-buttons-container {
@@ -228,8 +352,8 @@
   }
 
   .send-button-fixed {
-    width: 28px !important;
-    height: 28px !important;
+    width: 32px !important;
+    height: 32px !important;
   }
 }
 
@@ -252,4 +376,187 @@
 .bottom-features-row .MuiChip-root:hover:not(:disabled) {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+/* Force remove box shadow under container (override theme) */
+.rbt-static-bar,
+body.home-chat-page .rbt-static-bar,
+body.home-chat-page .page-wrapper .rbt-static-bar,
+.rbt-panel-wrapper .rbt-static-bar {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+/* ========== Mobile: sidebar as main menu (full-width overlay) ========== */
+@media (max-width: 768px) {
+  .popup-dashboardleft-section {
+    width: min(320px, 88vw) !important;
+    max-width: 100%;
+    top: 0 !important;
+    height: 100% !important;
+    height: 100dvh !important;
+    z-index: 9999 !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.15);
+  }
+  .rbt-left-panel {
+    width: 100% !important;
+    max-width: min(320px, 88vw);
+    top: 0 !important;
+    height: 100% !important;
+    height: 100dvh !important;
+    padding-top: max(16px, env(safe-area-inset-top));
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: 16px;
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  .expand-btn-grp .popup-dashboardleft-btn,
+  .mobile-menu-bar .popup-dashboardleft-btn {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Navbar Menu button (mobile only): icon + label, right side - dark for visibility */
+  .sidebar-menu-btn-mobile {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #1f2937 !important;
+    color: #fff !important;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+  }
+  .sidebar-menu-btn-mobile:hover {
+    background-color: #111827 !important;
+    opacity: 1;
+  }
+  .sidebar-menu-btn-mobile i {
+    font-size: 20px;
+    color: #fff !important;
+  }
+  .sidebar-menu-label {
+    display: inline-block;
+    color: #fff !important;
+  }
+
+  /* Dark navbar: slightly lighter dark button so it stands out */
+  body.active-dark-mode .sidebar-menu-btn-mobile {
+    background-color: #374151 !important;
+  }
+  body.active-dark-mode .sidebar-menu-btn-mobile:hover {
+    background-color: #4b5563 !important;
+  }
+  .sidebar-mobile-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    padding-top: max(14px, env(safe-area-inset-top));
+    padding-left: max(16px, env(safe-area-inset-left));
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    background: #fff;
+    flex-shrink: 0;
+  }
+  .sidebar-mobile-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+  }
+  .sidebar-close-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: -8px -8px -8px 0;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #374151;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .sidebar-close-btn:hover {
+    background: rgba(0, 0, 0, 0.06);
+    color: #111;
+  }
+  .sidebar-close-btn:active {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  body.active-dark-mode .sidebar-mobile-header {
+    background: var(--color-dark, #1a1a1a);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+  body.active-dark-mode .sidebar-mobile-title {
+    color: #fff;
+  }
+  body.active-dark-mode .sidebar-close-btn {
+    color: #e5e7eb;
+  }
+  body.active-dark-mode .sidebar-close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+}
+
+/* ========== Home chat page: mobile accuracy ========== */
+@media (max-width: 768px) {
+  body.home-chat-page .rbt-daynamic-page-content {
+    padding-left: max(12px, env(safe-area-inset-left)) !important;
+    padding-right: max(12px, env(safe-area-inset-right)) !important;
+    padding-top: 16px !important;
+    padding-bottom: 20px !important;
+    min-height: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+  body.home-chat-page .chat-box-section .chat-box-list {
+    padding-left: max(12px, env(safe-area-inset-left)) !important;
+    padding-right: max(12px, env(safe-area-inset-right)) !important;
+    padding-top: 12px !important;
+    padding-bottom: 16px !important;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  body.home-chat-page .rbt-static-bar {
+    padding-left: max(16px, env(safe-area-inset-left)) !important;
+    padding-right: max(16px, env(safe-area-inset-right)) !important;
+    padding-bottom: max(16px, env(safe-area-inset-bottom)) !important;
+    padding-top: 12px !important;
+  }
+  body.home-chat-page .rbt-static-bar .new-chat-form > div {
+    padding-left: max(8px, env(safe-area-inset-left)) !important;
+    padding-right: max(8px, env(safe-area-inset-right)) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body.home-chat-page .rbt-daynamic-page-content {
+    padding-left: max(10px, env(safe-area-inset-left)) !important;
+    padding-right: max(10px, env(safe-area-inset-right)) !important;
+    padding-top: 12px !important;
+  }
+  body.home-chat-page .chat-box-section .chat-box-list {
+    padding-left: max(10px, env(safe-area-inset-left)) !important;
+    padding-right: max(10px, env(safe-area-inset-right)) !important;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  body.home-chat-page .rbt-static-bar {
+    padding-left: max(12px, env(safe-area-inset-left)) !important;
+    padding-right: max(12px, env(safe-area-inset-right)) !important;
+    padding-bottom: max(12px, env(safe-area-inset-bottom)) !important;
+  }
 } 
