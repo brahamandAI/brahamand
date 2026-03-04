@@ -1,0 +1,26 @@
+2026-02-21 20:41:38: 
+2026-02-21 20:41:38: > brahamand.ai@0.1.0 start /home/ubuntu/htdocs/brahamand
+2026-02-21 20:41:38: > node start.js
+2026-02-21 20:41:38: 
+2026-02-21 20:41:38: Environment variables loaded
+2026-02-21 20:41:38: OPENAI_API_KEY configured: true
+2026-02-21 20:41:38: Starting Next.js with 2187MB memory limit
+2026-02-21 20:41:38: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-02-21 20:41:38: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-02-21 20:41:41:   ▲ Next.js 14.2.35
+2026-02-21 20:41:41:   - Local:        http://localhost:3001
+2026-02-21 20:41:41:   - Network:      http://0.0.0.0:3001
+2026-02-21 20:41:41: 
+2026-02-21 20:41:41:  ✓ Starting...
+2026-02-21 20:41:43:  ✓ Ready in 4.3s
+2026-02-24 12:32:00: Received streaming chat request: Hhh...
+2026-02-24 12:32:00: Starting OpenAI streaming...
+2026-02-24 12:32:02: Streaming completed successfully
+2026-02-25 12:39:11: Received streaming chat request: Hello...
+2026-02-25 12:39:11: Starting OpenAI streaming...
+2026-02-25 12:39:12: Streaming completed successfully
+2026-02-25 12:39:51: Received streaming chat request: Hello...
+2026-02-25 12:39:51: Starting OpenAI streaming...
+2026-02-25 12:39:53: Streaming completed successfully
+2026-02-25 16:04:34: Next.js process exited with code null
+2026-02-25 16:04:35:  ELIFECYCLE  Command failed.

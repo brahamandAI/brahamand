@@ -9,7 +9,7 @@ module.exports = {
       // ---- START USING PNPM (IMPORTANT) ----
       script: "/home/ubuntu/.local/share/pnpm/pnpm",
       args: "start",
-      interpreter: "node",
+      interpreter: "sh",
   
         // ---- ABSOLUTE SAFETY ----
         instances: 1,          // NEVER > 1
