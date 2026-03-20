@@ -762,6 +762,9 @@
 
 .chatBoxSection {
   padding-bottom: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-sizing: border-box;
 }
 
 /* Extra top space when showing messages so first user message is clearly visible */

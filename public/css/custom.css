@@ -250,6 +250,16 @@ body.home-chat-page .chat-box-section {
   background: transparent !important;
 }
 
+/* Desktop: keep chatbot centered instead of stretching full width */
+@media (min-width: 769px) {
+  body.home-chat-page .rbt-daynamic-page-content,
+  body.home-chat-page .chat-box-section {
+    max-width: 805px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 /* Home chat: message bubbles blend with page – no card background */
 body.home-chat-page .chat-box-list,
 body.home-chat-page .chat-box,
@@ -287,6 +297,18 @@ body.home-chat-page .rbt-static-bar {
   left: 0 !important;
   right: 0 !important;
   box-shadow: none !important;
+}
+
+/* Desktop: keep input bar centered (not edge-to-edge) */
+@media (min-width: 769px) {
+  body.home-chat-page .rbt-static-bar {
+    max-width: 805px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 /* Enhanced mobile responsiveness - full-width ChatGPT-style */
