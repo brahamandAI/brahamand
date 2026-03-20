@@ -2,25 +2,13 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
-import { FaHome, FaTools, FaSignInAlt, FaUserPlus, FaChevronDown, FaInfoCircle } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import { useAuth } from "@/context/AuthContext";
 
 import MenuData from "../../data/header.json";
 
 import NavProps from "./NavProps";
 import menuImg from "../../public/images/menu-img/menu-img-2.png";
-
-// Get icon component based on text
-const getIcon = (text) => {
-  switch(text) {
-    case "Home": return <FaHome className="me-1" />;
-    case "Tools": return <FaTools className="me-1" />;
-    case "SignIn": return <FaSignInAlt className="me-1" />;
-    case "Sign Up": return <FaUserPlus className="me-1" />;
-    case "About Us": return <FaInfoCircle className="me-1" />;
-    default: return null;
-  }
-};
 
 // CSS-based hover button component (faster than framer-motion)
 const HoverButton = ({ text, href, hasIcon }) => {
@@ -32,11 +20,9 @@ const HoverButton = ({ text, href, hasIcon }) => {
       <Link
         href={href}
         className={`nav-hover-item ${isActive ? "active" : ""}`}
-        style={{ display: "inline-flex", alignItems: "center" }}
       >
-        {getIcon(text)}
         {text}
-        {hasIcon && <FaChevronDown style={{ marginLeft: "5px" }} />}
+        {hasIcon && <FaChevronDown className="nav-chevron" />}
       </Link>
     </div>
   );
@@ -49,12 +35,10 @@ const HoverDropdownButton = ({ text, onClick, isOpen }) => {
       <a
         href="#"
         className={`nav-hover-item ${isOpen ? "open" : ""}`}
-        style={{ display: "inline-flex", alignItems: "center" }}
         onClick={onClick}
       >
-        {getIcon(text)}
         {text}
-        <FaChevronDown style={{ marginLeft: "5px" }} />
+        <FaChevronDown className="nav-chevron" />
       </a>
     </div>
   );
@@ -102,8 +86,6 @@ const Nav = () => {
   // Filter out SignIn and Sign Up items when user is logged in
   const filteredNavItems = MenuData.nav.filter(item => {
     if (isLoggedIn) {
-      // Log the filtering for debugging
-      console.log('Filtering nav items:', { isLoggedIn, itemText: item.text });
       return !['SignIn', 'Sign Up'].includes(item.text);
     }
     return true;
@@ -113,22 +95,28 @@ const Nav = () => {
     <>
       <style jsx global>{`
         .nav-hover-wrapper .nav-hover-item {
-          transition: transform 0.15s ease, color 0.15s ease;
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+          transition: color 0.15s ease;
           color: inherit;
+          text-decoration: none;
         }
-        .nav-hover-wrapper:hover .nav-hover-item {
-          transform: scale(1.05);
+        .nav-hover-wrapper:hover .nav-hover-item,
+        .nav-hover-wrapper .nav-hover-item:hover {
           color: #1e90ff !important;
         }
-        .nav-hover-wrapper:hover svg {
-          color: #1e90ff !important;
+        .nav-chevron {
+          font-size: 11px;
+          vertical-align: middle;
+          opacity: 0.75;
         }
         .submenu-hover-wrapper .submenu-hover-item {
-          transition: transform 0.15s ease, translate 0.15s ease;
+          transition: color 0.15s ease, padding-left 0.15s ease;
         }
         .submenu-hover-wrapper:hover .submenu-hover-item {
-          transform: scale(1.05);
-          translate: 5px 0;
+          color: #1e90ff;
+          padding-left: 4px;
         }
       `}</style>
       <ul className="mainmenu">

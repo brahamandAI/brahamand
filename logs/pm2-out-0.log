@@ -1247,3 +1247,417 @@
 2026-02-21 20:40:23:  ✓ Ready in 6s
 2026-02-21 20:41:24: Next.js process exited with code null
 2026-02-21 20:41:24:  ELIFECYCLE  Command failed.
+2026-03-14 07:15:18: Environment variables loaded
+2026-03-14 07:15:18: OPENAI_API_KEY configured: true
+2026-03-14 07:15:18: Starting Next.js with 4073MB memory limit
+2026-03-14 07:15:18: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-14 07:15:18: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-14 07:15:18:   ▲ Next.js 14.2.35
+2026-03-14 07:15:18:   - Local:        http://localhost:3001
+2026-03-14 07:15:18:   - Network:      http://0.0.0.0:3001
+2026-03-14 07:15:18: 
+2026-03-14 07:15:18:  ✓ Starting...
+2026-03-14 07:15:19:  ✓ Ready in 445ms
+2026-03-14 07:15:46: Received streaming chat request: hi...
+2026-03-14 07:15:46: Starting OpenAI streaming...
+2026-03-14 07:15:48: Streaming completed successfully
+2026-03-14 07:51:28: Received streaming chat request: hi...
+2026-03-14 07:51:28: Starting OpenAI streaming...
+2026-03-14 07:51:29: Streaming completed successfully
+2026-03-14 07:51:46: Received streaming chat request: write an sql query for joins...
+2026-03-14 07:51:46: Starting OpenAI streaming...
+2026-03-14 07:51:51: Streaming completed successfully
+2026-03-14 16:07:47: Received streaming chat request: hi...
+2026-03-14 16:07:47: Starting OpenAI streaming...
+2026-03-14 16:07:49: Streaming completed successfully
+2026-03-15 23:14:32: Received streaming chat request: Hello...
+2026-03-15 23:14:32: Starting OpenAI streaming...
+2026-03-15 23:14:34: Streaming completed successfully
+2026-03-15 23:14:38: Received streaming chat request: How r u...
+2026-03-15 23:14:38: Starting OpenAI streaming...
+2026-03-15 23:14:40: Streaming completed successfully
+2026-03-15 23:14:50: Received chat request: Hello
+2026-03-15 23:14:50: Generating chat completion for: Hello
+2026-03-15 23:14:50: API key available: true
+2026-03-15 23:14:50: Is PDF summary request: false
+2026-03-15 23:14:50: Making OpenAI API call with message length: 5
+2026-03-15 23:14:52: OpenAI API returned successful response
+2026-03-16 01:21:15: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: Applicability:   This   policy   is   applicable   to   all   t he   employees   of   the   company   who are required to  undertake business travel within India.  Type   of   Travel:   Defining   type   of travel depending   on the   duration of   travel  Table1:   Classification of   Travel  Travel   Duration  A.   Tour   1 - 15   days  B.   Deputation   15   days   to   06 months or more  Tour   :   Any   official travel which is for   a   duration   of 1   to 15   days  Lodging   &   Boarding   allowances:   Lodging   &   Fooding   allowances   will   be   payable   to   the   employees  for   tour   within   India   on official work as per the limits mentioned in given   Table   5 .  Table   2:   Classification   of   Designation  Grade   Designation  A1   Directors, CMD. CEO  A2   GM,   Sr. Manager, HOD’s  A 3   Manager,   Assistant   Manager,   Sr.   Executive, Officer,   Engineer  A 4   Executive,   Supervisor etc.  Table   3:   Classification   of   Cities  Category   Name   of the   city  A  NCR,   Kolkata,   Chennai,   Mumbai,   Hyderabad,   Bangalore,   Pune,   Ahmedabad,  Chandigarh,   Goa   Capitals of all States/Union Territories  B   All   other   cities  Table   4:   Classification   of   Mode   of   Travel  Mode   of Travel   Entitlements  Grade   Mode   of Travel   (Local)   Mode   of   Travel   (inter - city)  A1   Taxi   (AC)   Air   (Economy)   /Train   (AC   I,   II)   /Taxi   (AC)  A2   TAXI (AC/Non - AC)/Auto   Air   (Economy)   /Train   (AC   II, III, CC)   /Taxi   / Auto  A3   Shared   Taxi/   Shared   Auto   Train   (AC   III )   /Bus   ( A/C ) /Taxi   (Shared)/   Shared   Auto  A 4  E - Rikshaw   /Shared Auto  (Public   Transport/Shared  Transport)  Sleeper Class   Train   &   Bus   (Sleeper)/Share d   Auto  Note:   In case of   non - availability   of a particular class of ticket, a ticket for   one class lower   will be  booked without any approval. If a lower - class ticket is also unavailable, a ticket for   one class higher  may be booked with   HOD approval . Travel tickets booked   without approval   will not   be considered  for reimbursement.
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: Table   5:   Tour   Entitlements  Grade  Lodging   Allow.  Food   Allow.  D earness   Allow. Category  Category A   B  A1   Actual   Actual   Actual   Actual  A 2   1500   1200   600   200  A 3   1200   1000   500   1 50  A 4   1000   800   400   100  Note:   The amount limits mentioned in   Table 5   represent the   maximum permissible rates   upon  submission of actual bills. These rates are   Exclusive of T axes . All expense claims must be  supported by   original bills or invoices .  An employee staying at a   relative's or   friend's place   during an official tour will be given  Rs. 300.00 per day   as lodging reimbursement.   Bills or invoices are not required.  If an employee waits at a   railway station or airport   for more than   4 hours   during the  night, they are eligible to claim   50% of the food allowance .  Use   of   personal vehicle   for   official   work :   All   employees   shall   be   entitled   to   claim   the   given   amounts  towards   usage   of   their   personal vehicle for official work:  Table:6  S r .n o   Designation   By two - wheeler   By own car   By Taxi  1   Sr. Manager & Above   Rs.4 per Km.   Rs. 10 per Km.   Actual  2.   Manager, Asst. Manager , Officer,  Engg., Sr. Executive  Rs. 4 Per Km.   Rs.   0 8 Per Km.   On special approval  only  3   Executive,   Supervisor etc.   Rs. 4 Per Km.   N.A.   N.A.  Day   Tour   Entitlement:   The   Entitlement   shall   be   calculated   on   a   24 - hour   clock   basis.   The   start   time  would   be   the   start time of departure and end on return time of   travel   the   employee is eligible for  food allowances & DA   as per   Table no - 5.  The   employee   will   be eligible   to get   the   following   entitlements   during   deputation :     1 - 15   Days   of benefit as per the   tour policy   (Mentioned in   Point   A )     After   15   days:   Allowances   to   be   provided   as   per   given   table   no - 7 :  Deputation   Policy:   A   travel   for a   duration   greater   than   15 days   but   less than   6 Months or more   at  one   location / site   will   be   treated   as   deputation.
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: Table 7 : Deputation   Entitlements  Grade   Lodging/Fooding   Allow. (Per Month)  Category  A   B  A 4   8000   7500  Note:   If the company provides   guest house and food   facilities   at the site, the employee will   not  be entitled   to any of the above allowances.   Employees   are not required   to submit bills for  deputation entitlements.   The distance between two places must be   greater than 50 km  for relocation and deput.  Guideline s for Ticket Booking and Bill Submission  1)   Ticket Booking Request:   Employees requesting a ticket booking must send an   email request   to the  travel desk or HOD   at least   Two   day before   the intended travel date.  2)   Approval Process:   The travel desk will obtain approval from the respective   Head of Department  (HOD)   before proceeding with the booking. Employees are   not permitted   to book tickets directly unless  it is an   emergency .  3)   Independent Bookings:   If an employee books a ticket indepe ndently through a vendor,   prior HOD  approval   is required to ensure reimbursement by the company.  4)   Specific Travel Requests:   If a specific   flight, train, or bus   is requested, a   justification   must be included  in the request email. For   urgent bookings   made wit hin one day of travel, the reason for urgency must be  explicitly mentioned.  5)   Special Preferences:   Employees are   not allowed   to request special preferences such as specific   hotels,  flights,   train,   seats, or web check - ins .  6)   Bill Submission Deadline:   Employees must submit their   travel bills   within   four days   of completing  their journey. If they are unable to do so within the given timeframe, a   written justification   must be  attached.  7)   Late Submission Consequences:   If   T ravel   bills   not submitted   within   05   days   will   not be accepted   and  will be   deducted from the subsequent month's salary . Upon receiving the travel expense sheet, the  Finance & Accounts (F&A)   department must verify the travel account and process the balance amount  within   07   days   without requir ing a reminder.  8)   Bill Authorization:   The bill must be   signed by both the employee and the   respective HOD . Any  discrepancies in the billed amounts require   HOD approval with a clarification note .  9)   Bill Authenticity and Details:   It   is the employee’s   responsibility   to ensure all bills are   authentic .  E mployees must mention the   locations and distances travelled   to facilitate smooth processing.
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: Applicability:   This   policy   is   applicable   to   all   t he   employees   of   the   company   who are required to  undertake business travel within India.  Type   of   Travel:   Defining   type   of travel depending   on the   duration of   travel  Table1:   Classification of   Travel  Travel   Duration  A.   Tour   1 - 15   days  B.   Deputation   15   days   to   06 months or more  Tour   :   Any   official travel which is for   a   duration   of 1   to 15   days  Lodging   &   Boarding   allowances:   Lodging   &   Fooding   allowances   will   be   payable   to   the   employees  for   tour   within   India   on official work as per the limits mentioned in given   Table   5 .  Table   2:   Classification   of   Designation  Grade   Designation  A1   Directors, CMD. CEO  A2   GM,   Sr. Manager, HOD’s  A 3   Manager,   Assistant   Manager,   Sr.   Executive, Officer,   Engineer  A 4   Executive,   Supervisor etc.  Table   3:   Classification   of   Cities  Category   Name   of the   city  A  NCR,   Kolkata,   Chennai,   Mumbai,   Hyderabad,   Bangalore,   Pune,   Ahmedabad,  Chandigarh,   Goa   Capitals of all States/Union Territories  B   All   other   cities  Table   4:   Classification   of   Mode   of   Travel  Mode   of Travel   Entitlements  Grade   Mode   of Travel   (Local)   Mode   of   Travel   (inter - city)  A1   Taxi   (AC)   Air   (Economy)   /Train   (AC   I,   II)   /Taxi   (AC)  A2   TAXI (AC/Non - AC)/Auto   Air   (Economy)   /Train   (AC   II, III, CC)   /Taxi   / Auto  A3   Shared   Taxi/   Shared   Auto   Train   (AC   III )   /Bus   ( A/C ) /Taxi   (Shared)/   Shared   Auto  A 4  E - Rikshaw   /Shared Auto  (Public   Transport/Shared  Transport)  Sleeper Class   Train   &   Bus   (Sleeper)/Share d   Auto  Note:   In case of   non - availability   of a particular class of ticket, a ticket for   one class lower   will be  booked without any approval. If a lower - class ticket is also unavailable, a ticket for   one class higher  may be booked with   HOD approval . Travel tickets booked   without approval   will not   be considered  for reimbursement.
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: Table   5:   Tour   Entitlements  Grade  Lodging   Allow.  Food   Allow.  D earness   Allow. Category  Category A   B  A1   Actual   Actual   Actual   Actual  A 2   1500   1200   600   200  A 3   1200   1000   500   1 50  A 4   1000   800   400   100  Note:   The amount limits mentioned in   Table 5   represent the   maximum permissible rates   upon  submission of actual bills. These rates are   Exclusive of T axes . All expense claims must be  supported by   original bills or invoices .  An employee staying at a   relative's or   friend's place   during an official tour will be given  Rs. 300.00 per day   as lodging reimbursement.   Bills or invoices are not required.  If an employee waits at a   railway station or airport   for more than   4 hours   during the  night, they are eligible to claim   50% of the food allowance .  Use   of   personal vehicle   for   official   work :   All   employees   shall   be   entitled   to   claim   the   given   amounts  towards   usage   of   their   personal vehicle for official work:  Table:6  S r .n o   Designation   By two - wheeler   By own car   By Taxi  1   Sr. Manager & Above   Rs.4 per Km.   Rs. 10 per Km.   Actual  2.   Manager, Asst. Manager , Officer,  Engg., Sr. Executive  Rs. 4 Per Km.   Rs.   0 8 Per Km.   On special approval  only  3   Executive,   Supervisor etc.   Rs. 4 Per Km.   N.A.   N.A.  Day   Tour   Entitlement:   The   Entitlement   shall   be   calculated   on   a   24 - hour   clock   basis.   The   start   time  would   be   the   start time of departure and end on return time of   travel   the   employee is eligible for  food allowances & DA   as per   Table no - 5.  The   employee   will   be eligible   to get   the   following   entitlements   during   deputation :     1 - 15   Days   of benefit as per the   tour policy   (Mentioned in   Point   A )     After   15   days:   Allowances   to   be   provided   as   per   given   table   no - 7 :  Deputation   Policy:   A   travel   for a   duration   greater   than   15 days   but   less than   6 Months or more   at  one   location / site   will   be   treated   as   deputation.
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: Table 7 : Deputation   Entitlements  Grade   Lodging/Fooding   Allow. (Per Month)  Category  A   B  A 4   8000   7500  Note:   If the company provides   guest house and food   facilities   at the site, the employee will   not  be entitled   to any of the above allowances.   Employees   are not required   to submit bills for  deputation entitlements.   The distance between two places must be   greater than 50 km  for relocation and deput.  Guideline s for Ticket Booking and Bill Submission  1)   Ticket Booking Request:   Employees requesting a ticket booking must send an   email request   to the  travel desk or HOD   at least   Two   day before   the intended travel date.  2)   Approval Process:   The travel desk will obtain approval from the respective   Head of Department  (HOD)   before proceeding with the booking. Employees are   not permitted   to book tickets directly unless  it is an   emergency .  3)   Independent Bookings:   If an employee books a ticket indepe ndently through a vendor,   prior HOD  approval   is required to ensure reimbursement by the company.  4)   Specific Travel Requests:   If a specific   flight, train, or bus   is requested, a   justification   must be included  in the request email. For   urgent bookings   made wit hin one day of travel, the reason for urgency must be  explicitly mentioned.  5)   Special Preferences:   Employees are   not allowed   to request special preferences such as specific   hotels,  flights,   train,   seats, or web check - ins .  6)   Bill Submission Deadline:   Employees must submit their   travel bills   within   four days   of completing  their journey. If they are unable to do so within the given timeframe, a   written justification   must be  attached.  7)   Late Submission Consequences:   If   T ravel   bills   not submitted   within   05   days   will   not be accepted   and  will be   deducted from the subsequent month's salary . Upon receiving the travel expense sheet, the  Finance & Accounts (F&A)   department must verify the travel account and process the balance amount  within   07   days   without requir ing a reminder.  8)   Bill Authorization:   The bill must be   signed by both the employee and the   respective HOD . Any  discrepancies in the billed amounts require   HOD approval with a clarification note .  9)   Bill Authenticity and Details:   It   is the employee’s   responsibility   to ensure all bills are   authentic .  E mployees must mention the   locations and distances travelled   to facilitate smooth processing.
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: 
+2026-03-16 01:21:15: API key available: true
+2026-03-16 01:21:15: Is PDF summary request: false
+2026-03-16 01:21:15: Making OpenAI API call with message length: 6869
+2026-03-16 01:21:23: OpenAI API returned successful response
+2026-03-16 01:23:24: Received streaming chat request: Hi...
+2026-03-16 01:23:24: Starting OpenAI streaming...
+2026-03-16 01:23:40: Streaming completed successfully
+2026-03-16 05:29:31: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-16 05:29:31: 
+2026-03-16 05:29:31: www.therobustrix.com www.brahamand.ai 212, City Centre Mall, Dwarka  Sector-12, New Delhi +91 98896 11496 info@therobustrix.com ABHINEET SINGH AGM SALES
+2026-03-16 05:29:31: 
+2026-03-16 05:29:31: BRAHAMAND   AI Made In India
+2026-03-16 05:29:31: 
+2026-03-16 05:29:31: 
+2026-03-16 05:29:31: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-16 05:29:31: 
+2026-03-16 05:29:31: www.therobustrix.com www.brahamand.ai 212, City Centre Mall, Dwarka  Sector-12, New Delhi +91 98896 11496 info@therobustrix.com ABHINEET SINGH AGM SALES
+2026-03-16 05:29:31: 
+2026-03-16 05:29:31: BRAHAMAND   AI Made In India
+2026-03-16 05:29:31: 
+2026-03-16 05:29:31: 
+2026-03-16 05:29:31: API key available: true
+2026-03-16 05:29:31: Is PDF summary request: false
+2026-03-16 05:29:31: Making OpenAI API call with message length: 260
+2026-03-16 05:29:37: OpenAI API returned successful response
+2026-03-16 05:31:08: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-16 05:31:08: 
+2026-03-16 05:31:08: www.therobustrix.com www.brahamand.ai 212, City Centre Mall, Dwarka  Sector-12, New Delhi +91 98896 11496 info@therobustrix.com ABHINEET SINGH AGM SALES
+2026-03-16 05:31:08: 
+2026-03-16 05:31:08: BRAHAMAND   AI Made In India
+2026-03-16 05:31:08: 
+2026-03-16 05:31:08: 
+2026-03-16 05:31:08: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-16 05:31:08: 
+2026-03-16 05:31:08: www.therobustrix.com www.brahamand.ai 212, City Centre Mall, Dwarka  Sector-12, New Delhi +91 98896 11496 info@therobustrix.com ABHINEET SINGH AGM SALES
+2026-03-16 05:31:08: 
+2026-03-16 05:31:08: BRAHAMAND   AI Made In India
+2026-03-16 05:31:08: 
+2026-03-16 05:31:08: 
+2026-03-16 05:31:08: API key available: true
+2026-03-16 05:31:08: Is PDF summary request: false
+2026-03-16 05:31:08: Making OpenAI API call with message length: 260
+2026-03-16 05:31:13: OpenAI API returned successful response
+2026-03-16 05:33:36: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-16 05:33:36: 
+2026-03-16 05:33:36: www.therobustrix.com www.brahamand.ai 212, City Centre Mall, Dwarka  Sector-12, New Delhi +91 98896 11496 info@therobustrix.com ABHINEET SINGH AGM SALES
+2026-03-16 05:33:36: 
+2026-03-16 05:33:36: BRAHAMAND   AI Made In India
+2026-03-16 05:33:36: 
+2026-03-16 05:33:36: 
+2026-03-16 05:33:36: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-16 05:33:36: 
+2026-03-16 05:33:36: www.therobustrix.com www.brahamand.ai 212, City Centre Mall, Dwarka  Sector-12, New Delhi +91 98896 11496 info@therobustrix.com ABHINEET SINGH AGM SALES
+2026-03-16 05:33:36: 
+2026-03-16 05:33:36: BRAHAMAND   AI Made In India
+2026-03-16 05:33:36: 
+2026-03-16 05:33:36: 
+2026-03-16 05:33:36: API key available: true
+2026-03-16 05:33:36: Is PDF summary request: false
+2026-03-16 05:33:36: Making OpenAI API call with message length: 260
+2026-03-16 05:33:44: OpenAI API returned successful response
+2026-03-16 05:59:50: Received streaming chat request: Hi...
+2026-03-16 05:59:50: Starting OpenAI streaming...
+2026-03-16 05:59:52: Streaming completed successfully
+2026-03-16 06:32:14: Received streaming chat request: Hello...
+2026-03-16 06:32:14: Starting OpenAI streaming...
+2026-03-16 06:32:15: Streaming completed successfully
+2026-03-16 06:32:19: Received streaming chat request: How r u...
+2026-03-16 06:32:19: Starting OpenAI streaming...
+2026-03-16 06:32:20: Streaming completed successfully
+2026-03-16 06:32:25: Received streaming chat request: What r u doing...
+2026-03-16 06:32:25: Starting OpenAI streaming...
+2026-03-16 06:32:26: Streaming completed successfully
+2026-03-16 06:32:33: Received streaming chat request: Please...
+2026-03-16 06:32:33: Starting OpenAI streaming...
+2026-03-16 06:32:34: Streaming completed successfully
+2026-03-16 06:32:40: Received streaming chat request: Where r u from...
+2026-03-16 06:32:40: Starting OpenAI streaming...
+2026-03-16 06:32:43: Streaming completed successfully
+2026-03-16 06:33:05: Received streaming chat request: Hello...
+2026-03-16 06:33:05: Starting OpenAI streaming...
+2026-03-16 06:33:07: Streaming completed successfully
+2026-03-16 11:23:34: Received streaming chat request: Hello...
+2026-03-16 11:23:34: Starting OpenAI streaming...
+2026-03-16 11:23:36: Streaming completed successfully
+2026-03-16 17:57:55: Next.js process exited with code null
+2026-03-16 17:58:08: Environment variables loaded
+2026-03-16 17:58:08: OPENAI_API_KEY configured: true
+2026-03-16 17:58:08: Starting Next.js with 2334MB memory limit
+2026-03-16 17:58:08: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-16 17:58:08: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-16 17:58:10:   ▲ Next.js 14.2.35
+2026-03-16 17:58:10:   - Local:        http://localhost:3001
+2026-03-16 17:58:10:   - Network:      http://0.0.0.0:3001
+2026-03-16 17:58:10: 
+2026-03-16 17:58:10:  ✓ Starting...
+2026-03-16 17:58:10:  ✓ Ready in 1410ms
+2026-03-16 17:58:36: Received streaming chat request: hello...
+2026-03-16 17:58:36: Starting OpenAI streaming...
+2026-03-16 17:58:38: Streaming completed successfully
+2026-03-16 17:58:47: Received streaming chat request: who made you...
+2026-03-16 17:58:47: Starting OpenAI streaming...
+2026-03-16 17:58:49: Streaming completed successfully
+2026-03-16 17:58:59: Received streaming chat request: who is father of you...
+2026-03-16 17:58:59: Starting OpenAI streaming...
+2026-03-16 17:59:01: Streaming completed successfully
+2026-03-17 05:10:04: Environment variables loaded
+2026-03-17 05:10:04: OPENAI_API_KEY configured: true
+2026-03-17 05:10:04: Starting Next.js with 4096MB memory limit
+2026-03-17 05:10:04: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-17 05:10:04: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-17 05:10:15:   ▲ Next.js 14.2.35
+2026-03-17 05:10:15:   - Local:        http://localhost:3001
+2026-03-17 05:10:15:   - Network:      http://0.0.0.0:3001
+2026-03-17 05:10:15: 
+2026-03-17 05:10:15:  ✓ Starting...
+2026-03-17 05:10:21:  ✓ Ready in 13.8s
+2026-03-17 05:16:52: Received streaming chat request: Design a creative for symposium restaurant...
+2026-03-17 05:16:52: Starting OpenAI streaming...
+2026-03-17 05:17:02: Streaming completed successfully
+2026-03-17 07:12:05: Received streaming chat request: Hi...
+2026-03-17 07:12:05: Starting OpenAI streaming...
+2026-03-17 07:12:07: Streaming completed successfully
+2026-03-17 07:12:16: Received streaming chat request: Who created you...
+2026-03-17 07:12:16: Starting OpenAI streaming...
+2026-03-17 07:12:17: Streaming completed successfully
+2026-03-17 07:12:58: Received streaming chat request: Are you created by open ai...
+2026-03-17 07:12:58: Starting OpenAI streaming...
+2026-03-17 07:13:02: Streaming completed successfully
+2026-03-17 07:13:20: Received streaming chat request: Do you have any relation with elon musk...
+2026-03-17 07:13:20: Starting OpenAI streaming...
+2026-03-17 07:13:22: Streaming completed successfully
+2026-03-17 07:13:43: Received chat request: What is brainstorming mode
+2026-03-17 07:13:43: Generating chat completion for: What is brainstorming mode
+2026-03-17 07:13:43: API key available: true
+2026-03-17 07:13:43: Is PDF summary request: false
+2026-03-17 07:13:43: Making OpenAI API call with message length: 26
+2026-03-17 07:13:47: OpenAI API returned successful response
+2026-03-17 07:22:16: Received chat request: Rakshaks Foundation ke liye ek post design karni hai jisme Rakshaks Foundation ke saath logo jude uske liye content do
+2026-03-17 07:22:16: Generating chat completion for: Rakshaks Foundation ke liye ek post design karni hai jisme Rakshaks Foundation ke saath logo jude uske liye content do
+2026-03-17 07:22:16: API key available: true
+2026-03-17 07:22:16: Is PDF summary request: false
+2026-03-17 07:22:16: Making OpenAI API call with message length: 118
+2026-03-17 07:22:23: OpenAI API returned successful response
+2026-03-17 07:24:54: Received streaming chat request: ਤੁਹਾਨੂੰ ਆਪਣੇ ਬਾਰੇ ਕੀ ਪਤਾ ਹੈ...
+2026-03-17 07:24:54: Starting OpenAI streaming...
+2026-03-17 07:24:58: Streaming completed successfully
+2026-03-17 07:25:56: Received streaming chat request: ਪੰਜਾਬੀ ਚ ਦੱਸੋ ਕਿ ਸਿੱਖ ਧਰਮ ਵਿੱਚ ਕਿੰਨੇ ਗੁਰੂ ਸਾਹਿਬਾਨ ...
+2026-03-17 07:25:56: Starting OpenAI streaming...
+2026-03-17 07:26:04: Streaming completed successfully
+2026-03-17 07:27:19: Received streaming chat request: Aami tumako baalo ashi...
+2026-03-17 07:27:19: Starting OpenAI streaming...
+2026-03-17 07:27:20: Streaming completed successfully
+2026-03-17 07:27:34: Received streaming chat request: Bengali me namaste ko kya bolte hai...
+2026-03-17 07:27:34: Starting OpenAI streaming...
+2026-03-17 07:27:35: Streaming completed successfully
+2026-03-17 07:41:14: Received streaming chat request: Tell me about Rakshaks Securitas...
+2026-03-17 07:41:14: Starting OpenAI streaming...
+2026-03-17 07:41:21: Streaming completed successfully
+2026-03-17 07:47:54: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: Applicability:   This   policy   is   applicable   to   all   t he   employees   of   the   company   who are required to  undertake business travel within India.  Type   of   Travel:   Defining   type   of travel depending   on the   duration of   travel  Table1:   Classification of   Travel  Travel   Duration  A.   Tour   1 - 15   days  B.   Deputation   15   days   to   06 months or more  Tour   :   Any   official travel which is for   a   duration   of 1   to 15   days  Lodging   &   Boarding   allowances:   Lodging   &   Fooding   allowances   will   be   payable   to   the   employees  for   tour   within   India   on official work as per the limits mentioned in given   Table   5 .  Table   2:   Classification   of   Designation  Grade   Designation  A1   Directors, CMD. CEO  A2   GM,   Sr. Manager, HOD’s  A 3   Manager,   Assistant   Manager,   Sr.   Executive, Officer,   Engineer  A 4   Executive,   Supervisor etc.  Table   3:   Classification   of   Cities  Category   Name   of the   city  A  NCR,   Kolkata,   Chennai,   Mumbai,   Hyderabad,   Bangalore,   Pune,   Ahmedabad,  Chandigarh,   Goa   Capitals of all States/Union Territories  B   All   other   cities  Table   4:   Classification   of   Mode   of   Travel  Mode   of Travel   Entitlements  Grade   Mode   of Travel   (Local)   Mode   of   Travel   (inter - city)  A1   Taxi   (AC)   Air   (Economy)   /Train   (AC   I,   II)   /Taxi   (AC)  A2   TAXI (AC/Non - AC)/Auto   Air   (Economy)   /Train   (AC   II, III, CC)   /Taxi   / Auto  A3   Shared   Taxi/   Shared   Auto   Train   (AC   III )   /Bus   ( A/C ) /Taxi   (Shared)/   Shared   Auto  A 4  E - Rikshaw   /Shared Auto  (Public   Transport/Shared  Transport)  Sleeper Class   Train   &   Bus   (Sleeper)/Share d   Auto  Note:   In case of   non - availability   of a particular class of ticket, a ticket for   one class lower   will be  booked without any approval. If a lower - class ticket is also unavailable, a ticket for   one class higher  may be booked with   HOD approval . Travel tickets booked   without approval   will not   be considered  for reimbursement.
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: Table   5:   Tour   Entitlements  Grade  Lodging   Allow.  Food   Allow.  D earness   Allow. Category  Category A   B  A1   Actual   Actual   Actual   Actual  A 2   1500   1200   600   200  A 3   1200   1000   500   1 50  A 4   1000   800   400   100  Note:   The amount limits mentioned in   Table 5   represent the   maximum permissible rates   upon  submission of actual bills. These rates are   Exclusive of T axes . All expense claims must be  supported by   original bills or invoices .  An employee staying at a   relative's or   friend's place   during an official tour will be given  Rs. 300.00 per day   as lodging reimbursement.   Bills or invoices are not required.  If an employee waits at a   railway station or airport   for more than   4 hours   during the  night, they are eligible to claim   50% of the food allowance .  Use   of   personal vehicle   for   official   work :   All   employees   shall   be   entitled   to   claim   the   given   amounts  towards   usage   of   their   personal vehicle for official work:  Table:6  S r .n o   Designation   By two - wheeler   By own car   By Taxi  1   Sr. Manager & Above   Rs.4 per Km.   Rs. 10 per Km.   Actual  2.   Manager, Asst. Manager , Officer,  Engg., Sr. Executive  Rs. 4 Per Km.   Rs.   0 8 Per Km.   On special approval  only  3   Executive,   Supervisor etc.   Rs. 4 Per Km.   N.A.   N.A.  Day   Tour   Entitlement:   The   Entitlement   shall   be   calculated   on   a   24 - hour   clock   basis.   The   start   time  would   be   the   start time of departure and end on return time of   travel   the   employee is eligible for  food allowances & DA   as per   Table no - 5.  The   employee   will   be eligible   to get   the   following   entitlements   during   deputation :     1 - 15   Days   of benefit as per the   tour policy   (Mentioned in   Point   A )     After   15   days:   Allowances   to   be   provided   as   per   given   table   no - 7 :  Deputation   Policy:   A   travel   for a   duration   greater   than   15 days   but   less than   6 Months or more   at  one   location / site   will   be   treated   as   deputation.
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: Table 7 : Deputation   Entitlements  Grade   Lodging/Fooding   Allow. (Per Month)  Category  A   B  A 4   8000   7500  Note:   If the company provides   guest house and food   facilities   at the site, the employee will   not  be entitled   to any of the above allowances.   Employees   are not required   to submit bills for  deputation entitlements.   The distance between two places must be   greater than 50 km  for relocation and deput.  Guideline s for Ticket Booking and Bill Submission  1)   Ticket Booking Request:   Employees requesting a ticket booking must send an   email request   to the  travel desk or HOD   at least   Two   day before   the intended travel date.  2)   Approval Process:   The travel desk will obtain approval from the respective   Head of Department  (HOD)   before proceeding with the booking. Employees are   not permitted   to book tickets directly unless  it is an   emergency .  3)   Independent Bookings:   If an employee books a ticket indepe ndently through a vendor,   prior HOD  approval   is required to ensure reimbursement by the company.  4)   Specific Travel Requests:   If a specific   flight, train, or bus   is requested, a   justification   must be included  in the request email. For   urgent bookings   made wit hin one day of travel, the reason for urgency must be  explicitly mentioned.  5)   Special Preferences:   Employees are   not allowed   to request special preferences such as specific   hotels,  flights,   train,   seats, or web check - ins .  6)   Bill Submission Deadline:   Employees must submit their   travel bills   within   four days   of completing  their journey. If they are unable to do so within the given timeframe, a   written justification   must be  attached.  7)   Late Submission Consequences:   If   T ravel   bills   not submitted   within   05   days   will   not be accepted   and  will be   deducted from the subsequent month's salary . Upon receiving the travel expense sheet, the  Finance & Accounts (F&A)   department must verify the travel account and process the balance amount  within   07   days   without requir ing a reminder.  8)   Bill Authorization:   The bill must be   signed by both the employee and the   respective HOD . Any  discrepancies in the billed amounts require   HOD approval with a clarification note .  9)   Bill Authenticity and Details:   It   is the employee’s   responsibility   to ensure all bills are   authentic .  E mployees must mention the   locations and distances travelled   to facilitate smooth processing.
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: Applicability:   This   policy   is   applicable   to   all   t he   employees   of   the   company   who are required to  undertake business travel within India.  Type   of   Travel:   Defining   type   of travel depending   on the   duration of   travel  Table1:   Classification of   Travel  Travel   Duration  A.   Tour   1 - 15   days  B.   Deputation   15   days   to   06 months or more  Tour   :   Any   official travel which is for   a   duration   of 1   to 15   days  Lodging   &   Boarding   allowances:   Lodging   &   Fooding   allowances   will   be   payable   to   the   employees  for   tour   within   India   on official work as per the limits mentioned in given   Table   5 .  Table   2:   Classification   of   Designation  Grade   Designation  A1   Directors, CMD. CEO  A2   GM,   Sr. Manager, HOD’s  A 3   Manager,   Assistant   Manager,   Sr.   Executive, Officer,   Engineer  A 4   Executive,   Supervisor etc.  Table   3:   Classification   of   Cities  Category   Name   of the   city  A  NCR,   Kolkata,   Chennai,   Mumbai,   Hyderabad,   Bangalore,   Pune,   Ahmedabad,  Chandigarh,   Goa   Capitals of all States/Union Territories  B   All   other   cities  Table   4:   Classification   of   Mode   of   Travel  Mode   of Travel   Entitlements  Grade   Mode   of Travel   (Local)   Mode   of   Travel   (inter - city)  A1   Taxi   (AC)   Air   (Economy)   /Train   (AC   I,   II)   /Taxi   (AC)  A2   TAXI (AC/Non - AC)/Auto   Air   (Economy)   /Train   (AC   II, III, CC)   /Taxi   / Auto  A3   Shared   Taxi/   Shared   Auto   Train   (AC   III )   /Bus   ( A/C ) /Taxi   (Shared)/   Shared   Auto  A 4  E - Rikshaw   /Shared Auto  (Public   Transport/Shared  Transport)  Sleeper Class   Train   &   Bus   (Sleeper)/Share d   Auto  Note:   In case of   non - availability   of a particular class of ticket, a ticket for   one class lower   will be  booked without any approval. If a lower - class ticket is also unavailable, a ticket for   one class higher  may be booked with   HOD approval . Travel tickets booked   without approval   will not   be considered  for reimbursement.
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: Table   5:   Tour   Entitlements  Grade  Lodging   Allow.  Food   Allow.  D earness   Allow. Category  Category A   B  A1   Actual   Actual   Actual   Actual  A 2   1500   1200   600   200  A 3   1200   1000   500   1 50  A 4   1000   800   400   100  Note:   The amount limits mentioned in   Table 5   represent the   maximum permissible rates   upon  submission of actual bills. These rates are   Exclusive of T axes . All expense claims must be  supported by   original bills or invoices .  An employee staying at a   relative's or   friend's place   during an official tour will be given  Rs. 300.00 per day   as lodging reimbursement.   Bills or invoices are not required.  If an employee waits at a   railway station or airport   for more than   4 hours   during the  night, they are eligible to claim   50% of the food allowance .  Use   of   personal vehicle   for   official   work :   All   employees   shall   be   entitled   to   claim   the   given   amounts  towards   usage   of   their   personal vehicle for official work:  Table:6  S r .n o   Designation   By two - wheeler   By own car   By Taxi  1   Sr. Manager & Above   Rs.4 per Km.   Rs. 10 per Km.   Actual  2.   Manager, Asst. Manager , Officer,  Engg., Sr. Executive  Rs. 4 Per Km.   Rs.   0 8 Per Km.   On special approval  only  3   Executive,   Supervisor etc.   Rs. 4 Per Km.   N.A.   N.A.  Day   Tour   Entitlement:   The   Entitlement   shall   be   calculated   on   a   24 - hour   clock   basis.   The   start   time  would   be   the   start time of departure and end on return time of   travel   the   employee is eligible for  food allowances & DA   as per   Table no - 5.  The   employee   will   be eligible   to get   the   following   entitlements   during   deputation :     1 - 15   Days   of benefit as per the   tour policy   (Mentioned in   Point   A )     After   15   days:   Allowances   to   be   provided   as   per   given   table   no - 7 :  Deputation   Policy:   A   travel   for a   duration   greater   than   15 days   but   less than   6 Months or more   at  one   location / site   will   be   treated   as   deputation.
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: Table 7 : Deputation   Entitlements  Grade   Lodging/Fooding   Allow. (Per Month)  Category  A   B  A 4   8000   7500  Note:   If the company provides   guest house and food   facilities   at the site, the employee will   not  be entitled   to any of the above allowances.   Employees   are not required   to submit bills for  deputation entitlements.   The distance between two places must be   greater than 50 km  for relocation and deput.  Guideline s for Ticket Booking and Bill Submission  1)   Ticket Booking Request:   Employees requesting a ticket booking must send an   email request   to the  travel desk or HOD   at least   Two   day before   the intended travel date.  2)   Approval Process:   The travel desk will obtain approval from the respective   Head of Department  (HOD)   before proceeding with the booking. Employees are   not permitted   to book tickets directly unless  it is an   emergency .  3)   Independent Bookings:   If an employee books a ticket indepe ndently through a vendor,   prior HOD  approval   is required to ensure reimbursement by the company.  4)   Specific Travel Requests:   If a specific   flight, train, or bus   is requested, a   justification   must be included  in the request email. For   urgent bookings   made wit hin one day of travel, the reason for urgency must be  explicitly mentioned.  5)   Special Preferences:   Employees are   not allowed   to request special preferences such as specific   hotels,  flights,   train,   seats, or web check - ins .  6)   Bill Submission Deadline:   Employees must submit their   travel bills   within   four days   of completing  their journey. If they are unable to do so within the given timeframe, a   written justification   must be  attached.  7)   Late Submission Consequences:   If   T ravel   bills   not submitted   within   05   days   will   not be accepted   and  will be   deducted from the subsequent month's salary . Upon receiving the travel expense sheet, the  Finance & Accounts (F&A)   department must verify the travel account and process the balance amount  within   07   days   without requir ing a reminder.  8)   Bill Authorization:   The bill must be   signed by both the employee and the   respective HOD . Any  discrepancies in the billed amounts require   HOD approval with a clarification note .  9)   Bill Authenticity and Details:   It   is the employee’s   responsibility   to ensure all bills are   authentic .  E mployees must mention the   locations and distances travelled   to facilitate smooth processing.
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: 
+2026-03-17 07:47:54: API key available: true
+2026-03-17 07:47:54: Is PDF summary request: false
+2026-03-17 07:47:54: Making OpenAI API call with message length: 6869
+2026-03-17 07:48:02: OpenAI API returned successful response
+2026-03-18 03:24:03: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-18 03:24:03: 
+2026-03-18 03:24:03: Head Office:   Aakar House, Mathura Palace, Begum Bridge, Meerut   –   250001  Regd. office:   299, Asoda House, Western Kutchery Road, Meerut (U.P.) PIN   -   250002  Web:   www.aakarinfra.co.in   |      +91 - 121 - 4033987 |      info@aakarinfra.co.in | UDYAM - UP - 56 - 0004846  AAKAR ENGINEERS & CONTRACTORS  Ref. No.:   10146 - 170326   Date:   17 - 03 - 2026  To,  The Sr. DGM  Power Grid Corporation of India Limited  ±500kV Dadri Terminal  Vidyut Nagar, Gautam Buddha Nagar  Uttar Pradesh - 201008.  Work: Removal of existing AC/DC Switchyard gravel, PCC and re - gravelling work at HVDC  Dadri station.  Sub.:   Request for issuance of Form - III for obtaining Labour License .  Dear Sir,  The above mentioned   work was awarded to us vide   NOA Ref. No.: N1/C&M/25 -  26/AM/OT/26 - 101263 dt: 02 - 02 - 2026.  We would like to inform you that we are in the process of obtaining the Labour License for the  said project.  In this regard, we kindly request you to arrange for the   issuance of   Form - III   to enable us to  complete the Labour License registration for the above - mentioned work.  We request you to kindly do the needful at the earliest.  Thanks & Regards,  For, M/s Aakar Engineers & Contractors  IRAM,  Manager | Commercials
+2026-03-18 03:24:03: 
+2026-03-18 03:24:03: 
+2026-03-18 03:24:03: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-18 03:24:03: 
+2026-03-18 03:24:03: Head Office:   Aakar House, Mathura Palace, Begum Bridge, Meerut   –   250001  Regd. office:   299, Asoda House, Western Kutchery Road, Meerut (U.P.) PIN   -   250002  Web:   www.aakarinfra.co.in   |      +91 - 121 - 4033987 |      info@aakarinfra.co.in | UDYAM - UP - 56 - 0004846  AAKAR ENGINEERS & CONTRACTORS  Ref. No.:   10146 - 170326   Date:   17 - 03 - 2026  To,  The Sr. DGM  Power Grid Corporation of India Limited  ±500kV Dadri Terminal  Vidyut Nagar, Gautam Buddha Nagar  Uttar Pradesh - 201008.  Work: Removal of existing AC/DC Switchyard gravel, PCC and re - gravelling work at HVDC  Dadri station.  Sub.:   Request for issuance of Form - III for obtaining Labour License .  Dear Sir,  The above mentioned   work was awarded to us vide   NOA Ref. No.: N1/C&M/25 -  26/AM/OT/26 - 101263 dt: 02 - 02 - 2026.  We would like to inform you that we are in the process of obtaining the Labour License for the  said project.  In this regard, we kindly request you to arrange for the   issuance of   Form - III   to enable us to  complete the Labour License registration for the above - mentioned work.  We request you to kindly do the needful at the earliest.  Thanks & Regards,  For, M/s Aakar Engineers & Contractors  IRAM,  Manager | Commercials
+2026-03-18 03:24:03: 
+2026-03-18 03:24:03: 
+2026-03-18 03:24:03: API key available: true
+2026-03-18 03:24:03: Is PDF summary request: false
+2026-03-18 03:24:03: Making OpenAI API call with message length: 1334
+2026-03-18 03:24:20: OpenAI API returned successful response
+2026-03-18 06:56:31: Received streaming chat request: Hello...
+2026-03-18 06:56:31: Starting OpenAI streaming...
+2026-03-18 06:56:33: Streaming completed successfully
+2026-03-18 06:56:58: Received chat request: About js
+2026-03-18 06:56:58: Generating chat completion for: About js
+2026-03-18 06:56:58: API key available: true
+2026-03-18 06:56:58: Is PDF summary request: false
+2026-03-18 06:56:58: Making OpenAI API call with message length: 8
+2026-03-18 06:57:07: OpenAI API returned successful response
+2026-03-19 05:07:17: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-19 05:07:17: 
+2026-03-19 05:07:17: Personal Details Application Number   260100059964   Name :   CHITRANSHI SHARMA  Father Name :   DEO TRILOCHAN SHARMA   Mother Name :   KIRAN SHARMA  Gender :   Female   Date of Birth :   19-11-2004  Nationality :   Indian   State of Eligibility :   Domicile of U.P.  Category :   Other Backward Class (OBC)  Sub Category List  Physically Handicapped   No Military Personal   No Freedom Fighter   No  Other Informations  Are you Color Blind :   No Place of Residence :   Urban Are you belong to Minority :   No Do you have APAAR Id?:   ?   No  Qualification Details Intermediate/ITI Details  Passing Status   Passed Passing Year   2021 Stream/Course   Intermediate Science Board   Other Roll/Registration Number   216045376 Result Mode   Percentage Maximum Marks   500 Obtained Marks   332 Percentage Marks   66.4  Apply For Details Sr.No.   Discipline  1   Group K5 (IT)  Exam Center List Exam Center Choice No.   State Name   Exam City  1   Uttar Pradesh   Varanasi (Kashi) 2   Uttar Pradesh   Ghaziabad 3   Uttar Pradesh   Kanpur Nagar 4   Uttar Pradesh   Chitrakoot  Contact Details Correspondence Address Premises No./Village Name   I block 70 Gujaini udhyog Nagar kanpur Nagar  Sub Locality/Colony/Police Station(Optional)   Govind Nagar  Locality/City/Town/Village/Post Office   Gujaini bypass  Country   India  State   Uttar Pradesh  District   Kanpur Nagar  Pin Code   208022  Mobile Number   9517281094  Email Id   chitranshisharma7754@gmail.com  Permanent Address Premises No./Village Name   I block 70 Gujaini udhyog Nagar kanpur Nagar  Sub Locality/Colony/Police Station(Optional)   Govind Nagar  Locality/City/Town/Village/Post Office   Gujaini bypass  Country   India  State   Uttar Pradesh  District   Kanpur Nagar  Pin Code   208022  Fee Payment Details Registration Fee  Joint Entrance Examination Council (Polytechnic), Uttar Pradesh  Joint Entrance Examination (Polytechnic) UP 2026 Confirmation Page  Application Number: 260100059964   Generated On: 18-03-2026 08:49:05 PM   Page No. 1
+2026-03-19 05:07:17: 
+2026-03-19 05:07:17: Transaction Number   Transaction Amount   Transaction Date  8210278946013   300   2026/03/18 20:47:33  Registration Details Activity   Date & Time   IP Address  Registration Form Submission   Mar 16 2026 4:46PM   49.42.32.79 Application Form Submission   Mar 18 2026 8:35PM   49.42.32.158  Uploaded Documents  Photograph Signature Live Photograph  Declaration  I hereby declare that I have filled up this online application after carefully reading the Information Bulletin and fully understanding the provisions/ procedures mentioned therein. I further declare that all the particulars given by me in this application are true to the best of my knowledge and belief. I agree that my Result may be withheld/ not declared/ my candidature may automatically stand cancelled, In case it is found at any point of time in future that false information has been furnished in this application. I shall abide by these terms and conditions as well as those laid down in the Information Bulletin, Public Notices and Advisories issued by JEECUP regarding this exam from time to time.  Instructions:  Candidate is requested to retain the printout of confirmation page for future reference. 1. The candidate is requested to keep the registered mobile number and email ID active for important updates and notifications. 2. Kindly visit the website https://jeecup.admissions.nic.in/ regularly for further updates and notifications. 3.  CHITRANSHI SHARMA (Signature of Candidate)  Joint Entrance Examination Council (Polytechnic), Uttar Pradesh  Joint Entrance Examination (Polytechnic) UP 2026 Confirmation Page  Application Number: 260100059964   Generated On: 18-03-2026 08:49:05 PM   Page No. 2
+2026-03-19 05:07:17: 
+2026-03-19 05:07:17: 
+2026-03-19 05:07:17: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-19 05:07:17: 
+2026-03-19 05:07:17: Personal Details Application Number   260100059964   Name :   CHITRANSHI SHARMA  Father Name :   DEO TRILOCHAN SHARMA   Mother Name :   KIRAN SHARMA  Gender :   Female   Date of Birth :   19-11-2004  Nationality :   Indian   State of Eligibility :   Domicile of U.P.  Category :   Other Backward Class (OBC)  Sub Category List  Physically Handicapped   No Military Personal   No Freedom Fighter   No  Other Informations  Are you Color Blind :   No Place of Residence :   Urban Are you belong to Minority :   No Do you have APAAR Id?:   ?   No  Qualification Details Intermediate/ITI Details  Passing Status   Passed Passing Year   2021 Stream/Course   Intermediate Science Board   Other Roll/Registration Number   216045376 Result Mode   Percentage Maximum Marks   500 Obtained Marks   332 Percentage Marks   66.4  Apply For Details Sr.No.   Discipline  1   Group K5 (IT)  Exam Center List Exam Center Choice No.   State Name   Exam City  1   Uttar Pradesh   Varanasi (Kashi) 2   Uttar Pradesh   Ghaziabad 3   Uttar Pradesh   Kanpur Nagar 4   Uttar Pradesh   Chitrakoot  Contact Details Correspondence Address Premises No./Village Name   I block 70 Gujaini udhyog Nagar kanpur Nagar  Sub Locality/Colony/Police Station(Optional)   Govind Nagar  Locality/City/Town/Village/Post Office   Gujaini bypass  Country   India  State   Uttar Pradesh  District   Kanpur Nagar  Pin Code   208022  Mobile Number   9517281094  Email Id   chitranshisharma7754@gmail.com  Permanent Address Premises No./Village Name   I block 70 Gujaini udhyog Nagar kanpur Nagar  Sub Locality/Colony/Police Station(Optional)   Govind Nagar  Locality/City/Town/Village/Post Office   Gujaini bypass  Country   India  State   Uttar Pradesh  District   Kanpur Nagar  Pin Code   208022  Fee Payment Details Registration Fee  Joint Entrance Examination Council (Polytechnic), Uttar Pradesh  Joint Entrance Examination (Polytechnic) UP 2026 Confirmation Page  Application Number: 260100059964   Generated On: 18-03-2026 08:49:05 PM   Page No. 1
+2026-03-19 05:07:17: 
+2026-03-19 05:07:17: Transaction Number   Transaction Amount   Transaction Date  8210278946013   300   2026/03/18 20:47:33  Registration Details Activity   Date & Time   IP Address  Registration Form Submission   Mar 16 2026 4:46PM   49.42.32.79 Application Form Submission   Mar 18 2026 8:35PM   49.42.32.158  Uploaded Documents  Photograph Signature Live Photograph  Declaration  I hereby declare that I have filled up this online application after carefully reading the Information Bulletin and fully understanding the provisions/ procedures mentioned therein. I further declare that all the particulars given by me in this application are true to the best of my knowledge and belief. I agree that my Result may be withheld/ not declared/ my candidature may automatically stand cancelled, In case it is found at any point of time in future that false information has been furnished in this application. I shall abide by these terms and conditions as well as those laid down in the Information Bulletin, Public Notices and Advisories issued by JEECUP regarding this exam from time to time.  Instructions:  Candidate is requested to retain the printout of confirmation page for future reference. 1. The candidate is requested to keep the registered mobile number and email ID active for important updates and notifications. 2. Kindly visit the website https://jeecup.admissions.nic.in/ regularly for further updates and notifications. 3.  CHITRANSHI SHARMA (Signature of Candidate)  Joint Entrance Examination Council (Polytechnic), Uttar Pradesh  Joint Entrance Examination (Polytechnic) UP 2026 Confirmation Page  Application Number: 260100059964   Generated On: 18-03-2026 08:49:05 PM   Page No. 2
+2026-03-19 05:07:17: 
+2026-03-19 05:07:17: 
+2026-03-19 05:07:17: API key available: true
+2026-03-19 05:07:17: Is PDF summary request: false
+2026-03-19 05:07:17: Making OpenAI API call with message length: 3766
+2026-03-19 05:07:31: OpenAI API returned successful response
+2026-03-19 05:16:44: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-19 05:16:44: 
+2026-03-19 05:16:44: 
+2026-03-19 05:16:44: 
+2026-03-19 05:16:44: 
+2026-03-19 05:16:44: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-19 05:16:44: 
+2026-03-19 05:16:44: 
+2026-03-19 05:16:44: 
+2026-03-19 05:16:44: 
+2026-03-19 05:16:44: API key available: true
+2026-03-19 05:16:44: Is PDF summary request: false
+2026-03-19 05:16:44: Making OpenAI API call with message length: 78
+2026-03-19 05:16:46: OpenAI API returned successful response
+2026-03-19 05:17:06: Received chat request: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-19 05:17:06: 
+2026-03-19 05:17:06: 
+2026-03-19 05:17:06: 
+2026-03-19 05:17:06: 
+2026-03-19 05:17:06: Generating chat completion for: Analyze this PDF document and provide a comprehensive, structured summary:
+2026-03-19 05:17:06: 
+2026-03-19 05:17:06: 
+2026-03-19 05:17:06: 
+2026-03-19 05:17:06: 
+2026-03-19 05:17:06: API key available: true
+2026-03-19 05:17:06: Is PDF summary request: false
+2026-03-19 05:17:06: Making OpenAI API call with message length: 78
+2026-03-19 05:17:08: OpenAI API returned successful response
+2026-03-19 18:08:58: Received streaming chat request: hi...
+2026-03-19 18:08:58: Starting OpenAI streaming...
+2026-03-19 18:09:00: Streaming completed successfully
+2026-03-20 06:42:46: Next.js process exited with code null
+2026-03-20 06:42:47: Environment variables loaded
+2026-03-20 06:42:47: OPENAI_API_KEY configured: true
+2026-03-20 06:42:47: Starting Next.js with 3680MB memory limit
+2026-03-20 06:42:47: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-20 06:42:47: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-20 06:42:50:   ▲ Next.js 14.2.35
+2026-03-20 06:42:50:   - Local:        http://localhost:3001
+2026-03-20 06:42:50:   - Network:      http://0.0.0.0:3001
+2026-03-20 06:42:50: 
+2026-03-20 06:42:50:  ✓ Starting...
+2026-03-20 06:42:51:  ✓ Ready in 3.7s
+2026-03-20 06:55:18: Next.js process exited with code null
+2026-03-20 06:55:28: Environment variables loaded
+2026-03-20 06:55:28: OPENAI_API_KEY configured: true
+2026-03-20 06:55:28: Starting Next.js with 3738MB memory limit
+2026-03-20 06:55:28: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-20 06:55:28: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-20 06:55:28:   ▲ Next.js 14.2.35
+2026-03-20 06:55:28:   - Local:        http://localhost:3001
+2026-03-20 06:55:28:   - Network:      http://0.0.0.0:3001
+2026-03-20 06:55:28: 
+2026-03-20 06:55:28:  ✓ Starting...
+2026-03-20 06:55:29:  ✓ Ready in 374ms
+2026-03-20 06:57:04: Next.js process exited with code null
+2026-03-20 06:57:05: Environment variables loaded
+2026-03-20 06:57:05: OPENAI_API_KEY configured: true
+2026-03-20 06:57:05: Starting Next.js with 3819MB memory limit
+2026-03-20 06:57:05: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-20 06:57:05: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-20 06:57:05:   ▲ Next.js 14.2.35
+2026-03-20 06:57:05:   - Local:        http://localhost:3001
+2026-03-20 06:57:05:   - Network:      http://0.0.0.0:3001
+2026-03-20 06:57:05: 
+2026-03-20 06:57:05:  ✓ Starting...
+2026-03-20 06:57:05:  ✓ Ready in 372ms
+2026-03-20 07:00:37: Received streaming chat request: hello...
+2026-03-20 07:00:37: Starting OpenAI streaming...
+2026-03-20 07:00:39: Streaming completed successfully
+2026-03-20 07:00:44: Received streaming chat request: what is your name...
+2026-03-20 07:00:44: Starting OpenAI streaming...
+2026-03-20 07:00:46: Streaming completed successfully
+2026-03-20 07:00:56: Received streaming chat request: who is your father...
+2026-03-20 07:00:56: Starting OpenAI streaming...
+2026-03-20 07:00:58: Streaming completed successfully
+2026-03-20 07:01:08: Received streaming chat request: who created you...
+2026-03-20 07:01:08: Starting OpenAI streaming...
+2026-03-20 07:01:09: Streaming completed successfully
+2026-03-20 07:01:19: Received streaming chat request: what is iran isreal conflict...
+2026-03-20 07:01:19: Starting OpenAI streaming...
+2026-03-20 07:01:31: Streaming completed successfully
+2026-03-20 07:01:50: Received streaming chat request: can you generate me a image of man sitting in rest...
+2026-03-20 07:01:50: Starting OpenAI streaming...
+2026-03-20 07:01:57: Streaming completed successfully
+2026-03-20 07:08:21: Received streaming chat request: hi...
+2026-03-20 07:08:21: Starting OpenAI streaming...
+2026-03-20 07:08:22: Streaming completed successfully
+2026-03-20 07:09:32: Received streaming chat request: Hi...
+2026-03-20 07:09:32: Starting OpenAI streaming...
+2026-03-20 07:09:34: Streaming completed successfully
+2026-03-20 07:11:20: Received streaming chat request: hi...
+2026-03-20 07:11:20: Starting OpenAI streaming...
+2026-03-20 07:11:21: Streaming completed successfully
+2026-03-20 07:22:17: Next.js process exited with code null
+2026-03-20 07:22:17: Environment variables loaded
+2026-03-20 07:22:17: OPENAI_API_KEY configured: true
+2026-03-20 07:22:17: Starting Next.js with 3444MB memory limit
+2026-03-20 07:22:17: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-20 07:22:17: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-20 07:22:17:   ▲ Next.js 14.2.35
+2026-03-20 07:22:17:   - Local:        http://localhost:3001
+2026-03-20 07:22:17:   - Network:      http://0.0.0.0:3001
+2026-03-20 07:22:17: 
+2026-03-20 07:22:17:  ✓ Starting...
+2026-03-20 07:22:17:  ✓ Ready in 354ms
+2026-03-20 07:35:05: Next.js process exited with code null
+2026-03-20 07:35:05: Environment variables loaded
+2026-03-20 07:35:05: OPENAI_API_KEY configured: true
+2026-03-20 07:35:05: Starting Next.js with 3427MB memory limit
+2026-03-20 07:35:05: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-20 07:35:05: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-20 07:35:05:   ▲ Next.js 14.2.35
+2026-03-20 07:35:05:   - Local:        http://localhost:3001
+2026-03-20 07:35:05:   - Network:      http://0.0.0.0:3001
+2026-03-20 07:35:05: 
+2026-03-20 07:35:05:  ✓ Starting...
+2026-03-20 07:35:05:  ✓ Ready in 336ms
+2026-03-20 07:36:39: Next.js process exited with code null
+2026-03-20 07:36:45: Environment variables loaded
+2026-03-20 07:36:45: OPENAI_API_KEY configured: true
+2026-03-20 07:36:45: Starting Next.js with 3492MB memory limit
+2026-03-20 07:36:45: Using Next.js binary: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next
+2026-03-20 07:36:45: Running command: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next start -H 0.0.0.0 -p 3001
+2026-03-20 07:36:45:   ▲ Next.js 14.2.35
+2026-03-20 07:36:45:   - Local:        http://localhost:3001
+2026-03-20 07:36:45:   - Network:      http://0.0.0.0:3001
+2026-03-20 07:36:45: 
+2026-03-20 07:36:45:  ✓ Starting...
+2026-03-20 07:36:45:  ✓ Ready in 366ms
+2026-03-20 07:37:20: Received streaming chat request: who created you...
+2026-03-20 07:37:20: Starting OpenAI streaming...
+2026-03-20 07:37:22: Streaming completed successfully
+2026-03-20 07:48:10: Received streaming chat request: hello...
+2026-03-20 07:48:10: Starting OpenAI streaming...
+2026-03-20 07:48:11: Streaming completed successfully
+2026-03-20 07:48:29: Received streaming chat request: describe iran and isreal war...
+2026-03-20 07:48:29: Starting OpenAI streaming...
+2026-03-20 07:48:45: Streaming completed successfully

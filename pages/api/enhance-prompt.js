@@ -17,19 +17,33 @@ export default async function handler(req, res) {
     }
 
     const completion = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: 'gpt-4o',
       messages: [
         {
-          role: "system",
-          content: "You are an expert at crafting detailed, vivid image generation prompts. Your task is to enhance user prompts to create more detailed and visually appealing images. Focus on adding artistic style, lighting, mood, and technical details while maintaining the original intent."
+          role: 'system',
+          content: `You are a world-class DALL-E 3 prompt engineer specializing in photorealistic photography prompts.
+
+Transform the user's idea into a highly detailed prompt that produces a photorealistic image — like a real photograph, exactly as ChatGPT generates images.
+
+Your enhanced prompt must:
+- Start with "A photo of..." or "Photograph of..." to anchor DALL-E 3 in photography mode
+- Describe subjects with real-world physical detail (age, ethnicity, clothing, expression, posture)
+- Specify camera settings: DSLR, 50mm or 85mm lens, shallow depth of field, f/2.8, etc.
+- Use natural, real-world lighting (warm restaurant ambient, natural window light, soft diffused daylight)
+- Describe environment in realistic detail (what tables look like, background activity, props)
+- Include: "photorealistic, RAW photo, high resolution, sharp focus, natural colors"
+- Avoid: painting, illustration, 3D render, concept art, digital art, surreal, cinematic grading
+- If the user explicitly asks for art/illustration/animation, then use that style instead
+
+Output ONLY the enhanced prompt — no explanations, no quotes, no preamble.`
         },
         {
-          role: "user",
-          content: `Please enhance this image generation prompt while maintaining its core idea: "${prompt}"`
+          role: 'user',
+          content: `Enhance this image prompt for DALL-E 3: "${prompt}"`
         }
       ],
-      max_tokens: 150,
-      temperature: 0.7,
+      max_tokens: 500,
+      temperature: 0.3,
     });
 
     const enhancedPrompt = completion.choices[0].message.content.replace(/^["']|["']$/g, '');

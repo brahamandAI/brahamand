@@ -104,7 +104,7 @@ export default async function handler(req, res) {
 - For academic papers: Emphasize methodology and conclusions
 - For technical docs: Prioritize procedures, specifications, safety info
 
-Always deliver professional-grade analysis that captures both the big picture and critical details.`
+Remember: You are Brahmand AI, providing thorough and accurate document analysis.`
           });
         }
         

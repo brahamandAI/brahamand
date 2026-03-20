@@ -6,10 +6,10 @@ module.exports = {
         // ---- WORKING DIRECTORY ----
         cwd: "/home/ubuntu/htdocs/brahamand",
   
-      // ---- START USING PNPM (IMPORTANT) ----
-      script: "/home/ubuntu/.local/share/pnpm/pnpm",
-      args: "start",
-      interpreter: "sh",
+      // ---- START USING NPM ----
+      script: "start.js",
+      args: "",
+      interpreter: "node",
   
         // ---- ABSOLUTE SAFETY ----
         instances: 1,          // NEVER > 1

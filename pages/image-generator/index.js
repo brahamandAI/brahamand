@@ -9,7 +9,6 @@ import LeftDashboardSidebar from "@/components/Header/LeftDashboardSidebar";
 import HeaderDashboard from "@/components/Header/HeaderDashboard";
 import RightDashboardSidebar from "@/components/Header/RightDashboardSidebar";
 import Modal from "@/components/Common/Modal";
-import StaticbarDashboard from "@/components/Common/StaticBarDashboard";
 import TextToImage from "@/components/ImageGenerator/TextToImage";
 
 const ImageGeneratorPage = () => {
@@ -21,7 +20,7 @@ const ImageGeneratorPage = () => {
         <div className="rbt-panel-wrapper">
           <Context>
             <LeftDashboardSidebar />
-            <HeaderDashboard display="" />
+            <HeaderDashboard display="" hideRightSidebar={true} />
             <RightDashboardSidebar />
             <Modal />
             <PopupMobileMenu />
@@ -30,9 +29,8 @@ const ImageGeneratorPage = () => {
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
                   <div className="content-page">
-                    <div className="chat-box-section">
+                    <div className="image-generator-page-wrapper">
                       <TextToImage />
-                      <StaticbarDashboard />
                     </div>
                   </div>
                 </div>

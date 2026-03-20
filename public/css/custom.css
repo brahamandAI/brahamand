@@ -32,63 +32,30 @@
   box-sizing: border-box;
 }
 
-/* Remove extra space from containers */
-.chat-box-list,
-.chat-box,
-.inner,
-.chat-section,
-.d-flex,
-.form-group {
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 0 !important;
-  height: auto !important;
-  overflow: visible !important;
-  max-height: none !important;
+/* Chat page container resets — scoped to home chat page only */
+body.home-chat-page .chat-box-list,
+body.home-chat-page .chat-box,
+body.home-chat-page .chat-section {
+  margin: 0;
+  padding: 0;
 }
 
-/* Ensure content fits without extra space */
-.chat-content,
-.inner > div,
-.chat-section > div {
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 0 !important;
-  height: auto !important;
-  max-height: none !important;
+body.home-chat-page .chat-content {
+  margin: 0;
+  padding: 0;
 }
 
-/* Fix for the blank container */
-.chat-box-list {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+body.home-chat-page .chat-box-list {
   display: flex;
   flex-direction: column;
 }
 
-.chat-box {
-  margin-bottom: 0 !important;
+body.home-chat-page .chat-box {
   flex: 0 0 auto;
 }
 
-.inner {
-  padding-bottom: 0 !important;
-  display: flex;
-  flex-direction: column;
-}
-
-.chat-section {
-  margin-bottom: 0 !important;
+body.home-chat-page .chat-section {
   flex: 0 0 auto;
-}
-
-/* Prevent any bottom spacing */
-.chat-box:last-child,
-.chat-section:last-child,
-.inner:last-child,
-.chat-content:last-child {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
 }
 
 .rbt-static-bar .new-chat-form {
@@ -189,6 +156,65 @@
 /* Ensure dark mode compatibility */
 .rbt-static-bar[data-theme="dark"] {
   background-color: #1a1b26;
+}
+
+/* ===== Image generator page: full scrolling layout ===== */
+.image-generator-page-wrapper {
+  width: 100%;
+}
+
+/* -------------------------------------------------------
+   NON-CHAT dashboard pages (image-generator, pdf, etc.)
+   The BODY scrolls — do NOT lock any container to 100vh
+------------------------------------------------------- */
+body:not(.home-chat-page) html,
+body:not(.home-chat-page) {
+  overflow-y: auto !important;
+  overflow-x: hidden;
+  height: auto !important;
+  position: static !important;
+}
+
+/* Let the main content grow naturally so body can scroll */
+body:not(.home-chat-page) .page-wrapper,
+body:not(.home-chat-page) .rbt-panel-wrapper {
+  height: auto !important;
+  min-height: 100vh;
+  overflow: visible !important;
+  position: static !important;
+}
+
+body:not(.home-chat-page) .rbt-main-content {
+  height: auto !important;
+  overflow: visible !important;
+  min-height: calc(100vh - 80px);
+}
+
+body:not(.home-chat-page) .rbt-daynamic-page-content,
+body:not(.home-chat-page) .rbt-dashboard-content,
+body:not(.home-chat-page) .content-page {
+  height: auto !important;
+  overflow: visible !important;
+  padding-bottom: 60px;
+}
+
+/* ===== Header fixes ===== */
+/* Keep logo height consistent — don't let the GIF aspect ratio break header row */
+.rbt-dashboard-header .logo img,
+.rbt-dashboard-header .logo a img {
+  max-height: 48px !important;
+  width: auto !important;
+  object-fit: contain;
+}
+
+/* Ensure header row stays aligned on all screen sizes */
+.rbt-dashboard-header .header-left {
+  gap: 12px;
+}
+
+/* Prevent the right sidebar expand button from appearing on pages that don't need it */
+.rbt-dashboard-header .expand-btn-grp:empty {
+  display: none;
 }
 
 /* Home page: force full width - remove dashboard width constraints (desktop + mobile) */

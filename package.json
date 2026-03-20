@@ -8,6 +8,8 @@
     "build": "next build",
     "start": "node start.js",
     "lint": "next lint",
+    "install:safe": "npm ci && npx prisma generate",
+    "postinstall:allowed": "npx prisma generate",
     "next:dev": "next dev",
     "next:start": "next start",
     "dev:simple": "node start-simple.js --dev",

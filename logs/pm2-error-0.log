@@ -1312,3 +1312,390 @@
 2026-02-21 20:39:53: /bin/sh: 1: 
 2026-02-21 20:39:53: /home/ubuntu/htdocs/brahamand/node_modules/.bin/next: Permission denied
 2026-02-21 20:39:53: 
+2026-03-14 07:15:25:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-03-14 07:15:25:  ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-14 07:15:26:  ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-14 07:15:26:  ⚠ The requested resource "/images/logo/logo-dark-half.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-14 07:15:26:  ⚠ The requested resource "/images/logo/logo-dark.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-15 13:34:52:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-15 13:34:52:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-15 13:34:52:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-15 13:34:52:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-15 13:34:52:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-15 13:34:52:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-15 13:34:52:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-15 13:34:52:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-03-15 13:34:52:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-03-15 13:34:52:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-03-15 13:34:52:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-03-15 15:35:50:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-15 15:35:50:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-15 15:35:50:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-15 15:35:50:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-15 15:35:50:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-15 15:35:50:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-15 15:35:50:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-15 15:35:50:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-03-15 15:35:50:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-03-15 15:35:50:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-03-15 15:35:50:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-03-15 23:14:32:  ⚠ The requested resource "/images/logo/output-onlinegiftools.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-16 05:32:16:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-16 05:32:16:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-16 05:32:16:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-16 05:32:16:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-16 05:32:16:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-16 05:32:16:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-16 05:32:16:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-16 05:32:16:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-03-16 05:32:16:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-03-16 05:32:16:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-03-16 05:32:16:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-03-16 05:34:25:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-16 05:34:25:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-16 05:34:25:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-16 05:34:25:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-16 05:34:25:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-16 05:34:25:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-16 05:34:25:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-16 05:34:25:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-03-16 05:34:25:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-03-16 05:34:25:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-03-16 05:34:25:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-03-16 05:34:30:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-16 05:34:30:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-16 05:34:30:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-16 05:34:30:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-16 05:34:30:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-16 05:34:30:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-16 05:34:30:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-16 05:34:30:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-03-16 05:34:30:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-03-16 05:34:30:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-03-16 05:34:30:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-03-16 05:35:37:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-16 05:35:37:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-16 05:35:37:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-16 05:35:37:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-16 05:35:37:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-16 05:35:37:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-16 05:35:37:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-16 05:35:37:     at Module._compile (node:internal/modules/cjs/loader:1356:14)
+2026-03-16 05:35:37:     at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+2026-03-16 05:35:37:     at Module.load (node:internal/modules/cjs/loader:1197:32)
+2026-03-16 05:35:37:     at Module._load (node:internal/modules/cjs/loader:1013:12)
+2026-03-16 17:58:17:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-03-17 05:12:19:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-03-17 05:16:31:  ⚠ The requested resource "/images/logo/logo-dark-half.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-17 05:16:31:  ⚠ The requested resource "/images/logo/logo-dark.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-17 06:55:58:  ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-17 07:10:21:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:21:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:21:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:21:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:21:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:21:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:21:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:21:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:21:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:21:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:21:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:24:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:24:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:24:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:24:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:24:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:24:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:24:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:24:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:24:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:24:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:24:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:25:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:25:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:25:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:25:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:25:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:25:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:25:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:25:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:25:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:25:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:25:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:26:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:26:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:26:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:26:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:26:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:26:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:26:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:26:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:26:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:26:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:26:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:26:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:26:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:26:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:26:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:26:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:26:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:26:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:26:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:26:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:26:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:26:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:26:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:26:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:26:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:26:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:26:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:26:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:26:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:26:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:26:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:26:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:26:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:27:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:27:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:27:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:27:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:27:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:27:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:27:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:27:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:27:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:27:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:27:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:27:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:27:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:27:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:27:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:27:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:27:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:27:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:27:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:27:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:27:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:27:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:27:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:27:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:27:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:27:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:27:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:27:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:27:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:27:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:27:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:27:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:27:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:27:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:27:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:27:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:27:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:10:29:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:10:29:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:10:29:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:29:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:10:29:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:10:29:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:10:29:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:10:29:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:10:29:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:10:29:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:10:29:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:08:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:08:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:08:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:08:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:08:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:08:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:08:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:08:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:08:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:08:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:08:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:10:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:10:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:10:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:10:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:10:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:10:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:10:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:10:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:10:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:10:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:10:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:10:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:10:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:10:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:10:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:10:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:10:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:10:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:10:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:10:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:10:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:10:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:11:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:11:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:11:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:11:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:11:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:11:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:11:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:11:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:11:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:11:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:11:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:17:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:17:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:17:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:17:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:17:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:17:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:17:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:17:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:17:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:17:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:17:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:18:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:18:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:18:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:18:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:18:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:18:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:18:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:18:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:18:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:18:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:18:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:19:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:19:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:19:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:19:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:19:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:19:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:19:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:19:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:19:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:19:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:19:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:19:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:19:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:19:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:19:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:19:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:19:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:19:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:19:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:19:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:19:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:19:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:19:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:19:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:19:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:19:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:19:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:19:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:19:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:19:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:19:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:19:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:19:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:21:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:21:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:21:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:21:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:21:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:21:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:21:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:21:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:21:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:21:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:21:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:21:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:21:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:21:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:21:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:21:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:21:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:21:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:21:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:21:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:21:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:21:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:22:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:22:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:22:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:22:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:22:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:22:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:22:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:22:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:22:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:22:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:22:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:22:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:22:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:22:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:22:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:22:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:22:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:22:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:22:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:22:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:22:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:22:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:39:22:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-17 07:39:22:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-17 07:39:22:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:22:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-17 07:39:22:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-17 07:39:22:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-17 07:39:22:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-17 07:39:22:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-17 07:39:22:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-17 07:39:22:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-17 07:39:22:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-17 07:42:02:  ⚠ The requested resource "/images/icons/loader-one.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-18 06:08:38:  ⨯ Error: Please define the MONGODB_URI environment variable inside .env.local
+2026-03-18 06:08:38:     at 4359 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:1693)
+2026-03-18 06:08:38:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-18 06:08:38:     at 6921 (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:520)
+2026-03-18 06:08:38:     at o (/home/ubuntu/htdocs/brahamand/.next/server/webpack-api-runtime.js:1:127)
+2026-03-18 06:08:38:     at /home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2341
+2026-03-18 06:08:38:     at Object.<anonymous> (/home/ubuntu/htdocs/brahamand/.next/server/pages/api/live-news.js:1:2371)
+2026-03-18 06:08:38:     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+2026-03-18 06:08:38:     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+2026-03-18 06:08:38:     at Module.load (node:internal/modules/cjs/loader:1091:32)
+2026-03-18 06:08:38:     at Module._load (node:internal/modules/cjs/loader:938:12)
+2026-03-20 06:44:41:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-03-20 06:44:41:  ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-20 06:44:41:  ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-20 06:57:23:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-03-20 07:00:37:  ⚠ The requested resource "/images/logo/output-onlinegiftools.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-20 07:06:25:  ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-20 07:06:25:  ⚠ The requested resource "/images/logo/logo-white.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-20 07:06:28:  ⚠ The requested resource "/images/logo/logo-dark-half.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-20 07:06:28:  ⚠ The requested resource "/images/logo/logo-dark.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-20 07:23:11:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2026-03-20 07:23:20:  ⚠ The requested resource "/images/logo/logo.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+2026-03-20 07:37:03:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.

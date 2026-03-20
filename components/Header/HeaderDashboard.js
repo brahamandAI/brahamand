@@ -67,7 +67,14 @@ const HeaderDashboard = ({ display, hideRightSidebar = false, useSidebarAsMobile
                 </div>
                 <div className="logo">
                   <Link href="/">
-                    <Image width={110} height={250} src={ isLightTheme ? "/images/logo/logo-dark.gif" : "/images/logo/logo-white.gif"}></Image>
+                    <Image 
+                      width={110} 
+                      height={44} 
+                      src={isLightTheme ? "/images/logo/logo-dark.gif" : "/images/logo/logo-white.gif"}
+                      alt="Brahmand AI Logo"
+                      priority
+                      style={{ objectFit: 'contain', height: '44px', width: 'auto' }}
+                    />
                   </Link>
                 </div>
               </div>
